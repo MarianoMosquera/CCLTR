@@ -53,4 +53,93 @@ The platform emphasizes three analytical dimensions:
 
 The initial version focuses on identifying and exploring AI-related argumentative maps while preserving their original structures.
 
-The platform does not automatically
+The platform does not automatically interpret argumentative disagreement as evidence that one position is correct or superior.
+
+## Interactive Visualization
+
+The explorer provides a browser-based interface for navigating argumentative networks.
+
+Its visualization environment is designed to support:
+
+- Exploration of AI-related central claims.
+- Interactive examination of argument maps.
+- Visualization of connections among argumentative elements.
+- Inspection of supporting and opposing positions.
+- Navigation between selected maps and their source references.
+
+The interface uses established graph visualization technologies to represent argumentative relationships in an accessible format.
+
+## Technical Architecture
+
+CCLTR separates data preparation from interactive visualization.
+
+Argumentative networks are processed and organized into structured datasets that can subsequently be explored through a web interface.
+
+The public visualization environment uses static web technologies, including HTML, CSS, JavaScript, and Cytoscape.js.
+
+This architecture supports lightweight deployment, reproducible access to published results, and exploration without requiring users to execute analytical software locally.
+
+The project is designed for deployment through a free, static Hugging Face Space.
+
+## Scope and Limitations
+
+**Version 1 (V1)** represents an initial stage of the CCLTR research infrastructure.
+
+Its primary purpose is to facilitate exploration of argumentative maps associated with artificial intelligence.
+
+The identification of relevant maps in this version relies on lexical criteria rather than comprehensive semantic equivalence.
+
+Consequently, the selection of maps should not be interpreted as an exhaustive representation of every AI-related argument contained in the original dataset.
+
+Likewise, network visualization describes argumentative relationships without independently establishing the factual validity, scientific quality, or normative superiority of individual claims.
+
+Future developments may extend the platform's analytical capabilities.
+
+## Research Applications
+
+The explorer is intended to support research and educational activities in areas such as:
+
+- Artificial intelligence governance and ethics.
+- Computational argumentation.
+- Conceptual diversity and disagreement.
+- Deliberative processes.
+- Network analysis of public and technological controversies.
+- Human–AI and multi-agent deliberation research.
+
+By making argumentative structures visible, the platform offers a foundation for investigating how competing perspectives emerge, interact, and potentially contribute to conceptual innovation.
+
+## Attribution and Data Provenance
+
+The original argumentative dataset is provided by **DebateLab KIT / syncIALO**.
+
+Dataset:  
+https://huggingface.co/datasets/DebateLabKIT/syncialo-raw
+
+The CCLTR project acknowledges the original dataset creators and distinguishes their contribution from the analytical and visualization components developed within this repository.
+
+Reuse and redistribution of source data remain subject to the applicable dataset license and attribution requirements.
+
+## Project Repository
+
+**CCLTR — Conceptual Innovation and Argumentative Diversity Research**
+
+GitHub:  
+https://github.com/marianomosquera/CCLTR
+
+The repository hosts the project's public research infrastructure, visualization components, and associated resources.
+
+## Project Status
+
+**Version:** 1.0 — Initial Explorer
+
+**Focus:** Artificial intelligence argumentative networks
+
+**Data foundation:** syncIALO / DebateLab KIT
+
+**Interface:** Static, browser-based interactive visualization
+
+**Research orientation:** Argumentative diversity, conceptual exploration, and AI deliberation
+
+---
+
+*CCLTR approaches disagreement not merely as an obstacle to consensus, but as a potential source of conceptual diversity, critical reflection, and innovation.*
