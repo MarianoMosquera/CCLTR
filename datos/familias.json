@@ -1,0 +1,65 @@
+[
+  {
+    "familia": "Reconocimiento facial, privacidad y seguridad",
+    "cantidad": 17,
+    "mapas": [
+      "debate-eval-0019",
+      "debate-eval-0041",
+      "debate-train-0049",
+      "debate-train-0096",
+      "debate-train-0158",
+      "debate-train-0190",
+      "debate-train-0203",
+      "debate-train-0212",
+      "debate-train-0225",
+      "debate-train-0318",
+      "debate-train-0347",
+      "debate-train-0415",
+      "debate-train-0443",
+      "debate-train-0444",
+      "debate-train-0601",
+      "debate-train-0772",
+      "debate-train-0848"
+    ]
+  },
+  {
+    "familia": "Educación y producción cultural",
+    "cantidad": 4,
+    "mapas": [
+      "debate-train-0061",
+      "debate-train-0070",
+      "debate-train-0275",
+      "debate-train-0338"
+    ]
+  },
+  {
+    "familia": "Democracia y gobernanza algorítmica",
+    "cantidad": 4,
+    "mapas": [
+      "debate-test-0005",
+      "debate-train-0340",
+      "debate-train-0447",
+      "debate-train-0595"
+    ]
+  },
+  {
+    "familia": "Derechos y condición moral de la IA",
+    "cantidad": 2,
+    "mapas": [
+      "debate-train-0469",
+      "debate-train-0659"
+    ]
+  },
+  {
+    "familia": "Desarrollo de la IA e impactos sociales",
+    "cantidad": 6,
+    "mapas": [
+      "debate-train-0007",
+      "debate-train-0586",
+      "debate-train-0708",
+      "debate-train-0950",
+      "debate-train-0988",
+      "debate-train-0996"
+    ]
+  }
+]

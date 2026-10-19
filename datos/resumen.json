@@ -1,0 +1,13 @@
+{
+  "repositorio": "DebateLabKIT/syncialo-raw",
+  "fecha_utc": "2026-10-19T17:49:24.398030+00:00",
+  "archivos_examinados": 1100,
+  "mapas_indexados": 1100,
+  "mapas_ia": 33,
+  "errores": 0,
+  "metodo": "coincidencia léxica sobre tesis central; no equivalencia semántica",
+  "alcance": "data/synthetic_corpus-001/",
+  "limite_prueba": null,
+  "mapas_excluidos_sin_argumentos": 1,
+  "criterio_exclusion": "Grafos sin relaciones argumentativas"
+}

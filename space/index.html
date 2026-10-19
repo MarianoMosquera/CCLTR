@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1220">
+<title>CCLTR · Argument Atlas</title>
+<script defer src="https://unpkg.com/cytoscape@3.30.4/dist/cytoscape.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar"><div><div class="eyebrow">CCLTR / CONTRADICTION ATLAS</div><h1>Mapping arguments <span>about artificial intelligence</span></h1><p>Explore original argument maps from syncIALO · DebateLab KIT</p></div><div class="topmetric"><strong id="totalMaps">33</strong><small>selected debates</small></div></header>
+  <div class="summary"><div><strong>05</strong><span>Thematic families</span></div><div><strong>18.280</strong><span>Corpus nodes</span></div><div><strong>18.247</strong><span>Argument relations</span></div><div><span class="dot live"></span><span id="status">Loading data…</span></div></div>
+  <main class="workspace">
+    <aside class="sidebar"><div class="section-head"><h2>Research families</h2><span>01 / 03</span></div><h3>Thematic families</h3><div id="families" class="families"></div><div class="listhead"><h3>Debates</h3><span id="count">0</span></div><div id="results" class="results"></div></aside>
+    <section class="viewer"><div class="viewer-header"><div><div class="eyebrow" id="familyName">SELECT A DEBATE</div><h2 id="title">Explore a thesis and its arguments</h2><p id="mapId">Relations point toward the claims they support or challenge.</p></div><a id="source" href="#" target="_blank" rel="noopener noreferrer" hidden>Original source ↗</a></div>
+      <div class="toolbar"><div class="legend"><span><i class="swatch root"></i>Thesis</span><span><i class="swatch pro"></i>PRO</span><span><i class="swatch con"></i>CON</span></div><div class="tools"><button id="filterAll" class="tool active">All</button><button id="filterPro" class="tool">PRO</button><button id="filterCon" class="tool">CON</button><button id="fit" class="tool">Fit view</button><button id="reset" class="tool">Rearrange</button></div></div>
+      <div class="graph-wrap"><div id="cy" role="img" aria-label="Interactive argument network"></div><div id="graphPlaceholder">Choose a family and debate to explore its argument constellation.</div><div class="graph-hint">Scroll to zoom · Drag to pan · Select a node</div></div>
+      <div class="graph-stats"><div><strong id="nodeCount">—</strong><span>Nodes</span></div><div><strong id="edgeCount">—</strong><span>Relations</span></div><div><strong id="proCount">—</strong><span>PRO</span></div><div><strong id="conCount">—</strong><span>CON</span></div></div>
+    </section>
+    <aside class="details"><div class="section-head"><h2>Argument</h2><span>03 / 03</span></div><div id="detail"><p class="muted">Select a node to read its full claim and relationships.</p></div><div class="note"><strong>Interpretation note</strong><p>PRO and CON label relations in the source corpus. They do not, by themselves, establish formal logical contradictions.</p></div></aside>
+  </main><footer>CCLTR · Exploratory visualization · Original data: syncIALO / DebateLab KIT</footer>
+</div>
+</body></html>

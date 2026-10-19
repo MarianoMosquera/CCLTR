@@ -1,0 +1,36 @@
+name: Actualizar mapas syncIALO
+on:
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: 'Cantidad de archivos JSON a examinar (0 = todos)'
+        required: true
+        default: '10'
+  # Habilitar programación periódica solamente después de validar la primera ejecución.
+permissions:
+  contents: write
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Ejecutar extracción
+        shell: bash
+        run: |
+          if [ "${{ inputs.limite }}" = "0" ]; then
+            python -m orquestador.pipeline
+          else
+            python -m orquestador.pipeline --limit "${{ inputs.limite }}"
+          fi
+      - name: Guardar resultados
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add datos
+          git diff --cached --quiet || (git commit -m 'Actualizar índice syncIALO' && git push)

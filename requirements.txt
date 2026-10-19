@@ -1,0 +1,2 @@
+huggingface_hub>=0.25,<2
+networkx>=3.2,<4

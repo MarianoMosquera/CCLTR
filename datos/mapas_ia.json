@@ -1,0 +1,398 @@
+[
+  {
+    "id": "debate-eval-0019",
+    "path": "data/synthetic_corpus-001/eval/debate-eval-0019/node_link_data-debate-eval-0019.json",
+    "root_id": "35568bc7-5b5e-44e2-a7bd-cd6a138b1a1f",
+    "tesis": "Facial recognition technology in public spaces constitutes a disproportionate threat to individual privacy and freedom, particularly for marginalized groups.",
+    "nodos": 703,
+    "relaciones": 702,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/eval/debate-eval-0019/node_link_data-debate-eval-0019.json"
+  },
+  {
+    "id": "debate-eval-0041",
+    "path": "data/synthetic_corpus-001/eval/debate-eval-0041/node_link_data-debate-eval-0041.json",
+    "root_id": "81218322-5bf0-4b3f-bba1-0121ed34a381",
+    "tesis": "This house believes that facial recognition technology should remain permissible in public spaces to ensure the safety and security of marginalized communities, including LGBTQ individuals.",
+    "nodos": 511,
+    "relaciones": 510,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/eval/debate-eval-0041/node_link_data-debate-eval-0041.json"
+  },
+  {
+    "id": "debate-test-0005",
+    "path": "data/synthetic_corpus-001/test/debate-test-0005/node_link_data-debate-test-0005.json",
+    "root_id": "15167795-754d-4276-9fa7-c508d21be734",
+    "tesis": "This house believes that democratic governments should regulate tech giants like Apple to prevent algorithmic bias that perpetuates social injustices.",
+    "nodos": 631,
+    "relaciones": 630,
+    "coincidencias": [
+      "\\balgorithmic (decision|bias|discrimination)\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/test/debate-test-0005/node_link_data-debate-test-0005.json"
+  },
+  {
+    "id": "debate-train-0007",
+    "path": "data/synthetic_corpus-001/train/debate-train-0007/node_link_data-debate-train-0007.json",
+    "root_id": "47b313f5-92f0-4265-adf0-6b4e1154febe",
+    "tesis": "This house believes that Artificial Intelligence will inevitably displace human workers, exacerbating economic inequality and compromising global stability.",
+    "nodos": 633,
+    "relaciones": 632,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0007/node_link_data-debate-train-0007.json"
+  },
+  {
+    "id": "debate-train-0049",
+    "path": "data/synthetic_corpus-001/train/debate-train-0049/node_link_data-debate-train-0049.json",
+    "root_id": "d25dd8b7-433c-4317-9dbe-9e755fad265d",
+    "tesis": "Facial recognition technology should be banned in all public spaces due to its unacceptable risks to individual privacy and democratic freedoms.",
+    "nodos": 445,
+    "relaciones": 444,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0049/node_link_data-debate-train-0049.json"
+  },
+  {
+    "id": "debate-train-0061",
+    "path": "data/synthetic_corpus-001/train/debate-train-0061/node_link_data-debate-train-0061.json",
+    "root_id": "69c535eb-ac93-4691-b7ec-19ce684db5b5",
+    "tesis": "Implementing artificial intelligence in education does more harm than good to students' overall development.",
+    "nodos": 633,
+    "relaciones": 632,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0061/node_link_data-debate-train-0061.json"
+  },
+  {
+    "id": "debate-train-0070",
+    "path": "data/synthetic_corpus-001/train/debate-train-0070/node_link_data-debate-train-0070.json",
+    "root_id": "95c17ea4-e223-4ea2-8256-6cee37919acf",
+    "tesis": "Artificial intelligence should be embraced as a legitimate creator of comedy content in the United States entertainment industry.",
+    "nodos": 701,
+    "relaciones": 700,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0070/node_link_data-debate-train-0070.json"
+  },
+  {
+    "id": "debate-train-0096",
+    "path": "data/synthetic_corpus-001/train/debate-train-0096/node_link_data-debate-train-0096.json",
+    "root_id": "d195c482-b05d-4a1d-84b7-0949108dd562",
+    "tesis": "Facial recognition technology should be banned in all public spaces to protect individual privacy and prevent discriminatory surveillance.",
+    "nodos": 309,
+    "relaciones": 308,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0096/node_link_data-debate-train-0096.json"
+  },
+  {
+    "id": "debate-train-0158",
+    "path": "data/synthetic_corpus-001/train/debate-train-0158/node_link_data-debate-train-0158.json",
+    "root_id": "7a0178d5-2b4d-4d5a-80dc-2f237f3e96fd",
+    "tesis": "Facial recognition technology in law enforcement disproportionately targets marginalized communities and undermines social justice, therefore its use should be banned.",
+    "nodos": 308,
+    "relaciones": 307,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0158/node_link_data-debate-train-0158.json"
+  },
+  {
+    "id": "debate-train-0190",
+    "path": "data/synthetic_corpus-001/train/debate-train-0190/node_link_data-debate-train-0190.json",
+    "root_id": "220c31fb-ac7f-473b-9ac0-bed110a142cc",
+    "tesis": "Facial recognition technology has no place in law enforcement due to its inherent threat to civil liberties.",
+    "nodos": 703,
+    "relaciones": 702,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0190/node_link_data-debate-train-0190.json"
+  },
+  {
+    "id": "debate-train-0203",
+    "path": "data/synthetic_corpus-001/train/debate-train-0203/node_link_data-debate-train-0203.json",
+    "root_id": "9b66208a-ae52-4e6a-8b7c-3e04f55a5ecc",
+    "tesis": "Facial recognition technology should remain permissible in public spaces to ensure national security and public safety, even if it risks eroding individual privacy and freedom.",
+    "nodos": 703,
+    "relaciones": 702,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0203/node_link_data-debate-train-0203.json"
+  },
+  {
+    "id": "debate-train-0212",
+    "path": "data/synthetic_corpus-001/train/debate-train-0212/node_link_data-debate-train-0212.json",
+    "root_id": "88f6f9f4-337d-4144-b842-e04c7dd25f56",
+    "tesis": "Facial recognition technology has no place in public spaces and should be banned to protect individual freedoms and promote social justice.",
+    "nodos": 631,
+    "relaciones": 630,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0212/node_link_data-debate-train-0212.json"
+  },
+  {
+    "id": "debate-train-0225",
+    "path": "data/synthetic_corpus-001/train/debate-train-0225/node_link_data-debate-train-0225.json",
+    "root_id": "457d22a7-dc8c-4315-aceb-554e227ceb19",
+    "tesis": "Public use of facial recognition technology constitutes a fundamental breach of human rights and should be prohibited.",
+    "nodos": 445,
+    "relaciones": 444,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0225/node_link_data-debate-train-0225.json"
+  },
+  {
+    "id": "debate-train-0275",
+    "path": "data/synthetic_corpus-001/train/debate-train-0275/node_link_data-debate-train-0275.json",
+    "root_id": "f2184a15-167e-4998-ab80-b41cb889d1ea",
+    "tesis": "Implementing artificial intelligence in educational institutions worldwide will significantly enhance student learning outcomes.",
+    "nodos": 631,
+    "relaciones": 630,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0275/node_link_data-debate-train-0275.json"
+  },
+  {
+    "id": "debate-train-0318",
+    "path": "data/synthetic_corpus-001/train/debate-train-0318/node_link_data-debate-train-0318.json",
+    "root_id": "45285f0d-13e2-4683-a880-609e090ee4a1",
+    "tesis": "This house believes that facial recognition technology should be permitted in public spaces to prioritize public health and safety.",
+    "nodos": 511,
+    "relaciones": 510,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0318/node_link_data-debate-train-0318.json"
+  },
+  {
+    "id": "debate-train-0338",
+    "path": "data/synthetic_corpus-001/train/debate-train-0338/node_link_data-debate-train-0338.json",
+    "root_id": "10132480-711f-466d-b58c-5505c83b2bc1",
+    "tesis": "Implementing artificial intelligence in education undermines critical thinking and creativity.",
+    "nodos": 631,
+    "relaciones": 630,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0338/node_link_data-debate-train-0338.json"
+  },
+  {
+    "id": "debate-train-0340",
+    "path": "data/synthetic_corpus-001/train/debate-train-0340/node_link_data-debate-train-0340.json",
+    "root_id": "57d84a7f-9323-4558-86b6-71bb065bdf6d",
+    "tesis": "Governments should prioritize the development of artificial intelligence for societal benefit over corporate interests.",
+    "nodos": 633,
+    "relaciones": 632,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0340/node_link_data-debate-train-0340.json"
+  },
+  {
+    "id": "debate-train-0347",
+    "path": "data/synthetic_corpus-001/train/debate-train-0347/node_link_data-debate-train-0347.json",
+    "root_id": "e16d6eea-83a2-4d14-b07a-0f8cabd113fc",
+    "tesis": "Facial recognition technology should be prohibited in all public spaces to protect individual privacy and prevent discriminatory misidentification.",
+    "nodos": 309,
+    "relaciones": 308,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0347/node_link_data-debate-train-0347.json"
+  },
+  {
+    "id": "debate-train-0415",
+    "path": "data/synthetic_corpus-001/train/debate-train-0415/node_link_data-debate-train-0415.json",
+    "root_id": "2747e966-a628-4db7-9ace-2d7a63287119",
+    "tesis": "Public use of facial recognition technology should be banned to protect human rights and individual autonomy.",
+    "nodos": 511,
+    "relaciones": 510,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0415/node_link_data-debate-train-0415.json"
+  },
+  {
+    "id": "debate-train-0443",
+    "path": "data/synthetic_corpus-001/train/debate-train-0443/node_link_data-debate-train-0443.json",
+    "root_id": "a25b02ff-440d-4512-9b26-a7cb2e44d049",
+    "tesis": "The use of facial recognition technology by the FBI is a necessary measure to ensure national security.",
+    "nodos": 631,
+    "relaciones": 630,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0443/node_link_data-debate-train-0443.json"
+  },
+  {
+    "id": "debate-train-0444",
+    "path": "data/synthetic_corpus-001/train/debate-train-0444/node_link_data-debate-train-0444.json",
+    "root_id": "23fda372-c749-4456-92ae-446f0481c591",
+    "tesis": "Facial recognition technology should remain permissible in public spaces to prioritize societal security over individual anonymity.",
+    "nodos": 693,
+    "relaciones": 692,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0444/node_link_data-debate-train-0444.json"
+  },
+  {
+    "id": "debate-train-0447",
+    "path": "data/synthetic_corpus-001/train/debate-train-0447/node_link_data-debate-train-0447.json",
+    "root_id": "752627a1-54fc-43d1-81bb-491f4d9be5ab",
+    "tesis": "Voting systems should incorporate artificial intelligence and psychological insights to mitigate the impact of fake news and disinformation on voter choice.",
+    "nodos": 445,
+    "relaciones": 444,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0447/node_link_data-debate-train-0447.json"
+  },
+  {
+    "id": "debate-train-0469",
+    "path": "data/synthetic_corpus-001/train/debate-train-0469/node_link_data-debate-train-0469.json",
+    "root_id": "3048f0cf-ca40-475f-914e-81c460755e1d",
+    "tesis": "Artificial Intelligence should be granted rights equivalent to those of humans.",
+    "nodos": 631,
+    "relaciones": 630,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0469/node_link_data-debate-train-0469.json"
+  },
+  {
+    "id": "debate-train-0586",
+    "path": "data/synthetic_corpus-001/train/debate-train-0586/node_link_data-debate-train-0586.json",
+    "root_id": "d3764aaa-0f2d-4503-8987-7fac1d230634",
+    "tesis": "The deployment of artificial intelligence in modern warfare inherently violates the principles of just war theory and disproportionately harms civilians.",
+    "nodos": 445,
+    "relaciones": 444,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0586/node_link_data-debate-train-0586.json"
+  },
+  {
+    "id": "debate-train-0595",
+    "path": "data/synthetic_corpus-001/train/debate-train-0595/node_link_data-debate-train-0595.json",
+    "root_id": "c76ad23e-5a3b-4204-a6a4-f19384cd46a4",
+    "tesis": "EU decision-making processes that rely on algorithms and artificial intelligence perpetuate existing biases and undermine democratic values.",
+    "nodos": 511,
+    "relaciones": 510,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0595/node_link_data-debate-train-0595.json"
+  },
+  {
+    "id": "debate-train-0601",
+    "path": "data/synthetic_corpus-001/train/debate-train-0601/node_link_data-debate-train-0601.json",
+    "root_id": "675997dc-897c-4019-985a-9337f05810fa",
+    "tesis": "Facial recognition technology has no place in law enforcement due to its inherent threat to individual privacy rights.",
+    "nodos": 309,
+    "relaciones": 308,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0601/node_link_data-debate-train-0601.json"
+  },
+  {
+    "id": "debate-train-0659",
+    "path": "data/synthetic_corpus-001/train/debate-train-0659/node_link_data-debate-train-0659.json",
+    "root_id": "85c80fc8-ce12-4ab1-9526-a4bab39b79fb",
+    "tesis": "Conscious artificial intelligence systems should be granted equivalent rights to human immigrants, including access to citizenship, education, and social services.",
+    "nodos": 617,
+    "relaciones": 616,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0659/node_link_data-debate-train-0659.json"
+  },
+  {
+    "id": "debate-train-0708",
+    "path": "data/synthetic_corpus-001/train/debate-train-0708/node_link_data-debate-train-0708.json",
+    "root_id": "92255914-5ef0-496d-842f-05bd1f8254a5",
+    "tesis": "Implementing artificial intelligence in the workplace is a necessary step to mitigate economic inequality and address climate change, despite its job displacement risks.",
+    "nodos": 703,
+    "relaciones": 702,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0708/node_link_data-debate-train-0708.json"
+  },
+  {
+    "id": "debate-train-0772",
+    "path": "data/synthetic_corpus-001/train/debate-train-0772/node_link_data-debate-train-0772.json",
+    "root_id": "30fd8547-e0c1-4545-bd2b-a0ffd932d132",
+    "tesis": "This house believes that facial recognition technology should remain permissible in public spaces to ensure public safety and economic efficiency.",
+    "nodos": 631,
+    "relaciones": 630,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0772/node_link_data-debate-train-0772.json"
+  },
+  {
+    "id": "debate-train-0848",
+    "path": "data/synthetic_corpus-001/train/debate-train-0848/node_link_data-debate-train-0848.json",
+    "root_id": "17780bcb-3a74-4eed-b34d-6b0dfeef8c07",
+    "tesis": "Facial recognition technology in public spaces should be banned due to its disproportionate impact on marginalized communities and erosion of privacy rights.",
+    "nodos": 309,
+    "relaciones": 308,
+    "coincidencias": [
+      "\\bfacial recognition\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0848/node_link_data-debate-train-0848.json"
+  },
+  {
+    "id": "debate-train-0950",
+    "path": "data/synthetic_corpus-001/train/debate-train-0950/node_link_data-debate-train-0950.json",
+    "root_id": "0a6132ad-5e7e-4574-94e5-347a91c590a3",
+    "tesis": "Implementing strict regulations on workplace artificial intelligence is necessary to prevent exacerbating income inequality and safeguard workers' rights.",
+    "nodos": 511,
+    "relaciones": 510,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0950/node_link_data-debate-train-0950.json"
+  },
+  {
+    "id": "debate-train-0988",
+    "path": "data/synthetic_corpus-001/train/debate-train-0988/node_link_data-debate-train-0988.json",
+    "root_id": "4337ee26-e1db-499e-9340-97bce6e0276d",
+    "tesis": "Implementing artificial intelligence will ultimately enhance global human well-being.",
+    "nodos": 629,
+    "relaciones": 628,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0988/node_link_data-debate-train-0988.json"
+  },
+  {
+    "id": "debate-train-0996",
+    "path": "data/synthetic_corpus-001/train/debate-train-0996/node_link_data-debate-train-0996.json",
+    "root_id": "715eb9c9-1b43-4a28-8edf-da6924697aa2",
+    "tesis": "Slowing the development of artificial intelligence is necessary to prevent its benefits from exacerbating existing social inequalities.",
+    "nodos": 633,
+    "relaciones": 632,
+    "coincidencias": [
+      "\\bartificial intelligence\\b"
+    ],
+    "fuente": "https://huggingface.co/datasets/DebateLabKIT/syncialo-raw/blob/main/data/synthetic_corpus-001/train/debate-train-0996/node_link_data-debate-train-0996.json"
+  }
+]
