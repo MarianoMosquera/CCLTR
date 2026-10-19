@@ -1,50 +1,56 @@
-# CCLTR · syncIALO Argument Map Explorer (V1)
+# CCLTR · syncIALO Argument Map Explorer
 
-Explorador de tesis centrales sobre IA en los mapas originales de [syncIALO](https://huggingface.co/datasets/DebateLabKIT/syncialo-raw), de DebateLab KIT.
+**Exploring Artificial Intelligence Debates Through Argumentation Networks**
 
-## Arquitectura
+## Overview
 
-1. Python consulta la API pública de Hugging Face y recupera archivos JSON del repositorio.
-2. NetworkX lee los grafos **existentes** y detecta una tesis central por mapa.
-3. Un filtro léxico reproducible selecciona tesis que mencionan IA o tecnologías asociadas.
-4. Se exportan índice y grafos seleccionados en JSON.
-5. La interfaz HTML/JavaScript visualiza esos JSON sin Python en ejecución.
+CCLTR · syncIALO Argument Map Explorer is a research-oriented platform designed to explore, analyze, and visualize argumentative structures surrounding artificial intelligence (AI).
 
-**Limitación V1:** búsqueda léxica, no equivalencia semántica. La identificación del nodo raíz se verifica por mapa; los casos ambiguos se registran en `datos/errores.json`. No se asegura cobertura total hasta ejecutar el barrido completo.
+The project builds upon the [syncIALO dataset](https://huggingface.co/datasets/DebateLabKIT/syncialo-raw), developed by DebateLab KIT, and provides an interactive environment for examining how claims, supporting arguments, objections, and counterarguments are organized within structured debates.
 
-## Primer ensayo
+Rather than treating AI debates as collections of isolated statements, CCLTR approaches them as interconnected networks of competing positions.
 
-```bash
-pip install -r requirements.txt
-python -m orquestador.pipeline --limit 10
-```
+The platform seeks to make these argumentative relationships accessible for scientific investigation, conceptual exploration, and interdisciplinary discussion.
 
-Para procesar todo el conjunto configurado:
+## Research Objectives
 
-```bash
-python -m orquestador.pipeline
-```
+The project pursues four complementary objectives:
 
-Se usa la caché local de `huggingface_hub`. El pipeline descarga individualmente los JSON necesarios; no descarga el repositorio completo en un único archivo.
+1. **Argumentative exploration:** Identify and visualize central claims and their associated argumentative structures in debates concerning artificial intelligence.
 
-## GitHub Actions
+2. **Conceptual diversity:** Facilitate the examination of different, potentially conflicting perspectives on AI development, applications, and implications.
 
-En **Actions → Actualizar mapas syncIALO → Run workflow**, usar `10` para prueba o `0` para todos. La acción escribe resultados en `datos/` y necesita permisos de escritura del repositorio (Settings → Actions → General → Workflow permissions).
+3. **Argumentative transparency:** Preserve the relationships between claims, supporting arguments, and objections, allowing users to explore the structure of disagreement.
 
-## Publicación en Static Space gratuito
+4. **Research accessibility:** Provide an open, interactive environment for researchers, educators, and other interested audiences to examine argumentative networks.
 
-Copiar `space/index.html` y `space/app.js` al repositorio del Space y configurar `RAW_BASE` en `app.js` con la URL raw de `datos/` en GitHub público, por ejemplo:
+## Data Source
 
-```js
-const RAW_BASE = 'https://raw.githubusercontent.com/marianomosquera/CCLTR/main/datos';
-```
+The platform draws upon the original argumentative maps available in the syncIALO dataset, produced by DebateLab KIT.
 
-Alternativamente copiar `datos/` junto a la interfaz y cambiar `RAW_BASE` a `./datos`. En un Static Space no se ejecuta NetworkX: se consumen grafos precalculados y se muestran con Cytoscape.js.
+**Original dataset:**  
+https://huggingface.co/datasets/DebateLabKIT/syncialo-raw
 
-## Procedencia
+The dataset provides structured argumentative information that can be represented as networks of interconnected claims and argumentative relations.
 
-Los datos son de DebateLab KIT / syncIALO. Revisar la licencia y requisitos de atribución del dataset antes de redistribuir los JSON procesados. Los enlaces a archivos originales se preservan en el índice.
+CCLTR does not claim authorship of the original dataset. Its contribution consists of a research-oriented exploration and visualization layer focused on artificial intelligence debates.
 
-## Repositorio destino
+Where available, references to original source records are preserved to facilitate traceability.
 
-https://github.com/marianomosquera/CCLTR (rama prevista: `main`).
+## Methodological Approach
+
+CCLTR adopts a network-based approach to the analysis of argumentation.
+
+Argument maps are treated as structured representations of relationships among claims, supporting arguments, objections, and other argumentative elements.
+
+This approach enables the examination of debates beyond the linear presentation of individual arguments.
+
+The platform emphasizes three analytical dimensions:
+
+- **Argumentative structure:** How claims and arguments are interconnected.
+- **Conceptual opposition:** How competing positions and objections are represented.
+- **Diversity of perspectives:** How alternative argumentative pathways coexist within debates about artificial intelligence.
+
+The initial version focuses on identifying and exploring AI-related argumentative maps while preserving their original structures.
+
+The platform does not automatically
