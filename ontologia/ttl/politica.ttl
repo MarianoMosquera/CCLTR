@@ -1,0 +1,148 @@
+@prefix pol: <https://marianomosquera.github.io/politica/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# =========================================
+# CONCEPTO RAÍZ
+# =========================================
+
+pol:Politica
+    a skos:Concept ;
+    skos:prefLabel "Política"@es .
+
+
+# =========================================
+# GRANDES CATEGORÍAS
+# =========================================
+
+pol:Temas
+    a skos:Concept ;
+    skos:prefLabel "Temas"@es ;
+    skos:broader pol:Politica .
+
+pol:Actores
+    a skos:Concept ;
+    skos:prefLabel "Actores"@es ;
+    skos:broader pol:Politica .
+
+pol:Problemas
+    a skos:Concept ;
+    skos:prefLabel "Problemas"@es ;
+    skos:broader pol:Politica .
+
+
+# =========================================
+# TEMAS
+# =========================================
+
+pol:Geopolitica
+    a skos:Concept ;
+    skos:prefLabel "Geopolítica"@es ;
+    skos:broader pol:Temas ;
+    skos:related pol:PoliticaInternacional .
+
+pol:PoliticaInternacional
+    a skos:Concept ;
+    skos:prefLabel "Política internacional"@es ;
+    skos:broader pol:Temas ;
+    skos:related pol:Geopolitica ;
+    skos:related pol:Globalizacion .
+
+pol:Democracia
+    a skos:Concept ;
+    skos:prefLabel "Democracia"@es ;
+    skos:broader pol:Temas ;
+    skos:related pol:Ciudadania .
+
+pol:Ideologia
+    a skos:Concept ;
+    skos:prefLabel "Ideología"@es ;
+    skos:broader pol:Temas ;
+    skos:related pol:Polarizacion .
+
+pol:Elecciones
+    a skos:Concept ;
+    skos:prefLabel "Elecciones"@es ;
+    skos:broader pol:Democracia .
+
+pol:Globalizacion
+    a skos:Concept ;
+    skos:prefLabel "Globalización"@es ;
+    skos:broader pol:PoliticaInternacional ;
+    skos:related pol:PoliticaInternacional .
+
+pol:Ciudadania
+    a skos:Concept ;
+    skos:prefLabel "Ciudadanía"@es ;
+    skos:broader pol:Temas ;
+    skos:related pol:Democracia .
+
+pol:LibertadExpresion
+    a skos:Concept ;
+    skos:prefLabel "Libertad de expresión"@es ;
+    skos:broader pol:Ciudadania ;
+    skos:related pol:Desinformacion .
+
+
+# =========================================
+# PROBLEMAS
+# =========================================
+
+pol:Polarizacion
+    a skos:Concept ;
+    skos:prefLabel "Polarización"@es ;
+    skos:broader pol:Problemas ;
+    skos:related pol:Ideologia ;
+    skos:related pol:Desinformacion .
+
+pol:Desinformacion
+    a skos:Concept ;
+    skos:prefLabel "Desinformación"@es ;
+    skos:broader pol:Problemas ;
+    skos:related pol:Polarizacion ;
+    skos:related pol:LibertadExpresion .
+
+pol:Populismo
+    a skos:Concept ;
+    skos:prefLabel "Populismo"@es ;
+    skos:broader pol:Problemas .
+
+pol:Autoritarismo
+    a skos:Concept ;
+    skos:prefLabel "Autoritarismo"@es ;
+    skos:broader pol:Problemas .
+
+# =========================================
+# ACTORES
+# =========================================
+
+pol:Genero
+    a skos:Concept ;
+    skos:prefLabel "Género"@es ;
+    skos:broader pol:Actores .
+
+pol:Migrantes
+    a skos:Concept ;
+    skos:prefLabel "Migrantes"@es ;
+    skos:altLabel "Migración"@es ;
+    skos:broader pol:Actores .
+
+pol:GruposOriginarios
+    a skos:Concept ;
+    skos:prefLabel "Grupos originarios"@es ;
+    skos:broader pol:Actores .
+
+pol:LGBT
+    a skos:Concept ;
+    skos:prefLabel "LGBT"@es ;
+    skos:broader pol:Actores .
+
+
+# =========================================
+# CONCEPTOS SECUNDARIOS
+# =========================================
+
+pol:PartidosPoliticos
+    a skos:Concept ;
+    skos:prefLabel "Partidos políticos"@es ;
+    skos:broader pol:Elecciones ;
+    skos:related pol:Ideologia .

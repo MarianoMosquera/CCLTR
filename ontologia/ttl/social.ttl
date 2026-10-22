@@ -1,0 +1,170 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix soc: <https://marianomosquera.github.io/social/> .
+
+# =========================================
+# CONCEPTO PRINCIPAL
+# =========================================
+
+soc:Social
+    a skos:Concept ;
+    skos:prefLabel "Social"@es ;
+    skos:altLabel "Sociedad"@es .
+
+
+# =========================================
+# CATEGORÍAS PRINCIPALES
+# =========================================
+
+soc:Temas
+    a skos:Concept ;
+    skos:prefLabel "Temas"@es ;
+    skos:broader soc:Social .
+
+soc:Actores
+    a skos:Concept ;
+    skos:prefLabel "Actores"@es ;
+    skos:broader soc:Social .
+
+soc:Problemas
+    a skos:Concept ;
+    skos:prefLabel "Problemas"@es ;
+    skos:broader soc:Social .
+
+
+# =========================================
+# TEMAS
+# =========================================
+
+soc:Poblacion
+    a skos:Concept ;
+    skos:prefLabel "Población"@es ;
+    skos:broader soc:Temas .
+
+soc:Identidad
+    a skos:Concept ;
+    skos:prefLabel "Identidad"@es ;
+    skos:broader soc:Temas .
+
+soc:Infraestructura
+    a skos:Concept ;
+    skos:prefLabel "Infraestructura"@es ;
+    skos:broader soc:Temas .
+
+
+# =========================================
+# NARROWER DE IDENTIDAD
+# =========================================
+
+soc:Cultura
+    a skos:Concept ;
+    skos:prefLabel "Cultura"@es ;
+    skos:broader soc:Identidad .
+
+soc:Religion 
+    a skos:Concept ;
+    skos:prefLabel "Religión"@es ;
+    skos:broader soc:Identidad .
+
+
+# =========================================
+# NARROWER DE CULTURA
+# =========================================
+
+soc:Cosmopolitismo
+    a skos:Concept ;
+    skos:prefLabel "Cosmopolitismo"@es ;
+    skos:broader soc:Cultura .
+
+
+# =========================================
+# NARROWER DE INFRAESTRUCTURA
+# =========================================
+
+soc:Educacion
+    a skos:Concept ;
+    skos:prefLabel "Educación"@es ;
+    skos:broader soc:Infraestructura .
+
+soc:Salud
+    a skos:Concept ;
+    skos:prefLabel "Salud"@es ;
+    skos:broader soc:Infraestructura .
+
+soc:Vivienda
+    a skos:Concept ;
+    skos:prefLabel "Vivienda"@es ;
+    skos:broader soc:Infraestructura .
+
+soc:ServiciosPublicos
+    a skos:Concept ;
+    skos:prefLabel "Servicios públicos"@es ;
+    skos:broader soc:Infraestructura ;
+    skos:related soc:Discapacitados .
+
+soc:Movilidad
+    a skos:Concept ;
+    skos:prefLabel "Movilidad"@es ;
+    skos:broader soc:Infraestructura .
+
+soc:Deportes
+    a skos:Concept ;
+    skos:prefLabel "Deportes"@es ;
+    skos:broader soc:Infraestructura .
+
+soc:Conectividad
+    a skos:Concept ;
+    skos:prefLabel "Conectividad"@es ;
+    skos:broader soc:Infraestructura .
+
+soc:Empleo
+    a skos:Concept ;
+    skos:prefLabel "Empleo"@es ;
+    skos:broader soc:Infraestructura ;
+    skos:related soc:Pobreza .
+
+
+# =========================================
+# NARROWER DE VIVIENDA
+# =========================================
+
+soc:Urbanismo
+    a skos:Concept ;
+    skos:prefLabel "Urbanismo"@es ;
+    skos:broader soc:Vivienda .
+
+
+# =========================================
+# ACTORES
+# =========================================
+
+soc:Ninez
+    a skos:Concept ;
+    skos:prefLabel "Niñez"@es ;
+    skos:broader soc:Actores .
+
+soc:Juventud
+    a skos:Concept ;
+    skos:prefLabel "Juventud"@es ;
+    skos:broader soc:Actores .
+
+soc:Ancianidad
+    a skos:Concept ;
+    skos:prefLabel "Ancianidad"@es ;
+    skos:broader soc:Actores .
+
+soc:Discapacitados
+    a skos:Concept ;
+    skos:prefLabel "Discapacitados"@es ;
+    skos:broader soc:Actores ;
+    skos:related soc:ServiciosPublicos .
+
+
+# =========================================
+# PROBLEMAS
+# =========================================
+
+soc:Pobreza
+    a skos:Concept ;
+    skos:prefLabel "Pobreza"@es ;
+    skos:broader soc:Problemas ;
+    skos:related soc:Empleo .
