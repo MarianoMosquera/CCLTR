@@ -1,0 +1,6 @@
+{
+  "uri_aliases": {
+    "https://marianomosquera.github.io/racionalidad#Racionalidad": "https://marianomosquera.github.io/racionalidad/Racionalidad"
+  },
+  "description": "Correspondencia operativa para CCLTR. No modifica los TTL originales ni declara equivalencia RDF."
+}
