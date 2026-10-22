@@ -1,6 +1,13 @@
 {
   "uri_aliases": {
-    "https://marianomosquera.github.io/racionalidad#Racionalidad": "https://marianomosquera.github.io/racionalidad/Racionalidad"
+    "https://marianomosquera.github.io/racionalidad#Racionalidad": "https://marianomosquera.github.io/racionalidad/Racionalidad",
+    "https://marianomosquera.github.io/valores#Valores": "https://marianomosquera.github.io/ontology/Valores",
+    "https://marianomosquera.github.io/institucional#Institucional": "https://marianomosquera.github.io/institucional/Institucional",
+    "https://marianomosquera.github.io/politica#Politica": "https://marianomosquera.github.io/politica/Politica",
+    "https://marianomosquera.github.io/social#Social": "https://marianomosquera.github.io/social/Social",
+    "https://marianomosquera.github.io/ambiental#Ambiental": "https://marianomosquera.github.io/ambiental/Ambiental",
+    "https://marianomosquera.github.io/economica#Economica": "https://marianomosquera.github.io/economica/Economica",
+    "https://marianomosquera.github.io/tecnologica#Tecnologica": "https://marianomosquera.github.io/tecnologica/Tecnologica"
   },
   "description": "Correspondencia operativa para CCLTR. No modifica los TTL originales ni declara equivalencia RDF."
 }

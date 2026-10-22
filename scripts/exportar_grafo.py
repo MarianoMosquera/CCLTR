@@ -39,7 +39,22 @@ for predicado, tipo in relaciones.items():
         destino = normalizar(objeto)
 
         if origen in conceptos_normalizados and destino in conceptos_normalizados:
-            G.add_edge(origen, destino, tipo=tipo)
+            if not G.has_edge(origen, destino) or not any(
+                d.get("tipo") == tipo
+                for d in G.get_edge_data(origen, destino).values()
+            ):
+                G.add_edge(origen, destino, tipo=tipo)
+
+# skos:narrower se transforma en su relación inversa skos:broader.
+for superior, inferior in g.subject_objects(SKOS.narrower):
+    origen = normalizar(inferior)
+    destino = normalizar(superior)
+    if origen in conceptos_normalizados and destino in conceptos_normalizados:
+        if not G.has_edge(origen, destino) or not any(
+            d.get("tipo") == "broader"
+            for d in G.get_edge_data(origen, destino).values()
+        ):
+            G.add_edge(origen, destino, tipo="broader")
 
 salida = {
     "metadata": {

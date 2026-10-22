@@ -2,10 +2,17 @@
   "metadata": {
     "origen": "Ontologia SKOS CCLTR",
     "normalizacion_uri": {
-      "https://marianomosquera.github.io/racionalidad#Racionalidad": "https://marianomosquera.github.io/racionalidad/Racionalidad"
+      "https://marianomosquera.github.io/racionalidad#Racionalidad": "https://marianomosquera.github.io/racionalidad/Racionalidad",
+      "https://marianomosquera.github.io/valores#Valores": "https://marianomosquera.github.io/ontology/Valores",
+      "https://marianomosquera.github.io/institucional#Institucional": "https://marianomosquera.github.io/institucional/Institucional",
+      "https://marianomosquera.github.io/politica#Politica": "https://marianomosquera.github.io/politica/Politica",
+      "https://marianomosquera.github.io/social#Social": "https://marianomosquera.github.io/social/Social",
+      "https://marianomosquera.github.io/ambiental#Ambiental": "https://marianomosquera.github.io/ambiental/Ambiental",
+      "https://marianomosquera.github.io/economica#Economica": "https://marianomosquera.github.io/economica/Economica",
+      "https://marianomosquera.github.io/tecnologica#Tecnologica": "https://marianomosquera.github.io/tecnologica/Tecnologica"
     },
     "nodos": 398,
-    "aristas": 537
+    "aristas": 544
   },
   "nodes": [
     {
@@ -3175,6 +3182,14 @@
     {
       "data": {
         "id": "e47",
+        "source": "https://marianomosquera.github.io/ambiental/Ambiental",
+        "target": "https://marianomosquera.github.io/etica/etica#Agenda",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e48",
         "source": "https://marianomosquera.github.io/ambiental/Biodiversidad",
         "target": "https://marianomosquera.github.io/ambiental/Temas",
         "tipo": "broader"
@@ -3182,7 +3197,7 @@
     },
     {
       "data": {
-        "id": "e48",
+        "id": "e49",
         "source": "https://marianomosquera.github.io/ambiental/CambioClimatico",
         "target": "https://marianomosquera.github.io/ambiental/Problemas",
         "tipo": "broader"
@@ -3190,7 +3205,7 @@
     },
     {
       "data": {
-        "id": "e49",
+        "id": "e50",
         "source": "https://marianomosquera.github.io/ambiental/Comunidades",
         "target": "https://marianomosquera.github.io/ambiental/Actores",
         "tipo": "broader"
@@ -3198,7 +3213,7 @@
     },
     {
       "data": {
-        "id": "e50",
+        "id": "e51",
         "source": "https://marianomosquera.github.io/ambiental/Contaminacion",
         "target": "https://marianomosquera.github.io/ambiental/Problemas",
         "tipo": "broader"
@@ -3206,7 +3221,7 @@
     },
     {
       "data": {
-        "id": "e51",
+        "id": "e52",
         "source": "https://marianomosquera.github.io/ambiental/Deforestacion",
         "target": "https://marianomosquera.github.io/ambiental/Problemas",
         "tipo": "broader"
@@ -3214,7 +3229,7 @@
     },
     {
       "data": {
-        "id": "e52",
+        "id": "e53",
         "source": "https://marianomosquera.github.io/ambiental/Degradacion",
         "target": "https://marianomosquera.github.io/ambiental/Problemas",
         "tipo": "broader"
@@ -3222,7 +3237,7 @@
     },
     {
       "data": {
-        "id": "e53",
+        "id": "e54",
         "source": "https://marianomosquera.github.io/ambiental/EconomiaCircular",
         "target": "https://marianomosquera.github.io/ambiental/Residuos",
         "tipo": "broader"
@@ -3230,7 +3245,7 @@
     },
     {
       "data": {
-        "id": "e54",
+        "id": "e55",
         "source": "https://marianomosquera.github.io/ambiental/OrganizacionesAmbientales",
         "target": "https://marianomosquera.github.io/ambiental/Actores",
         "tipo": "broader"
@@ -3238,7 +3253,7 @@
     },
     {
       "data": {
-        "id": "e55",
+        "id": "e56",
         "source": "https://marianomosquera.github.io/ambiental/Problemas",
         "target": "https://marianomosquera.github.io/ambiental/Ambiental",
         "tipo": "broader"
@@ -3246,7 +3261,7 @@
     },
     {
       "data": {
-        "id": "e56",
+        "id": "e57",
         "source": "https://marianomosquera.github.io/ambiental/ProduccionAnimal",
         "target": "https://marianomosquera.github.io/ambiental/Temas",
         "tipo": "broader"
@@ -3254,7 +3269,7 @@
     },
     {
       "data": {
-        "id": "e57",
+        "id": "e58",
         "source": "https://marianomosquera.github.io/ambiental/Reciclado",
         "target": "https://marianomosquera.github.io/ambiental/Residuos",
         "tipo": "broader"
@@ -3262,7 +3277,7 @@
     },
     {
       "data": {
-        "id": "e58",
+        "id": "e59",
         "source": "https://marianomosquera.github.io/ambiental/Reciclado",
         "target": "https://marianomosquera.github.io/ambiental/EconomiaCircular",
         "tipo": "related"
@@ -3270,7 +3285,7 @@
     },
     {
       "data": {
-        "id": "e59",
+        "id": "e60",
         "source": "https://marianomosquera.github.io/ambiental/Recursos",
         "target": "https://marianomosquera.github.io/ambiental/Temas",
         "tipo": "broader"
@@ -3278,7 +3293,7 @@
     },
     {
       "data": {
-        "id": "e60",
+        "id": "e61",
         "source": "https://marianomosquera.github.io/ambiental/Residuos",
         "target": "https://marianomosquera.github.io/ambiental/Temas",
         "tipo": "broader"
@@ -3286,7 +3301,7 @@
     },
     {
       "data": {
-        "id": "e61",
+        "id": "e62",
         "source": "https://marianomosquera.github.io/ambiental/Temas",
         "target": "https://marianomosquera.github.io/ambiental/Ambiental",
         "tipo": "broader"
@@ -3294,7 +3309,7 @@
     },
     {
       "data": {
-        "id": "e62",
+        "id": "e63",
         "source": "https://marianomosquera.github.io/compliance#AbusoPoder",
         "target": "https://marianomosquera.github.io/compliance#Corrupcion",
         "tipo": "broader"
@@ -3302,7 +3317,7 @@
     },
     {
       "data": {
-        "id": "e63",
+        "id": "e64",
         "source": "https://marianomosquera.github.io/compliance#Adaptacion",
         "target": "https://marianomosquera.github.io/compliance#CapacidadPersonal",
         "tipo": "broader"
@@ -3310,7 +3325,7 @@
     },
     {
       "data": {
-        "id": "e64",
+        "id": "e65",
         "source": "https://marianomosquera.github.io/compliance#AnalisisRiesgo",
         "target": "https://marianomosquera.github.io/compliance#Compliance",
         "tipo": "broader"
@@ -3318,7 +3333,7 @@
     },
     {
       "data": {
-        "id": "e65",
+        "id": "e66",
         "source": "https://marianomosquera.github.io/compliance#Bienes",
         "target": "https://marianomosquera.github.io/compliance#Declaraciones",
         "tipo": "broader"
@@ -3326,7 +3341,7 @@
     },
     {
       "data": {
-        "id": "e66",
+        "id": "e67",
         "source": "https://marianomosquera.github.io/compliance#Capacidad",
         "target": "https://marianomosquera.github.io/compliance#AnalisisRiesgo",
         "tipo": "broader"
@@ -3334,7 +3349,7 @@
     },
     {
       "data": {
-        "id": "e67",
+        "id": "e68",
         "source": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "target": "https://marianomosquera.github.io/compliance#Capacidad",
         "tipo": "broader"
@@ -3342,7 +3357,7 @@
     },
     {
       "data": {
-        "id": "e68",
+        "id": "e69",
         "source": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "target": "https://marianomosquera.github.io/compliance#FactoresExternos",
         "tipo": "related"
@@ -3350,7 +3365,7 @@
     },
     {
       "data": {
-        "id": "e69",
+        "id": "e70",
         "source": "https://marianomosquera.github.io/compliance#CapacidadPersonal",
         "target": "https://marianomosquera.github.io/compliance#Capacidad",
         "tipo": "broader"
@@ -3358,7 +3373,7 @@
     },
     {
       "data": {
-        "id": "e70",
+        "id": "e71",
         "source": "https://marianomosquera.github.io/compliance#Capacitacion",
         "target": "https://marianomosquera.github.io/compliance#Normas",
         "tipo": "broader"
@@ -3366,7 +3381,7 @@
     },
     {
       "data": {
-        "id": "e71",
+        "id": "e72",
         "source": "https://marianomosquera.github.io/compliance#CodigosEtica",
         "target": "https://marianomosquera.github.io/compliance#Generales",
         "tipo": "broader"
@@ -3374,7 +3389,7 @@
     },
     {
       "data": {
-        "id": "e72",
+        "id": "e73",
         "source": "https://marianomosquera.github.io/compliance#Compliance",
         "target": "https://marianomosquera.github.io/etica/etica#Gobernanza",
         "tipo": "broader"
@@ -3382,7 +3397,7 @@
     },
     {
       "data": {
-        "id": "e73",
+        "id": "e74",
         "source": "https://marianomosquera.github.io/compliance#ConflictoIntereses",
         "target": "https://marianomosquera.github.io/compliance#Normas",
         "tipo": "broader"
@@ -3390,7 +3405,7 @@
     },
     {
       "data": {
-        "id": "e74",
+        "id": "e75",
         "source": "https://marianomosquera.github.io/compliance#ConflictoIntereses",
         "target": "https://marianomosquera.github.io/compliance#GestionIntereses",
         "tipo": "related"
@@ -3398,7 +3413,7 @@
     },
     {
       "data": {
-        "id": "e75",
+        "id": "e76",
         "source": "https://marianomosquera.github.io/compliance#ConsentimientoInformado",
         "target": "https://marianomosquera.github.io/compliance#Investigacion",
         "tipo": "broader"
@@ -3406,7 +3421,7 @@
     },
     {
       "data": {
-        "id": "e76",
+        "id": "e77",
         "source": "https://marianomosquera.github.io/compliance#Coordinacion",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "broader"
@@ -3414,7 +3429,7 @@
     },
     {
       "data": {
-        "id": "e77",
+        "id": "e78",
         "source": "https://marianomosquera.github.io/compliance#Corrupcion",
         "target": "https://marianomosquera.github.io/compliance#Problemas",
         "tipo": "broader"
@@ -3422,7 +3437,7 @@
     },
     {
       "data": {
-        "id": "e78",
+        "id": "e79",
         "source": "https://marianomosquera.github.io/compliance#DeberAbstencion",
         "target": "https://marianomosquera.github.io/compliance#ConflictoIntereses",
         "tipo": "broader"
@@ -3430,7 +3445,7 @@
     },
     {
       "data": {
-        "id": "e79",
+        "id": "e80",
         "source": "https://marianomosquera.github.io/compliance#DebidaDiligencia",
         "target": "https://marianomosquera.github.io/compliance#AnalisisRiesgo",
         "tipo": "broader"
@@ -3438,7 +3453,7 @@
     },
     {
       "data": {
-        "id": "e80",
+        "id": "e81",
         "source": "https://marianomosquera.github.io/compliance#Declaraciones",
         "target": "https://marianomosquera.github.io/compliance#Normas",
         "tipo": "broader"
@@ -3446,7 +3461,7 @@
     },
     {
       "data": {
-        "id": "e81",
+        "id": "e82",
         "source": "https://marianomosquera.github.io/compliance#Desconcentracion",
         "target": "https://marianomosquera.github.io/compliance#RiesgoEstandar",
         "tipo": "broader"
@@ -3454,7 +3469,7 @@
     },
     {
       "data": {
-        "id": "e82",
+        "id": "e83",
         "source": "https://marianomosquera.github.io/compliance#Experiencia",
         "target": "https://marianomosquera.github.io/compliance#CapacidadPersonal",
         "tipo": "broader"
@@ -3462,7 +3477,7 @@
     },
     {
       "data": {
-        "id": "e83",
+        "id": "e84",
         "source": "https://marianomosquera.github.io/compliance#FactoresExternos",
         "target": "https://marianomosquera.github.io/compliance#Capacidad",
         "tipo": "broader"
@@ -3470,7 +3485,7 @@
     },
     {
       "data": {
-        "id": "e84",
+        "id": "e85",
         "source": "https://marianomosquera.github.io/compliance#FactoresExternos",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "related"
@@ -3478,16 +3493,8 @@
     },
     {
       "data": {
-        "id": "e85",
-        "source": "https://marianomosquera.github.io/compliance#Generales",
-        "target": "https://marianomosquera.github.io/compliance#Normas",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
         "id": "e86",
-        "source": "https://marianomosquera.github.io/compliance#GestionIntereses",
+        "source": "https://marianomosquera.github.io/compliance#Generales",
         "target": "https://marianomosquera.github.io/compliance#Normas",
         "tipo": "broader"
       }
@@ -3496,13 +3503,21 @@
       "data": {
         "id": "e87",
         "source": "https://marianomosquera.github.io/compliance#GestionIntereses",
+        "target": "https://marianomosquera.github.io/compliance#Normas",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e88",
+        "source": "https://marianomosquera.github.io/compliance#GestionIntereses",
         "target": "https://marianomosquera.github.io/compliance#ConflictoIntereses",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e88",
+        "id": "e89",
         "source": "https://marianomosquera.github.io/compliance#Habilidades",
         "target": "https://marianomosquera.github.io/compliance#CapacidadPersonal",
         "tipo": "broader"
@@ -3510,7 +3525,7 @@
     },
     {
       "data": {
-        "id": "e89",
+        "id": "e90",
         "source": "https://marianomosquera.github.io/compliance#Idoneidad",
         "target": "https://marianomosquera.github.io/compliance#Recompensas",
         "tipo": "broader"
@@ -3518,7 +3533,7 @@
     },
     {
       "data": {
-        "id": "e90",
+        "id": "e91",
         "source": "https://marianomosquera.github.io/compliance#Incompatibilidades",
         "target": "https://marianomosquera.github.io/compliance#RiesgoEstandar",
         "tipo": "broader"
@@ -3526,7 +3541,7 @@
     },
     {
       "data": {
-        "id": "e91",
+        "id": "e92",
         "source": "https://marianomosquera.github.io/compliance#Informacion",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "broader"
@@ -3534,7 +3549,7 @@
     },
     {
       "data": {
-        "id": "e92",
+        "id": "e93",
         "source": "https://marianomosquera.github.io/compliance#Infraestructura",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "broader"
@@ -3542,7 +3557,7 @@
     },
     {
       "data": {
-        "id": "e93",
+        "id": "e94",
         "source": "https://marianomosquera.github.io/compliance#Ingresos",
         "target": "https://marianomosquera.github.io/compliance#Declaraciones",
         "tipo": "broader"
@@ -3550,7 +3565,7 @@
     },
     {
       "data": {
-        "id": "e94",
+        "id": "e95",
         "source": "https://marianomosquera.github.io/compliance#Intereses",
         "target": "https://marianomosquera.github.io/compliance#Declaraciones",
         "tipo": "broader"
@@ -3558,7 +3573,7 @@
     },
     {
       "data": {
-        "id": "e95",
+        "id": "e96",
         "source": "https://marianomosquera.github.io/compliance#Investigacion",
         "target": "https://marianomosquera.github.io/compliance#Normas",
         "tipo": "broader"
@@ -3566,7 +3581,7 @@
     },
     {
       "data": {
-        "id": "e96",
+        "id": "e97",
         "source": "https://marianomosquera.github.io/compliance#Lobby",
         "target": "https://marianomosquera.github.io/compliance#GestionIntereses",
         "tipo": "broader"
@@ -3574,7 +3589,7 @@
     },
     {
       "data": {
-        "id": "e97",
+        "id": "e98",
         "source": "https://marianomosquera.github.io/compliance#Maladministration",
         "target": "https://marianomosquera.github.io/compliance#Problemas",
         "tipo": "broader"
@@ -3582,7 +3597,7 @@
     },
     {
       "data": {
-        "id": "e98",
+        "id": "e99",
         "source": "https://marianomosquera.github.io/compliance#Merito",
         "target": "https://marianomosquera.github.io/compliance#Recompensas",
         "tipo": "broader"
@@ -3590,7 +3605,7 @@
     },
     {
       "data": {
-        "id": "e99",
+        "id": "e100",
         "source": "https://marianomosquera.github.io/compliance#Motivacion",
         "target": "https://marianomosquera.github.io/compliance#CapacidadPersonal",
         "tipo": "broader"
@@ -3598,7 +3613,7 @@
     },
     {
       "data": {
-        "id": "e100",
+        "id": "e101",
         "source": "https://marianomosquera.github.io/compliance#Negligencia",
         "target": "https://marianomosquera.github.io/compliance#Maladministration",
         "tipo": "broader"
@@ -3606,7 +3621,7 @@
     },
     {
       "data": {
-        "id": "e101",
+        "id": "e102",
         "source": "https://marianomosquera.github.io/compliance#NoDelegacion",
         "target": "https://marianomosquera.github.io/compliance#RiesgoEstandar",
         "tipo": "broader"
@@ -3614,7 +3629,7 @@
     },
     {
       "data": {
-        "id": "e102",
+        "id": "e103",
         "source": "https://marianomosquera.github.io/compliance#NoRelacionFamiliares",
         "target": "https://marianomosquera.github.io/compliance#RiesgoEstandar",
         "tipo": "broader"
@@ -3622,7 +3637,7 @@
     },
     {
       "data": {
-        "id": "e103",
+        "id": "e104",
         "source": "https://marianomosquera.github.io/compliance#Normas",
         "target": "https://marianomosquera.github.io/compliance#Compliance",
         "tipo": "broader"
@@ -3630,7 +3645,7 @@
     },
     {
       "data": {
-        "id": "e104",
+        "id": "e105",
         "source": "https://marianomosquera.github.io/compliance#Obsequios",
         "target": "https://marianomosquera.github.io/compliance#Declaraciones",
         "tipo": "broader"
@@ -3638,7 +3653,7 @@
     },
     {
       "data": {
-        "id": "e105",
+        "id": "e106",
         "source": "https://marianomosquera.github.io/compliance#PlanesIntegridad",
         "target": "https://marianomosquera.github.io/compliance#Generales",
         "tipo": "broader"
@@ -3646,7 +3661,7 @@
     },
     {
       "data": {
-        "id": "e106",
+        "id": "e107",
         "source": "https://marianomosquera.github.io/compliance#Presupuesto",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "broader"
@@ -3654,7 +3669,7 @@
     },
     {
       "data": {
-        "id": "e107",
+        "id": "e108",
         "source": "https://marianomosquera.github.io/compliance#Problemas",
         "target": "https://marianomosquera.github.io/compliance#Compliance",
         "tipo": "broader"
@@ -3662,7 +3677,7 @@
     },
     {
       "data": {
-        "id": "e108",
+        "id": "e109",
         "source": "https://marianomosquera.github.io/compliance#Procedimientos",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "broader"
@@ -3670,7 +3685,7 @@
     },
     {
       "data": {
-        "id": "e109",
+        "id": "e110",
         "source": "https://marianomosquera.github.io/compliance#ProteccionDatosPersonales",
         "target": "https://marianomosquera.github.io/compliance#Investigacion",
         "tipo": "broader"
@@ -3678,7 +3693,7 @@
     },
     {
       "data": {
-        "id": "e110",
+        "id": "e111",
         "source": "https://marianomosquera.github.io/compliance#Recompensas",
         "target": "https://marianomosquera.github.io/compliance#Normas",
         "tipo": "broader"
@@ -3686,7 +3701,7 @@
     },
     {
       "data": {
-        "id": "e111",
+        "id": "e112",
         "source": "https://marianomosquera.github.io/compliance#RecursosHumanos",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "broader"
@@ -3694,7 +3709,7 @@
     },
     {
       "data": {
-        "id": "e112",
+        "id": "e113",
         "source": "https://marianomosquera.github.io/compliance#Responsabilidad",
         "target": "https://marianomosquera.github.io/compliance#Compliance",
         "tipo": "broader"
@@ -3702,7 +3717,7 @@
     },
     {
       "data": {
-        "id": "e113",
+        "id": "e114",
         "source": "https://marianomosquera.github.io/compliance#ResponsabilidadFuncional",
         "target": "https://marianomosquera.github.io/compliance#Responsabilidad",
         "tipo": "broader"
@@ -3710,7 +3725,7 @@
     },
     {
       "data": {
-        "id": "e114",
+        "id": "e115",
         "source": "https://marianomosquera.github.io/compliance#ResponsabilidadInstitucional",
         "target": "https://marianomosquera.github.io/compliance#Responsabilidad",
         "tipo": "broader"
@@ -3718,7 +3733,7 @@
     },
     {
       "data": {
-        "id": "e115",
+        "id": "e116",
         "source": "https://marianomosquera.github.io/compliance#Reuniones",
         "target": "https://marianomosquera.github.io/compliance#Declaraciones",
         "tipo": "broader"
@@ -3726,7 +3741,7 @@
     },
     {
       "data": {
-        "id": "e116",
+        "id": "e117",
         "source": "https://marianomosquera.github.io/compliance#RiesgoEstandar",
         "target": "https://marianomosquera.github.io/compliance#Normas",
         "tipo": "broader"
@@ -3734,7 +3749,7 @@
     },
     {
       "data": {
-        "id": "e117",
+        "id": "e118",
         "source": "https://marianomosquera.github.io/compliance#Rotacion",
         "target": "https://marianomosquera.github.io/compliance#RiesgoEstandar",
         "tipo": "broader"
@@ -3742,7 +3757,7 @@
     },
     {
       "data": {
-        "id": "e118",
+        "id": "e119",
         "source": "https://marianomosquera.github.io/compliance#Salario",
         "target": "https://marianomosquera.github.io/compliance#Declaraciones",
         "tipo": "broader"
@@ -3750,7 +3765,7 @@
     },
     {
       "data": {
-        "id": "e119",
+        "id": "e120",
         "source": "https://marianomosquera.github.io/compliance#SalarioCompetitivo",
         "target": "https://marianomosquera.github.io/compliance#Recompensas",
         "tipo": "broader"
@@ -3758,7 +3773,7 @@
     },
     {
       "data": {
-        "id": "e120",
+        "id": "e121",
         "source": "https://marianomosquera.github.io/compliance#Seguros",
         "target": "https://marianomosquera.github.io/compliance#AnalisisRiesgo",
         "tipo": "broader"
@@ -3766,7 +3781,7 @@
     },
     {
       "data": {
-        "id": "e121",
+        "id": "e122",
         "source": "https://marianomosquera.github.io/compliance#Sponsoreo",
         "target": "https://marianomosquera.github.io/compliance#GestionIntereses",
         "tipo": "broader"
@@ -3774,7 +3789,7 @@
     },
     {
       "data": {
-        "id": "e122",
+        "id": "e123",
         "source": "https://marianomosquera.github.io/compliance#Tiempo",
         "target": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
         "tipo": "broader"
@@ -3782,7 +3797,7 @@
     },
     {
       "data": {
-        "id": "e123",
+        "id": "e124",
         "source": "https://marianomosquera.github.io/compliance#ToneAtTheTop",
         "target": "https://marianomosquera.github.io/compliance#Capacitacion",
         "tipo": "broader"
@@ -3790,7 +3805,7 @@
     },
     {
       "data": {
-        "id": "e124",
+        "id": "e125",
         "source": "https://marianomosquera.github.io/economica/Actividad",
         "target": "https://marianomosquera.github.io/economica/Temas",
         "tipo": "broader"
@@ -3798,7 +3813,7 @@
     },
     {
       "data": {
-        "id": "e125",
+        "id": "e126",
         "source": "https://marianomosquera.github.io/economica/Actores",
         "target": "https://marianomosquera.github.io/economica/Economica",
         "tipo": "broader"
@@ -3806,7 +3821,7 @@
     },
     {
       "data": {
-        "id": "e126",
+        "id": "e127",
         "source": "https://marianomosquera.github.io/economica/Aeroespacial",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3814,7 +3829,7 @@
     },
     {
       "data": {
-        "id": "e127",
+        "id": "e128",
         "source": "https://marianomosquera.github.io/economica/Agropecuaria",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3822,7 +3837,7 @@
     },
     {
       "data": {
-        "id": "e128",
+        "id": "e129",
         "source": "https://marianomosquera.github.io/economica/Alimentaria",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3830,7 +3845,7 @@
     },
     {
       "data": {
-        "id": "e129",
+        "id": "e130",
         "source": "https://marianomosquera.github.io/economica/Audiovisual",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3838,7 +3853,7 @@
     },
     {
       "data": {
-        "id": "e130",
+        "id": "e131",
         "source": "https://marianomosquera.github.io/economica/Automotriz",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3846,7 +3861,7 @@
     },
     {
       "data": {
-        "id": "e131",
+        "id": "e132",
         "source": "https://marianomosquera.github.io/economica/CadenaDeSuministros",
         "target": "https://marianomosquera.github.io/economica/Produccion",
         "tipo": "broader"
@@ -3854,7 +3869,7 @@
     },
     {
       "data": {
-        "id": "e132",
+        "id": "e133",
         "source": "https://marianomosquera.github.io/economica/Cambiaria",
         "target": "https://marianomosquera.github.io/economica/PoliticaEconomica",
         "tipo": "broader"
@@ -3862,7 +3877,7 @@
     },
     {
       "data": {
-        "id": "e133",
+        "id": "e134",
         "source": "https://marianomosquera.github.io/economica/Capital",
         "target": "https://marianomosquera.github.io/economica/Produccion",
         "tipo": "broader"
@@ -3870,7 +3885,7 @@
     },
     {
       "data": {
-        "id": "e134",
+        "id": "e135",
         "source": "https://marianomosquera.github.io/economica/Combustibles",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3878,7 +3893,7 @@
     },
     {
       "data": {
-        "id": "e135",
+        "id": "e136",
         "source": "https://marianomosquera.github.io/economica/Comercio",
         "target": "https://marianomosquera.github.io/economica/Actividad",
         "tipo": "broader"
@@ -3886,7 +3901,7 @@
     },
     {
       "data": {
-        "id": "e136",
+        "id": "e137",
         "source": "https://marianomosquera.github.io/economica/Construccion",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3894,7 +3909,7 @@
     },
     {
       "data": {
-        "id": "e137",
+        "id": "e138",
         "source": "https://marianomosquera.github.io/economica/Consumo",
         "target": "https://marianomosquera.github.io/economica/Actividad",
         "tipo": "broader"
@@ -3902,7 +3917,7 @@
     },
     {
       "data": {
-        "id": "e138",
+        "id": "e139",
         "source": "https://marianomosquera.github.io/economica/Crecimiento",
         "target": "https://marianomosquera.github.io/economica/Mercado",
         "tipo": "broader"
@@ -3910,7 +3925,7 @@
     },
     {
       "data": {
-        "id": "e139",
+        "id": "e140",
         "source": "https://marianomosquera.github.io/economica/Deuda",
         "target": "https://marianomosquera.github.io/economica/Problemas",
         "tipo": "broader"
@@ -3918,7 +3933,15 @@
     },
     {
       "data": {
-        "id": "e140",
+        "id": "e141",
+        "source": "https://marianomosquera.github.io/economica/Economica",
+        "target": "https://marianomosquera.github.io/etica/etica#Agenda",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e142",
         "source": "https://marianomosquera.github.io/economica/Educacion",
         "target": "https://marianomosquera.github.io/economica/Servicios",
         "tipo": "broader"
@@ -3926,7 +3949,7 @@
     },
     {
       "data": {
-        "id": "e141",
+        "id": "e143",
         "source": "https://marianomosquera.github.io/economica/Emprendedores",
         "target": "https://marianomosquera.github.io/economica/Actores",
         "tipo": "broader"
@@ -3934,7 +3957,7 @@
     },
     {
       "data": {
-        "id": "e142",
+        "id": "e144",
         "source": "https://marianomosquera.github.io/economica/Empresa",
         "target": "https://marianomosquera.github.io/economica/Mercado",
         "tipo": "broader"
@@ -3942,7 +3965,7 @@
     },
     {
       "data": {
-        "id": "e143",
+        "id": "e145",
         "source": "https://marianomosquera.github.io/economica/Energetica",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3950,7 +3973,7 @@
     },
     {
       "data": {
-        "id": "e144",
+        "id": "e146",
         "source": "https://marianomosquera.github.io/economica/Farmaceutica",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3958,7 +3981,7 @@
     },
     {
       "data": {
-        "id": "e145",
+        "id": "e147",
         "source": "https://marianomosquera.github.io/economica/Finanzas",
         "target": "https://marianomosquera.github.io/economica/Servicios",
         "tipo": "broader"
@@ -3966,7 +3989,7 @@
     },
     {
       "data": {
-        "id": "e146",
+        "id": "e148",
         "source": "https://marianomosquera.github.io/economica/Fiscal",
         "target": "https://marianomosquera.github.io/economica/PoliticaEconomica",
         "tipo": "broader"
@@ -3974,7 +3997,7 @@
     },
     {
       "data": {
-        "id": "e147",
+        "id": "e149",
         "source": "https://marianomosquera.github.io/economica/Forestal",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -3982,7 +4005,7 @@
     },
     {
       "data": {
-        "id": "e148",
+        "id": "e150",
         "source": "https://marianomosquera.github.io/economica/Industriales",
         "target": "https://marianomosquera.github.io/economica/Actores",
         "tipo": "broader"
@@ -3990,7 +4013,7 @@
     },
     {
       "data": {
-        "id": "e149",
+        "id": "e151",
         "source": "https://marianomosquera.github.io/economica/Inflacion",
         "target": "https://marianomosquera.github.io/economica/Problemas",
         "tipo": "broader"
@@ -3998,7 +4021,7 @@
     },
     {
       "data": {
-        "id": "e150",
+        "id": "e152",
         "source": "https://marianomosquera.github.io/economica/Inversion",
         "target": "https://marianomosquera.github.io/economica/Produccion",
         "tipo": "broader"
@@ -4006,7 +4029,7 @@
     },
     {
       "data": {
-        "id": "e151",
+        "id": "e153",
         "source": "https://marianomosquera.github.io/economica/Mercado",
         "target": "https://marianomosquera.github.io/economica/Temas",
         "tipo": "broader"
@@ -4014,7 +4037,7 @@
     },
     {
       "data": {
-        "id": "e152",
+        "id": "e154",
         "source": "https://marianomosquera.github.io/economica/Metalurgica",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4022,7 +4045,7 @@
     },
     {
       "data": {
-        "id": "e153",
+        "id": "e155",
         "source": "https://marianomosquera.github.io/economica/Minera",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4030,7 +4053,7 @@
     },
     {
       "data": {
-        "id": "e154",
+        "id": "e156",
         "source": "https://marianomosquera.github.io/economica/Monetaria",
         "target": "https://marianomosquera.github.io/economica/PoliticaEconomica",
         "tipo": "broader"
@@ -4038,7 +4061,7 @@
     },
     {
       "data": {
-        "id": "e155",
+        "id": "e157",
         "source": "https://marianomosquera.github.io/economica/Monopolio",
         "target": "https://marianomosquera.github.io/economica/Problemas",
         "tipo": "broader"
@@ -4046,7 +4069,7 @@
     },
     {
       "data": {
-        "id": "e156",
+        "id": "e158",
         "source": "https://marianomosquera.github.io/economica/Papelera",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4054,7 +4077,7 @@
     },
     {
       "data": {
-        "id": "e157",
+        "id": "e159",
         "source": "https://marianomosquera.github.io/economica/Petroquimica",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4062,7 +4085,7 @@
     },
     {
       "data": {
-        "id": "e158",
+        "id": "e160",
         "source": "https://marianomosquera.github.io/economica/Plastica",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4070,7 +4093,7 @@
     },
     {
       "data": {
-        "id": "e159",
+        "id": "e161",
         "source": "https://marianomosquera.github.io/economica/PoliticaEconomica",
         "target": "https://marianomosquera.github.io/economica/Temas",
         "tipo": "broader"
@@ -4078,7 +4101,7 @@
     },
     {
       "data": {
-        "id": "e160",
+        "id": "e162",
         "source": "https://marianomosquera.github.io/economica/Problemas",
         "target": "https://marianomosquera.github.io/economica/Economica",
         "tipo": "broader"
@@ -4086,7 +4109,7 @@
     },
     {
       "data": {
-        "id": "e161",
+        "id": "e163",
         "source": "https://marianomosquera.github.io/economica/Produccion",
         "target": "https://marianomosquera.github.io/economica/Actividad",
         "tipo": "broader"
@@ -4094,7 +4117,7 @@
     },
     {
       "data": {
-        "id": "e162",
+        "id": "e164",
         "source": "https://marianomosquera.github.io/economica/Quimica",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4102,7 +4125,7 @@
     },
     {
       "data": {
-        "id": "e163",
+        "id": "e165",
         "source": "https://marianomosquera.github.io/economica/Recesion",
         "target": "https://marianomosquera.github.io/economica/Problemas",
         "tipo": "broader"
@@ -4110,7 +4133,7 @@
     },
     {
       "data": {
-        "id": "e164",
+        "id": "e166",
         "source": "https://marianomosquera.github.io/economica/Rentabilidad",
         "target": "https://marianomosquera.github.io/economica/Produccion",
         "tipo": "broader"
@@ -4118,7 +4141,7 @@
     },
     {
       "data": {
-        "id": "e165",
+        "id": "e167",
         "source": "https://marianomosquera.github.io/economica/Riqueza",
         "target": "https://marianomosquera.github.io/economica/Crecimiento",
         "tipo": "broader"
@@ -4126,7 +4149,7 @@
     },
     {
       "data": {
-        "id": "e166",
+        "id": "e168",
         "source": "https://marianomosquera.github.io/economica/Salud",
         "target": "https://marianomosquera.github.io/economica/Servicios",
         "tipo": "broader"
@@ -4134,7 +4157,7 @@
     },
     {
       "data": {
-        "id": "e167",
+        "id": "e169",
         "source": "https://marianomosquera.github.io/economica/Seguros",
         "target": "https://marianomosquera.github.io/economica/Servicios",
         "tipo": "broader"
@@ -4142,7 +4165,7 @@
     },
     {
       "data": {
-        "id": "e168",
+        "id": "e170",
         "source": "https://marianomosquera.github.io/economica/Servicios",
         "target": "https://marianomosquera.github.io/economica/Actores",
         "tipo": "broader"
@@ -4150,7 +4173,7 @@
     },
     {
       "data": {
-        "id": "e169",
+        "id": "e171",
         "source": "https://marianomosquera.github.io/economica/Siderurgica",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4158,7 +4181,7 @@
     },
     {
       "data": {
-        "id": "e170",
+        "id": "e172",
         "source": "https://marianomosquera.github.io/economica/Telecomunicaciones",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4166,7 +4189,7 @@
     },
     {
       "data": {
-        "id": "e171",
+        "id": "e173",
         "source": "https://marianomosquera.github.io/economica/Temas",
         "target": "https://marianomosquera.github.io/economica/Economica",
         "tipo": "broader"
@@ -4174,7 +4197,7 @@
     },
     {
       "data": {
-        "id": "e172",
+        "id": "e174",
         "source": "https://marianomosquera.github.io/economica/Textil",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4182,7 +4205,7 @@
     },
     {
       "data": {
-        "id": "e173",
+        "id": "e175",
         "source": "https://marianomosquera.github.io/economica/Transporte",
         "target": "https://marianomosquera.github.io/economica/Industriales",
         "tipo": "broader"
@@ -4190,7 +4213,7 @@
     },
     {
       "data": {
-        "id": "e174",
+        "id": "e176",
         "source": "https://marianomosquera.github.io/economica/Turismo",
         "target": "https://marianomosquera.github.io/economica/Servicios",
         "tipo": "broader"
@@ -4198,7 +4221,7 @@
     },
     {
       "data": {
-        "id": "e175",
+        "id": "e177",
         "source": "https://marianomosquera.github.io/engagement#Acuerdo",
         "target": "https://marianomosquera.github.io/engagement#Colaboracion",
         "tipo": "broader"
@@ -4206,7 +4229,7 @@
     },
     {
       "data": {
-        "id": "e176",
+        "id": "e178",
         "source": "https://marianomosquera.github.io/engagement#Anticipacion",
         "target": "https://marianomosquera.github.io/engagement#Engagement",
         "tipo": "broader"
@@ -4214,7 +4237,7 @@
     },
     {
       "data": {
-        "id": "e177",
+        "id": "e179",
         "source": "https://marianomosquera.github.io/engagement#Aprendizaje",
         "target": "https://marianomosquera.github.io/engagement#Deliberacion",
         "tipo": "broader"
@@ -4222,7 +4245,7 @@
     },
     {
       "data": {
-        "id": "e178",
+        "id": "e180",
         "source": "https://marianomosquera.github.io/engagement#Censo",
         "target": "https://marianomosquera.github.io/engagement#Anticipacion",
         "tipo": "broader"
@@ -4230,7 +4253,7 @@
     },
     {
       "data": {
-        "id": "e179",
+        "id": "e181",
         "source": "https://marianomosquera.github.io/engagement#Colaboracion",
         "target": "https://marianomosquera.github.io/engagement#Engagement",
         "tipo": "broader"
@@ -4238,7 +4261,7 @@
     },
     {
       "data": {
-        "id": "e180",
+        "id": "e182",
         "source": "https://marianomosquera.github.io/engagement#Colusion",
         "target": "https://marianomosquera.github.io/engagement#Problemas",
         "tipo": "broader"
@@ -4246,7 +4269,7 @@
     },
     {
       "data": {
-        "id": "e181",
+        "id": "e183",
         "source": "https://marianomosquera.github.io/engagement#Comision",
         "target": "https://marianomosquera.github.io/engagement#TipoColaboracion",
         "tipo": "broader"
@@ -4254,7 +4277,7 @@
     },
     {
       "data": {
-        "id": "e182",
+        "id": "e184",
         "source": "https://marianomosquera.github.io/engagement#Comite",
         "target": "https://marianomosquera.github.io/engagement#TipoColaboracion",
         "tipo": "broader"
@@ -4262,7 +4285,7 @@
     },
     {
       "data": {
-        "id": "e183",
+        "id": "e185",
         "source": "https://marianomosquera.github.io/engagement#Consejo",
         "target": "https://marianomosquera.github.io/engagement#TipoColaboracion",
         "tipo": "broader"
@@ -4270,7 +4293,7 @@
     },
     {
       "data": {
-        "id": "e184",
+        "id": "e186",
         "source": "https://marianomosquera.github.io/engagement#Consenso",
         "target": "https://marianomosquera.github.io/engagement#Acuerdo",
         "tipo": "broader"
@@ -4278,7 +4301,7 @@
     },
     {
       "data": {
-        "id": "e185",
+        "id": "e187",
         "source": "https://marianomosquera.github.io/engagement#Consulta",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4286,7 +4309,7 @@
     },
     {
       "data": {
-        "id": "e186",
+        "id": "e188",
         "source": "https://marianomosquera.github.io/engagement#Debate",
         "target": "https://marianomosquera.github.io/engagement#Deliberacion",
         "tipo": "broader"
@@ -4294,7 +4317,7 @@
     },
     {
       "data": {
-        "id": "e187",
+        "id": "e189",
         "source": "https://marianomosquera.github.io/engagement#Deliberacion",
         "target": "https://marianomosquera.github.io/engagement#Colaboracion",
         "tipo": "broader"
@@ -4302,7 +4325,7 @@
     },
     {
       "data": {
-        "id": "e188",
+        "id": "e190",
         "source": "https://marianomosquera.github.io/engagement#Dialogo",
         "target": "https://marianomosquera.github.io/engagement#Deliberacion",
         "tipo": "broader"
@@ -4310,7 +4333,7 @@
     },
     {
       "data": {
-        "id": "e189",
+        "id": "e191",
         "source": "https://marianomosquera.github.io/engagement#Discusion",
         "target": "https://marianomosquera.github.io/engagement#Deliberacion",
         "tipo": "broader"
@@ -4318,7 +4341,7 @@
     },
     {
       "data": {
-        "id": "e190",
+        "id": "e192",
         "source": "https://marianomosquera.github.io/engagement#Encuesta",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4326,7 +4349,7 @@
     },
     {
       "data": {
-        "id": "e191",
+        "id": "e193",
         "source": "https://marianomosquera.github.io/engagement#Engagement",
         "target": "https://marianomosquera.github.io/etica/etica#Gobernanza",
         "tipo": "broader"
@@ -4334,7 +4357,7 @@
     },
     {
       "data": {
-        "id": "e192",
+        "id": "e194",
         "source": "https://marianomosquera.github.io/engagement#Entrevista",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4342,7 +4365,7 @@
     },
     {
       "data": {
-        "id": "e193",
+        "id": "e195",
         "source": "https://marianomosquera.github.io/engagement#EstudioCaso",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4350,7 +4373,7 @@
     },
     {
       "data": {
-        "id": "e194",
+        "id": "e196",
         "source": "https://marianomosquera.github.io/engagement#GrupoFocal",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4358,7 +4381,7 @@
     },
     {
       "data": {
-        "id": "e195",
+        "id": "e197",
         "source": "https://marianomosquera.github.io/engagement#Horizontalidad",
         "target": "https://marianomosquera.github.io/engagement#Pluralidad",
         "tipo": "broader"
@@ -4366,7 +4389,7 @@
     },
     {
       "data": {
-        "id": "e196",
+        "id": "e198",
         "source": "https://marianomosquera.github.io/engagement#Inclusion",
         "target": "https://marianomosquera.github.io/engagement#Pluralidad",
         "tipo": "broader"
@@ -4374,7 +4397,7 @@
     },
     {
       "data": {
-        "id": "e197",
+        "id": "e199",
         "source": "https://marianomosquera.github.io/engagement#InvestigacionMercado",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4382,7 +4405,7 @@
     },
     {
       "data": {
-        "id": "e198",
+        "id": "e200",
         "source": "https://marianomosquera.github.io/engagement#Minoria",
         "target": "https://marianomosquera.github.io/engagement#Oposicion",
         "tipo": "broader"
@@ -4390,7 +4413,7 @@
     },
     {
       "data": {
-        "id": "e199",
+        "id": "e201",
         "source": "https://marianomosquera.github.io/engagement#Muestra",
         "target": "https://marianomosquera.github.io/engagement#Anticipacion",
         "tipo": "broader"
@@ -4398,7 +4421,7 @@
     },
     {
       "data": {
-        "id": "e200",
+        "id": "e202",
         "source": "https://marianomosquera.github.io/engagement#Negociacion",
         "target": "https://marianomosquera.github.io/engagement#Acuerdo",
         "tipo": "broader"
@@ -4406,7 +4429,7 @@
     },
     {
       "data": {
-        "id": "e201",
+        "id": "e203",
         "source": "https://marianomosquera.github.io/engagement#Observacion",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4414,7 +4437,7 @@
     },
     {
       "data": {
-        "id": "e202",
+        "id": "e204",
         "source": "https://marianomosquera.github.io/engagement#Oposicion",
         "target": "https://marianomosquera.github.io/engagement#Colaboracion",
         "tipo": "broader"
@@ -4422,7 +4445,7 @@
     },
     {
       "data": {
-        "id": "e203",
+        "id": "e205",
         "source": "https://marianomosquera.github.io/engagement#Panel",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4430,7 +4453,7 @@
     },
     {
       "data": {
-        "id": "e204",
+        "id": "e206",
         "source": "https://marianomosquera.github.io/engagement#Pluralidad",
         "target": "https://marianomosquera.github.io/engagement#Colaboracion",
         "tipo": "broader"
@@ -4438,7 +4461,7 @@
     },
     {
       "data": {
-        "id": "e205",
+        "id": "e207",
         "source": "https://marianomosquera.github.io/engagement#Ponderacion",
         "target": "https://marianomosquera.github.io/engagement#Pluralidad",
         "tipo": "broader"
@@ -4446,7 +4469,7 @@
     },
     {
       "data": {
-        "id": "e206",
+        "id": "e208",
         "source": "https://marianomosquera.github.io/engagement#Priorizacion",
         "target": "https://marianomosquera.github.io/engagement#Acuerdo",
         "tipo": "broader"
@@ -4454,7 +4477,7 @@
     },
     {
       "data": {
-        "id": "e207",
+        "id": "e209",
         "source": "https://marianomosquera.github.io/engagement#Problemas",
         "target": "https://marianomosquera.github.io/engagement#Engagement",
         "tipo": "broader"
@@ -4462,7 +4485,7 @@
     },
     {
       "data": {
-        "id": "e208",
+        "id": "e210",
         "source": "https://marianomosquera.github.io/engagement#Representacion",
         "target": "https://marianomosquera.github.io/engagement#Pluralidad",
         "tipo": "broader"
@@ -4470,7 +4493,7 @@
     },
     {
       "data": {
-        "id": "e209",
+        "id": "e211",
         "source": "https://marianomosquera.github.io/engagement#Retroalimentacion",
         "target": "https://marianomosquera.github.io/engagement#Deliberacion",
         "tipo": "broader"
@@ -4478,7 +4501,7 @@
     },
     {
       "data": {
-        "id": "e210",
+        "id": "e212",
         "source": "https://marianomosquera.github.io/engagement#Sintesis",
         "target": "https://marianomosquera.github.io/engagement#Acuerdo",
         "tipo": "broader"
@@ -4486,7 +4509,7 @@
     },
     {
       "data": {
-        "id": "e211",
+        "id": "e213",
         "source": "https://marianomosquera.github.io/engagement#Sondeo",
         "target": "https://marianomosquera.github.io/engagement#Muestra",
         "tipo": "broader"
@@ -4494,7 +4517,7 @@
     },
     {
       "data": {
-        "id": "e212",
+        "id": "e214",
         "source": "https://marianomosquera.github.io/engagement#TipoColaboracion",
         "target": "https://marianomosquera.github.io/engagement#Colaboracion",
         "tipo": "broader"
@@ -4502,7 +4525,7 @@
     },
     {
       "data": {
-        "id": "e213",
+        "id": "e215",
         "source": "https://marianomosquera.github.io/engagement#Votacion",
         "target": "https://marianomosquera.github.io/engagement#Acuerdo",
         "tipo": "broader"
@@ -4510,7 +4533,7 @@
     },
     {
       "data": {
-        "id": "e214",
+        "id": "e216",
         "source": "https://marianomosquera.github.io/etica/etica#Agenda",
         "target": "https://marianomosquera.github.io/etica/etica#Atencion",
         "tipo": "broader"
@@ -4518,7 +4541,7 @@
     },
     {
       "data": {
-        "id": "e215",
+        "id": "e217",
         "source": "https://marianomosquera.github.io/etica/etica#Atencion",
         "target": "https://marianomosquera.github.io/etica/etica#EticaInstitucional",
         "tipo": "broader"
@@ -4526,7 +4549,7 @@
     },
     {
       "data": {
-        "id": "e216",
+        "id": "e218",
         "source": "https://marianomosquera.github.io/etica/etica#Gobernanza",
         "target": "https://marianomosquera.github.io/etica/etica#EticaInstitucional",
         "tipo": "broader"
@@ -4534,7 +4557,7 @@
     },
     {
       "data": {
-        "id": "e217",
+        "id": "e219",
         "source": "https://marianomosquera.github.io/institucional/Actores",
         "target": "https://marianomosquera.github.io/institucional/Institucional",
         "tipo": "broader"
@@ -4542,7 +4565,7 @@
     },
     {
       "data": {
-        "id": "e218",
+        "id": "e220",
         "source": "https://marianomosquera.github.io/institucional/Administracion",
         "target": "https://marianomosquera.github.io/institucional/Temas",
         "tipo": "broader"
@@ -4550,7 +4573,7 @@
     },
     {
       "data": {
-        "id": "e219",
+        "id": "e221",
         "source": "https://marianomosquera.github.io/institucional/Captura",
         "target": "https://marianomosquera.github.io/institucional/Problemas",
         "tipo": "broader"
@@ -4558,7 +4581,7 @@
     },
     {
       "data": {
-        "id": "e220",
+        "id": "e222",
         "source": "https://marianomosquera.github.io/institucional/ConvencionesInternacionales",
         "target": "https://marianomosquera.github.io/institucional/Normas",
         "tipo": "broader"
@@ -4566,7 +4589,7 @@
     },
     {
       "data": {
-        "id": "e221",
+        "id": "e223",
         "source": "https://marianomosquera.github.io/institucional/DerechosHumanos",
         "target": "https://marianomosquera.github.io/institucional/Temas",
         "tipo": "broader"
@@ -4574,7 +4597,7 @@
     },
     {
       "data": {
-        "id": "e222",
+        "id": "e224",
         "source": "https://marianomosquera.github.io/institucional/Estado",
         "target": "https://marianomosquera.github.io/institucional/Actores",
         "tipo": "broader"
@@ -4582,7 +4605,7 @@
     },
     {
       "data": {
-        "id": "e223",
+        "id": "e225",
         "source": "https://marianomosquera.github.io/institucional/Gobierno",
         "target": "https://marianomosquera.github.io/institucional/Actores",
         "tipo": "broader"
@@ -4590,7 +4613,15 @@
     },
     {
       "data": {
-        "id": "e224",
+        "id": "e226",
+        "source": "https://marianomosquera.github.io/institucional/Institucional",
+        "target": "https://marianomosquera.github.io/etica/etica#Agenda",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e227",
         "source": "https://marianomosquera.github.io/institucional/Leyes",
         "target": "https://marianomosquera.github.io/institucional/Normas",
         "tipo": "broader"
@@ -4598,7 +4629,7 @@
     },
     {
       "data": {
-        "id": "e225",
+        "id": "e228",
         "source": "https://marianomosquera.github.io/institucional/Normas",
         "target": "https://marianomosquera.github.io/institucional/Temas",
         "tipo": "broader"
@@ -4606,7 +4637,7 @@
     },
     {
       "data": {
-        "id": "e226",
+        "id": "e229",
         "source": "https://marianomosquera.github.io/institucional/OrganismosInternacionales",
         "target": "https://marianomosquera.github.io/institucional/Actores",
         "tipo": "broader"
@@ -4614,7 +4645,7 @@
     },
     {
       "data": {
-        "id": "e227",
+        "id": "e230",
         "source": "https://marianomosquera.github.io/institucional/OrganizacionesInternacionales",
         "target": "https://marianomosquera.github.io/institucional/Actores",
         "tipo": "broader"
@@ -4622,7 +4653,7 @@
     },
     {
       "data": {
-        "id": "e228",
+        "id": "e231",
         "source": "https://marianomosquera.github.io/institucional/PoderJudicial",
         "target": "https://marianomosquera.github.io/institucional/Actores",
         "tipo": "broader"
@@ -4630,7 +4661,7 @@
     },
     {
       "data": {
-        "id": "e229",
+        "id": "e232",
         "source": "https://marianomosquera.github.io/institucional/PoderLegislativo",
         "target": "https://marianomosquera.github.io/institucional/Actores",
         "tipo": "broader"
@@ -4638,7 +4669,7 @@
     },
     {
       "data": {
-        "id": "e230",
+        "id": "e233",
         "source": "https://marianomosquera.github.io/institucional/Problemas",
         "target": "https://marianomosquera.github.io/institucional/Institucional",
         "tipo": "broader"
@@ -4646,7 +4677,7 @@
     },
     {
       "data": {
-        "id": "e231",
+        "id": "e234",
         "source": "https://marianomosquera.github.io/institucional/RelacionesInterjurisdiccionales",
         "target": "https://marianomosquera.github.io/institucional/Temas",
         "tipo": "broader"
@@ -4654,7 +4685,7 @@
     },
     {
       "data": {
-        "id": "e232",
+        "id": "e235",
         "source": "https://marianomosquera.github.io/institucional/Seguridad",
         "target": "https://marianomosquera.github.io/institucional/Problemas",
         "tipo": "broader"
@@ -4662,7 +4693,7 @@
     },
     {
       "data": {
-        "id": "e233",
+        "id": "e236",
         "source": "https://marianomosquera.github.io/institucional/Temas",
         "target": "https://marianomosquera.github.io/institucional/Institucional",
         "tipo": "broader"
@@ -4670,7 +4701,7 @@
     },
     {
       "data": {
-        "id": "e234",
+        "id": "e237",
         "source": "https://marianomosquera.github.io/ontology/Adaptacion",
         "target": "https://marianomosquera.github.io/ontology/Competencia",
         "tipo": "broader"
@@ -4678,7 +4709,7 @@
     },
     {
       "data": {
-        "id": "e235",
+        "id": "e238",
         "source": "https://marianomosquera.github.io/ontology/Autodeterminacion",
         "target": "https://marianomosquera.github.io/ontology/Libertad",
         "tipo": "broader"
@@ -4686,7 +4717,7 @@
     },
     {
       "data": {
-        "id": "e236",
+        "id": "e239",
         "source": "https://marianomosquera.github.io/ontology/Autodeterminacion",
         "target": "https://marianomosquera.github.io/ontology/Autonomia",
         "tipo": "related"
@@ -4694,32 +4725,8 @@
     },
     {
       "data": {
-        "id": "e237",
-        "source": "https://marianomosquera.github.io/ontology/Autodeterminacion",
-        "target": "https://marianomosquera.github.io/ontology/Independencia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e238",
-        "source": "https://marianomosquera.github.io/ontology/Autodeterminacion",
-        "target": "https://marianomosquera.github.io/ontology/Diversidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e239",
-        "source": "https://marianomosquera.github.io/ontology/Autonomia",
-        "target": "https://marianomosquera.github.io/ontology/Libertad",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
         "id": "e240",
-        "source": "https://marianomosquera.github.io/ontology/Autonomia",
+        "source": "https://marianomosquera.github.io/ontology/Autodeterminacion",
         "target": "https://marianomosquera.github.io/ontology/Independencia",
         "tipo": "related"
       }
@@ -4727,6 +4734,22 @@
     {
       "data": {
         "id": "e241",
+        "source": "https://marianomosquera.github.io/ontology/Autodeterminacion",
+        "target": "https://marianomosquera.github.io/ontology/Diversidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e242",
+        "source": "https://marianomosquera.github.io/ontology/Autonomia",
+        "target": "https://marianomosquera.github.io/ontology/Libertad",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e243",
         "source": "https://marianomosquera.github.io/ontology/Autonomia",
         "target": "https://marianomosquera.github.io/ontology/Autodeterminacion",
         "tipo": "related"
@@ -4734,7 +4757,15 @@
     },
     {
       "data": {
-        "id": "e242",
+        "id": "e244",
+        "source": "https://marianomosquera.github.io/ontology/Autonomia",
+        "target": "https://marianomosquera.github.io/ontology/Independencia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e245",
         "source": "https://marianomosquera.github.io/ontology/Autoria",
         "target": "https://marianomosquera.github.io/ontology/Propiedad",
         "tipo": "broader"
@@ -4742,33 +4773,9 @@
     },
     {
       "data": {
-        "id": "e243",
+        "id": "e246",
         "source": "https://marianomosquera.github.io/ontology/Autoria",
         "target": "https://marianomosquera.github.io/ontology/SecretoEmpresarial",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e244",
-        "source": "https://marianomosquera.github.io/ontology/Beneficencia",
-        "target": "https://marianomosquera.github.io/ontology/Justicia",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e245",
-        "source": "https://marianomosquera.github.io/ontology/Beneficencia",
-        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e246",
-        "source": "https://marianomosquera.github.io/ontology/Beneficencia",
-        "target": "https://marianomosquera.github.io/ontology/NoMaleficencia",
         "tipo": "related"
       }
     },
@@ -4776,13 +4783,37 @@
       "data": {
         "id": "e247",
         "source": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "target": "https://marianomosquera.github.io/ontology/Justicia",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e248",
+        "source": "https://marianomosquera.github.io/ontology/Beneficencia",
         "target": "https://marianomosquera.github.io/ontology/Cuidado",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e248",
+        "id": "e249",
+        "source": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e250",
+        "source": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "target": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e251",
         "source": "https://marianomosquera.github.io/ontology/BienComun",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -4790,7 +4821,7 @@
     },
     {
       "data": {
-        "id": "e249",
+        "id": "e252",
         "source": "https://marianomosquera.github.io/ontology/BienComun",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "related"
@@ -4798,7 +4829,7 @@
     },
     {
       "data": {
-        "id": "e250",
+        "id": "e253",
         "source": "https://marianomosquera.github.io/ontology/BienComun",
         "target": "https://marianomosquera.github.io/ontology/Comunidad",
         "tipo": "related"
@@ -4806,7 +4837,7 @@
     },
     {
       "data": {
-        "id": "e251",
+        "id": "e254",
         "source": "https://marianomosquera.github.io/ontology/Competencia",
         "target": "https://marianomosquera.github.io/ontology/Valores",
         "tipo": "broader"
@@ -4814,7 +4845,7 @@
     },
     {
       "data": {
-        "id": "e252",
+        "id": "e255",
         "source": "https://marianomosquera.github.io/ontology/Competencia",
         "target": "https://marianomosquera.github.io/ontology/Libertad",
         "tipo": "related"
@@ -4822,33 +4853,9 @@
     },
     {
       "data": {
-        "id": "e253",
+        "id": "e256",
         "source": "https://marianomosquera.github.io/ontology/Competencia",
         "target": "https://marianomosquera.github.io/ontology/Propiedad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e254",
-        "source": "https://marianomosquera.github.io/ontology/Compromiso",
-        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e255",
-        "source": "https://marianomosquera.github.io/ontology/Compromiso",
-        "target": "https://marianomosquera.github.io/ontology/Confianza",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e256",
-        "source": "https://marianomosquera.github.io/ontology/Compromiso",
-        "target": "https://marianomosquera.github.io/ontology/Lealtad",
         "tipo": "related"
       }
     },
@@ -4856,38 +4863,38 @@
       "data": {
         "id": "e257",
         "source": "https://marianomosquera.github.io/ontology/Compromiso",
-        "target": "https://marianomosquera.github.io/ontology/Comunidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e258",
-        "source": "https://marianomosquera.github.io/ontology/Comunidad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
       }
     },
     {
       "data": {
+        "id": "e258",
+        "source": "https://marianomosquera.github.io/ontology/Compromiso",
+        "target": "https://marianomosquera.github.io/ontology/Lealtad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
         "id": "e259",
-        "source": "https://marianomosquera.github.io/ontology/Comunidad",
-        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
+        "source": "https://marianomosquera.github.io/ontology/Compromiso",
+        "target": "https://marianomosquera.github.io/ontology/Confianza",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e260",
-        "source": "https://marianomosquera.github.io/ontology/Comunidad",
-        "target": "https://marianomosquera.github.io/ontology/BienComun",
+        "source": "https://marianomosquera.github.io/ontology/Compromiso",
+        "target": "https://marianomosquera.github.io/ontology/Comunidad",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e261",
-        "source": "https://marianomosquera.github.io/ontology/Confianza",
+        "source": "https://marianomosquera.github.io/ontology/Comunidad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
       }
@@ -4895,7 +4902,7 @@
     {
       "data": {
         "id": "e262",
-        "source": "https://marianomosquera.github.io/ontology/Confianza",
+        "source": "https://marianomosquera.github.io/ontology/Comunidad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "related"
       }
@@ -4903,8 +4910,8 @@
     {
       "data": {
         "id": "e263",
-        "source": "https://marianomosquera.github.io/ontology/Confianza",
-        "target": "https://marianomosquera.github.io/ontology/Reciprocidad",
+        "source": "https://marianomosquera.github.io/ontology/Comunidad",
+        "target": "https://marianomosquera.github.io/ontology/BienComun",
         "tipo": "related"
       }
     },
@@ -4912,13 +4919,29 @@
       "data": {
         "id": "e264",
         "source": "https://marianomosquera.github.io/ontology/Confianza",
+        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e265",
+        "source": "https://marianomosquera.github.io/ontology/Confianza",
+        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e266",
+        "source": "https://marianomosquera.github.io/ontology/Confianza",
         "target": "https://marianomosquera.github.io/ontology/Lealtad",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e265",
+        "id": "e267",
         "source": "https://marianomosquera.github.io/ontology/Confianza",
         "target": "https://marianomosquera.github.io/ontology/Honestidad",
         "tipo": "related"
@@ -4926,7 +4949,15 @@
     },
     {
       "data": {
-        "id": "e266",
+        "id": "e268",
+        "source": "https://marianomosquera.github.io/ontology/Confianza",
+        "target": "https://marianomosquera.github.io/ontology/Reciprocidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e269",
         "source": "https://marianomosquera.github.io/ontology/Confidencialidad",
         "target": "https://marianomosquera.github.io/ontology/Propiedad",
         "tipo": "broader"
@@ -4934,7 +4965,7 @@
     },
     {
       "data": {
-        "id": "e267",
+        "id": "e270",
         "source": "https://marianomosquera.github.io/ontology/Confidencialidad",
         "target": "https://marianomosquera.github.io/ontology/Privacidad",
         "tipo": "related"
@@ -4942,7 +4973,7 @@
     },
     {
       "data": {
-        "id": "e268",
+        "id": "e271",
         "source": "https://marianomosquera.github.io/ontology/Confidencialidad",
         "target": "https://marianomosquera.github.io/ontology/SecretoEmpresarial",
         "tipo": "related"
@@ -4950,7 +4981,7 @@
     },
     {
       "data": {
-        "id": "e269",
+        "id": "e272",
         "source": "https://marianomosquera.github.io/ontology/Cooperacion",
         "target": "https://marianomosquera.github.io/ontology/Valores",
         "tipo": "broader"
@@ -4958,41 +4989,17 @@
     },
     {
       "data": {
-        "id": "e270",
-        "source": "https://marianomosquera.github.io/ontology/Cooperacion",
-        "target": "https://marianomosquera.github.io/ontology/Igualdad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e271",
-        "source": "https://marianomosquera.github.io/ontology/Cooperacion",
-        "target": "https://marianomosquera.github.io/ontology/Justicia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e272",
-        "source": "https://marianomosquera.github.io/ontology/Cuidado",
-        "target": "https://marianomosquera.github.io/ontology/Justicia",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
         "id": "e273",
-        "source": "https://marianomosquera.github.io/ontology/Cuidado",
-        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "source": "https://marianomosquera.github.io/ontology/Cooperacion",
+        "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e274",
-        "source": "https://marianomosquera.github.io/ontology/Cuidado",
-        "target": "https://marianomosquera.github.io/ontology/Solidaridad",
+        "source": "https://marianomosquera.github.io/ontology/Cooperacion",
+        "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "related"
       }
     },
@@ -5000,15 +5007,15 @@
       "data": {
         "id": "e275",
         "source": "https://marianomosquera.github.io/ontology/Cuidado",
-        "target": "https://marianomosquera.github.io/ontology/NoMaleficencia",
-        "tipo": "related"
+        "target": "https://marianomosquera.github.io/ontology/Justicia",
+        "tipo": "broader"
       }
     },
     {
       "data": {
         "id": "e276",
         "source": "https://marianomosquera.github.io/ontology/Cuidado",
-        "target": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "target": "https://marianomosquera.github.io/ontology/Solidaridad",
         "tipo": "related"
       }
     },
@@ -5016,7 +5023,7 @@
       "data": {
         "id": "e277",
         "source": "https://marianomosquera.github.io/ontology/Cuidado",
-        "target": "https://marianomosquera.github.io/ontology/Sustentabilidad",
+        "target": "https://marianomosquera.github.io/ontology/Beneficencia",
         "tipo": "related"
       }
     },
@@ -5024,31 +5031,31 @@
       "data": {
         "id": "e278",
         "source": "https://marianomosquera.github.io/ontology/Cuidado",
-        "target": "https://marianomosquera.github.io/ontology/Sostenibilidad",
+        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e279",
-        "source": "https://marianomosquera.github.io/ontology/Dignidad",
-        "target": "https://marianomosquera.github.io/ontology/Igualdad",
-        "tipo": "broader"
+        "source": "https://marianomosquera.github.io/ontology/Cuidado",
+        "target": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e280",
-        "source": "https://marianomosquera.github.io/ontology/Dignidad",
-        "target": "https://marianomosquera.github.io/ontology/Integridad",
+        "source": "https://marianomosquera.github.io/ontology/Cuidado",
+        "target": "https://marianomosquera.github.io/ontology/Sustentabilidad",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e281",
-        "source": "https://marianomosquera.github.io/ontology/Dignidad",
-        "target": "https://marianomosquera.github.io/ontology/Respeto",
+        "source": "https://marianomosquera.github.io/ontology/Cuidado",
+        "target": "https://marianomosquera.github.io/ontology/Sostenibilidad",
         "tipo": "related"
       }
     },
@@ -5056,13 +5063,37 @@
       "data": {
         "id": "e282",
         "source": "https://marianomosquera.github.io/ontology/Dignidad",
+        "target": "https://marianomosquera.github.io/ontology/Igualdad",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e283",
+        "source": "https://marianomosquera.github.io/ontology/Dignidad",
+        "target": "https://marianomosquera.github.io/ontology/Respeto",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e284",
+        "source": "https://marianomosquera.github.io/ontology/Dignidad",
+        "target": "https://marianomosquera.github.io/ontology/Integridad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e285",
+        "source": "https://marianomosquera.github.io/ontology/Dignidad",
         "target": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e283",
+        "id": "e286",
         "source": "https://marianomosquera.github.io/ontology/Diversidad",
         "target": "https://marianomosquera.github.io/ontology/Libertad",
         "tipo": "broader"
@@ -5070,7 +5101,7 @@
     },
     {
       "data": {
-        "id": "e284",
+        "id": "e287",
         "source": "https://marianomosquera.github.io/ontology/Diversidad",
         "target": "https://marianomosquera.github.io/ontology/Autodeterminacion",
         "tipo": "related"
@@ -5078,7 +5109,7 @@
     },
     {
       "data": {
-        "id": "e285",
+        "id": "e288",
         "source": "https://marianomosquera.github.io/ontology/Empatia",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "broader"
@@ -5086,34 +5117,10 @@
     },
     {
       "data": {
-        "id": "e286",
+        "id": "e289",
         "source": "https://marianomosquera.github.io/ontology/Equidad",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e287",
-        "source": "https://marianomosquera.github.io/ontology/Equidad",
-        "target": "https://marianomosquera.github.io/ontology/Inclusion",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e288",
-        "source": "https://marianomosquera.github.io/ontology/Equidad",
-        "target": "https://marianomosquera.github.io/ontology/Proporcionalidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e289",
-        "source": "https://marianomosquera.github.io/ontology/Equidad",
-        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
-        "tipo": "related"
       }
     },
     {
@@ -5128,13 +5135,37 @@
       "data": {
         "id": "e291",
         "source": "https://marianomosquera.github.io/ontology/Equidad",
-        "target": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
+        "target": "https://marianomosquera.github.io/ontology/Inclusion",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e292",
+        "source": "https://marianomosquera.github.io/ontology/Equidad",
+        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e293",
+        "source": "https://marianomosquera.github.io/ontology/Equidad",
+        "target": "https://marianomosquera.github.io/ontology/Proporcionalidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e294",
+        "source": "https://marianomosquera.github.io/ontology/Equidad",
+        "target": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e295",
         "source": "https://marianomosquera.github.io/ontology/Estabilidad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -5142,7 +5173,7 @@
     },
     {
       "data": {
-        "id": "e293",
+        "id": "e296",
         "source": "https://marianomosquera.github.io/ontology/Honestidad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -5150,7 +5181,7 @@
     },
     {
       "data": {
-        "id": "e294",
+        "id": "e297",
         "source": "https://marianomosquera.github.io/ontology/Honestidad",
         "target": "https://marianomosquera.github.io/ontology/Confianza",
         "tipo": "related"
@@ -5158,7 +5189,7 @@
     },
     {
       "data": {
-        "id": "e295",
+        "id": "e298",
         "source": "https://marianomosquera.github.io/ontology/Honestidad",
         "target": "https://marianomosquera.github.io/ontology/Verdad",
         "tipo": "related"
@@ -5166,7 +5197,7 @@
     },
     {
       "data": {
-        "id": "e296",
+        "id": "e299",
         "source": "https://marianomosquera.github.io/ontology/Igualdad",
         "target": "https://marianomosquera.github.io/ontology/Valores",
         "tipo": "broader"
@@ -5174,7 +5205,7 @@
     },
     {
       "data": {
-        "id": "e297",
+        "id": "e300",
         "source": "https://marianomosquera.github.io/ontology/Igualdad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "related"
@@ -5182,33 +5213,9 @@
     },
     {
       "data": {
-        "id": "e298",
+        "id": "e301",
         "source": "https://marianomosquera.github.io/ontology/Igualdad",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e299",
-        "source": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
-        "target": "https://marianomosquera.github.io/ontology/Justicia",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e300",
-        "source": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
-        "target": "https://marianomosquera.github.io/ontology/Equidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e301",
-        "source": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
-        "target": "https://marianomosquera.github.io/ontology/Inclusion",
         "tipo": "related"
       }
     },
@@ -5216,13 +5223,37 @@
       "data": {
         "id": "e302",
         "source": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
+        "target": "https://marianomosquera.github.io/ontology/Justicia",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e303",
+        "source": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
+        "target": "https://marianomosquera.github.io/ontology/Equidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e304",
+        "source": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
+        "target": "https://marianomosquera.github.io/ontology/Inclusion",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e305",
+        "source": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
         "target": "https://marianomosquera.github.io/ontology/Proporcionalidad",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e303",
+        "id": "e306",
         "source": "https://marianomosquera.github.io/ontology/Imparcialidad",
         "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "broader"
@@ -5230,7 +5261,7 @@
     },
     {
       "data": {
-        "id": "e304",
+        "id": "e307",
         "source": "https://marianomosquera.github.io/ontology/Imparcialidad",
         "target": "https://marianomosquera.github.io/ontology/Integridad",
         "tipo": "related"
@@ -5238,33 +5269,9 @@
     },
     {
       "data": {
-        "id": "e305",
+        "id": "e308",
         "source": "https://marianomosquera.github.io/ontology/Imparcialidad",
         "target": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e306",
-        "source": "https://marianomosquera.github.io/ontology/Inclusion",
-        "target": "https://marianomosquera.github.io/ontology/Justicia",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e307",
-        "source": "https://marianomosquera.github.io/ontology/Inclusion",
-        "target": "https://marianomosquera.github.io/ontology/Equidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e308",
-        "source": "https://marianomosquera.github.io/ontology/Inclusion",
-        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
         "tipo": "related"
       }
     },
@@ -5272,13 +5279,37 @@
       "data": {
         "id": "e309",
         "source": "https://marianomosquera.github.io/ontology/Inclusion",
+        "target": "https://marianomosquera.github.io/ontology/Justicia",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e310",
+        "source": "https://marianomosquera.github.io/ontology/Inclusion",
         "target": "https://marianomosquera.github.io/ontology/Solidaridad",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e310",
+        "id": "e311",
+        "source": "https://marianomosquera.github.io/ontology/Inclusion",
+        "target": "https://marianomosquera.github.io/ontology/Equidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e312",
+        "source": "https://marianomosquera.github.io/ontology/Inclusion",
+        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e313",
         "source": "https://marianomosquera.github.io/ontology/Inclusion",
         "target": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
         "tipo": "related"
@@ -5286,7 +5317,7 @@
     },
     {
       "data": {
-        "id": "e311",
+        "id": "e314",
         "source": "https://marianomosquera.github.io/ontology/Independencia",
         "target": "https://marianomosquera.github.io/ontology/Libertad",
         "tipo": "broader"
@@ -5294,15 +5325,7 @@
     },
     {
       "data": {
-        "id": "e312",
-        "source": "https://marianomosquera.github.io/ontology/Independencia",
-        "target": "https://marianomosquera.github.io/ontology/Autonomia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e313",
+        "id": "e315",
         "source": "https://marianomosquera.github.io/ontology/Independencia",
         "target": "https://marianomosquera.github.io/ontology/Autodeterminacion",
         "tipo": "related"
@@ -5310,7 +5333,15 @@
     },
     {
       "data": {
-        "id": "e314",
+        "id": "e316",
+        "source": "https://marianomosquera.github.io/ontology/Independencia",
+        "target": "https://marianomosquera.github.io/ontology/Autonomia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e317",
         "source": "https://marianomosquera.github.io/ontology/Iniciativa",
         "target": "https://marianomosquera.github.io/ontology/Competencia",
         "tipo": "broader"
@@ -5318,15 +5349,7 @@
     },
     {
       "data": {
-        "id": "e315",
-        "source": "https://marianomosquera.github.io/ontology/Iniciativa",
-        "target": "https://marianomosquera.github.io/ontology/Resiliencia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e316",
+        "id": "e318",
         "source": "https://marianomosquera.github.io/ontology/Iniciativa",
         "target": "https://marianomosquera.github.io/ontology/Merito",
         "tipo": "related"
@@ -5334,25 +5357,9 @@
     },
     {
       "data": {
-        "id": "e317",
-        "source": "https://marianomosquera.github.io/ontology/Integridad",
-        "target": "https://marianomosquera.github.io/ontology/Igualdad",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e318",
-        "source": "https://marianomosquera.github.io/ontology/Integridad",
-        "target": "https://marianomosquera.github.io/ontology/Respeto",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
         "id": "e319",
-        "source": "https://marianomosquera.github.io/ontology/Integridad",
-        "target": "https://marianomosquera.github.io/ontology/Dignidad",
+        "source": "https://marianomosquera.github.io/ontology/Iniciativa",
+        "target": "https://marianomosquera.github.io/ontology/Resiliencia",
         "tipo": "related"
       }
     },
@@ -5360,13 +5367,37 @@
       "data": {
         "id": "e320",
         "source": "https://marianomosquera.github.io/ontology/Integridad",
+        "target": "https://marianomosquera.github.io/ontology/Igualdad",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e321",
+        "source": "https://marianomosquera.github.io/ontology/Integridad",
+        "target": "https://marianomosquera.github.io/ontology/Dignidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e322",
+        "source": "https://marianomosquera.github.io/ontology/Integridad",
+        "target": "https://marianomosquera.github.io/ontology/Respeto",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e323",
+        "source": "https://marianomosquera.github.io/ontology/Integridad",
         "target": "https://marianomosquera.github.io/ontology/Imparcialidad",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e321",
+        "id": "e324",
         "source": "https://marianomosquera.github.io/ontology/Justicia",
         "target": "https://marianomosquera.github.io/ontology/Valores",
         "tipo": "broader"
@@ -5374,41 +5405,17 @@
     },
     {
       "data": {
-        "id": "e322",
-        "source": "https://marianomosquera.github.io/ontology/Justicia",
-        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e323",
-        "source": "https://marianomosquera.github.io/ontology/Justicia",
-        "target": "https://marianomosquera.github.io/ontology/Igualdad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e324",
-        "source": "https://marianomosquera.github.io/ontology/Lealtad",
-        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
         "id": "e325",
-        "source": "https://marianomosquera.github.io/ontology/Lealtad",
-        "target": "https://marianomosquera.github.io/ontology/Confianza",
+        "source": "https://marianomosquera.github.io/ontology/Justicia",
+        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e326",
-        "source": "https://marianomosquera.github.io/ontology/Lealtad",
-        "target": "https://marianomosquera.github.io/ontology/Compromiso",
+        "source": "https://marianomosquera.github.io/ontology/Justicia",
+        "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "related"
       }
     },
@@ -5416,13 +5423,37 @@
       "data": {
         "id": "e327",
         "source": "https://marianomosquera.github.io/ontology/Lealtad",
+        "target": "https://marianomosquera.github.io/ontology/Cooperacion",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e328",
+        "source": "https://marianomosquera.github.io/ontology/Lealtad",
+        "target": "https://marianomosquera.github.io/ontology/Confianza",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e329",
+        "source": "https://marianomosquera.github.io/ontology/Lealtad",
         "target": "https://marianomosquera.github.io/ontology/Reciprocidad",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e328",
+        "id": "e330",
+        "source": "https://marianomosquera.github.io/ontology/Lealtad",
+        "target": "https://marianomosquera.github.io/ontology/Compromiso",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e331",
         "source": "https://marianomosquera.github.io/ontology/Libertad",
         "target": "https://marianomosquera.github.io/ontology/Valores",
         "tipo": "broader"
@@ -5430,7 +5461,7 @@
     },
     {
       "data": {
-        "id": "e329",
+        "id": "e332",
         "source": "https://marianomosquera.github.io/ontology/Libertad",
         "target": "https://marianomosquera.github.io/ontology/Competencia",
         "tipo": "related"
@@ -5438,7 +5469,7 @@
     },
     {
       "data": {
-        "id": "e330",
+        "id": "e333",
         "source": "https://marianomosquera.github.io/ontology/Libertad",
         "target": "https://marianomosquera.github.io/ontology/Propiedad",
         "tipo": "related"
@@ -5446,7 +5477,7 @@
     },
     {
       "data": {
-        "id": "e331",
+        "id": "e334",
         "source": "https://marianomosquera.github.io/ontology/Merito",
         "target": "https://marianomosquera.github.io/ontology/Competencia",
         "tipo": "broader"
@@ -5454,15 +5485,7 @@
     },
     {
       "data": {
-        "id": "e332",
-        "source": "https://marianomosquera.github.io/ontology/Merito",
-        "target": "https://marianomosquera.github.io/ontology/Iniciativa",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e333",
+        "id": "e335",
         "source": "https://marianomosquera.github.io/ontology/Merito",
         "target": "https://marianomosquera.github.io/ontology/Resiliencia",
         "tipo": "related"
@@ -5470,7 +5493,15 @@
     },
     {
       "data": {
-        "id": "e334",
+        "id": "e336",
+        "source": "https://marianomosquera.github.io/ontology/Merito",
+        "target": "https://marianomosquera.github.io/ontology/Iniciativa",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e337",
         "source": "https://marianomosquera.github.io/ontology/NoDiscriminacion",
         "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "broader"
@@ -5478,7 +5509,7 @@
     },
     {
       "data": {
-        "id": "e335",
+        "id": "e338",
         "source": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
         "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "broader"
@@ -5486,23 +5517,7 @@
     },
     {
       "data": {
-        "id": "e336",
-        "source": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
-        "target": "https://marianomosquera.github.io/ontology/Respeto",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e337",
-        "source": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
-        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e338",
+        "id": "e339",
         "source": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
         "target": "https://marianomosquera.github.io/ontology/Dignidad",
         "tipo": "related"
@@ -5510,7 +5525,23 @@
     },
     {
       "data": {
-        "id": "e339",
+        "id": "e340",
+        "source": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
+        "target": "https://marianomosquera.github.io/ontology/Respeto",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e341",
+        "source": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
+        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e342",
         "source": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
         "target": "https://marianomosquera.github.io/ontology/Imparcialidad",
         "tipo": "related"
@@ -5518,7 +5549,7 @@
     },
     {
       "data": {
-        "id": "e340",
+        "id": "e343",
         "source": "https://marianomosquera.github.io/ontology/NoMaleficencia",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "broader"
@@ -5526,23 +5557,7 @@
     },
     {
       "data": {
-        "id": "e341",
-        "source": "https://marianomosquera.github.io/ontology/NoMaleficencia",
-        "target": "https://marianomosquera.github.io/ontology/Proporcionalidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e342",
-        "source": "https://marianomosquera.github.io/ontology/NoMaleficencia",
-        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e343",
+        "id": "e344",
         "source": "https://marianomosquera.github.io/ontology/NoMaleficencia",
         "target": "https://marianomosquera.github.io/ontology/Cuidado",
         "tipo": "related"
@@ -5550,7 +5565,7 @@
     },
     {
       "data": {
-        "id": "e344",
+        "id": "e345",
         "source": "https://marianomosquera.github.io/ontology/NoMaleficencia",
         "target": "https://marianomosquera.github.io/ontology/Beneficencia",
         "tipo": "related"
@@ -5558,25 +5573,17 @@
     },
     {
       "data": {
-        "id": "e345",
-        "source": "https://marianomosquera.github.io/ontology/NoViolencia",
-        "target": "https://marianomosquera.github.io/ontology/Igualdad",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
         "id": "e346",
-        "source": "https://marianomosquera.github.io/ontology/NoViolencia",
-        "target": "https://marianomosquera.github.io/ontology/Seguridad",
+        "source": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e347",
-        "source": "https://marianomosquera.github.io/ontology/NoViolencia",
-        "target": "https://marianomosquera.github.io/ontology/Paz",
+        "source": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "target": "https://marianomosquera.github.io/ontology/Proporcionalidad",
         "tipo": "related"
       }
     },
@@ -5584,31 +5591,31 @@
       "data": {
         "id": "e348",
         "source": "https://marianomosquera.github.io/ontology/NoViolencia",
-        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e349",
-        "source": "https://marianomosquera.github.io/ontology/Paz",
         "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "broader"
       }
     },
     {
       "data": {
+        "id": "e349",
+        "source": "https://marianomosquera.github.io/ontology/NoViolencia",
+        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
         "id": "e350",
-        "source": "https://marianomosquera.github.io/ontology/Paz",
-        "target": "https://marianomosquera.github.io/ontology/Seguridad",
+        "source": "https://marianomosquera.github.io/ontology/NoViolencia",
+        "target": "https://marianomosquera.github.io/ontology/Paz",
         "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e351",
-        "source": "https://marianomosquera.github.io/ontology/Paz",
-        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
+        "source": "https://marianomosquera.github.io/ontology/NoViolencia",
+        "target": "https://marianomosquera.github.io/ontology/Seguridad",
         "tipo": "related"
       }
     },
@@ -5616,13 +5623,37 @@
       "data": {
         "id": "e352",
         "source": "https://marianomosquera.github.io/ontology/Paz",
+        "target": "https://marianomosquera.github.io/ontology/Igualdad",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e353",
+        "source": "https://marianomosquera.github.io/ontology/Paz",
+        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e354",
+        "source": "https://marianomosquera.github.io/ontology/Paz",
         "target": "https://marianomosquera.github.io/ontology/NoViolencia",
         "tipo": "related"
       }
     },
     {
       "data": {
-        "id": "e353",
+        "id": "e355",
+        "source": "https://marianomosquera.github.io/ontology/Paz",
+        "target": "https://marianomosquera.github.io/ontology/Seguridad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e356",
         "source": "https://marianomosquera.github.io/ontology/Privacidad",
         "target": "https://marianomosquera.github.io/ontology/Propiedad",
         "tipo": "broader"
@@ -5630,7 +5661,7 @@
     },
     {
       "data": {
-        "id": "e354",
+        "id": "e357",
         "source": "https://marianomosquera.github.io/ontology/Privacidad",
         "target": "https://marianomosquera.github.io/ontology/Confidencialidad",
         "tipo": "related"
@@ -5638,7 +5669,7 @@
     },
     {
       "data": {
-        "id": "e355",
+        "id": "e358",
         "source": "https://marianomosquera.github.io/ontology/Propiedad",
         "target": "https://marianomosquera.github.io/ontology/Valores",
         "tipo": "broader"
@@ -5646,7 +5677,7 @@
     },
     {
       "data": {
-        "id": "e356",
+        "id": "e359",
         "source": "https://marianomosquera.github.io/ontology/Propiedad",
         "target": "https://marianomosquera.github.io/ontology/Competencia",
         "tipo": "related"
@@ -5654,7 +5685,7 @@
     },
     {
       "data": {
-        "id": "e357",
+        "id": "e360",
         "source": "https://marianomosquera.github.io/ontology/Propiedad",
         "target": "https://marianomosquera.github.io/ontology/Libertad",
         "tipo": "related"
@@ -5662,7 +5693,7 @@
     },
     {
       "data": {
-        "id": "e358",
+        "id": "e361",
         "source": "https://marianomosquera.github.io/ontology/Proporcionalidad",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "broader"
@@ -5670,7 +5701,7 @@
     },
     {
       "data": {
-        "id": "e359",
+        "id": "e362",
         "source": "https://marianomosquera.github.io/ontology/Proporcionalidad",
         "target": "https://marianomosquera.github.io/ontology/Equidad",
         "tipo": "related"
@@ -5678,23 +5709,7 @@
     },
     {
       "data": {
-        "id": "e360",
-        "source": "https://marianomosquera.github.io/ontology/Proporcionalidad",
-        "target": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e361",
-        "source": "https://marianomosquera.github.io/ontology/Proporcionalidad",
-        "target": "https://marianomosquera.github.io/ontology/NoMaleficencia",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e362",
+        "id": "e363",
         "source": "https://marianomosquera.github.io/ontology/Proporcionalidad",
         "target": "https://marianomosquera.github.io/ontology/Beneficencia",
         "tipo": "related"
@@ -5702,7 +5717,23 @@
     },
     {
       "data": {
-        "id": "e363",
+        "id": "e364",
+        "source": "https://marianomosquera.github.io/ontology/Proporcionalidad",
+        "target": "https://marianomosquera.github.io/ontology/IgualdadOportunidades",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e365",
+        "source": "https://marianomosquera.github.io/ontology/Proporcionalidad",
+        "target": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e366",
         "source": "https://marianomosquera.github.io/ontology/Prudencia",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -5710,7 +5741,7 @@
     },
     {
       "data": {
-        "id": "e364",
+        "id": "e367",
         "source": "https://marianomosquera.github.io/ontology/Reciprocidad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -5718,7 +5749,7 @@
     },
     {
       "data": {
-        "id": "e365",
+        "id": "e368",
         "source": "https://marianomosquera.github.io/ontology/Reciprocidad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "related"
@@ -5726,7 +5757,7 @@
     },
     {
       "data": {
-        "id": "e366",
+        "id": "e369",
         "source": "https://marianomosquera.github.io/ontology/Reciprocidad",
         "target": "https://marianomosquera.github.io/ontology/Confianza",
         "tipo": "related"
@@ -5734,7 +5765,7 @@
     },
     {
       "data": {
-        "id": "e367",
+        "id": "e370",
         "source": "https://marianomosquera.github.io/ontology/Reciprocidad",
         "target": "https://marianomosquera.github.io/ontology/Compromiso",
         "tipo": "related"
@@ -5742,7 +5773,7 @@
     },
     {
       "data": {
-        "id": "e368",
+        "id": "e371",
         "source": "https://marianomosquera.github.io/ontology/Resiliencia",
         "target": "https://marianomosquera.github.io/ontology/Competencia",
         "tipo": "broader"
@@ -5750,15 +5781,7 @@
     },
     {
       "data": {
-        "id": "e369",
-        "source": "https://marianomosquera.github.io/ontology/Resiliencia",
-        "target": "https://marianomosquera.github.io/ontology/Iniciativa",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e370",
+        "id": "e372",
         "source": "https://marianomosquera.github.io/ontology/Resiliencia",
         "target": "https://marianomosquera.github.io/ontology/Merito",
         "tipo": "related"
@@ -5766,25 +5789,9 @@
     },
     {
       "data": {
-        "id": "e371",
-        "source": "https://marianomosquera.github.io/ontology/Respeto",
-        "target": "https://marianomosquera.github.io/ontology/Igualdad",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e372",
-        "source": "https://marianomosquera.github.io/ontology/Respeto",
-        "target": "https://marianomosquera.github.io/ontology/Integridad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
         "id": "e373",
-        "source": "https://marianomosquera.github.io/ontology/Respeto",
-        "target": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
+        "source": "https://marianomosquera.github.io/ontology/Resiliencia",
+        "target": "https://marianomosquera.github.io/ontology/Iniciativa",
         "tipo": "related"
       }
     },
@@ -5792,8 +5799,8 @@
       "data": {
         "id": "e374",
         "source": "https://marianomosquera.github.io/ontology/Respeto",
-        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
-        "tipo": "related"
+        "target": "https://marianomosquera.github.io/ontology/Igualdad",
+        "tipo": "broader"
       }
     },
     {
@@ -5807,6 +5814,30 @@
     {
       "data": {
         "id": "e376",
+        "source": "https://marianomosquera.github.io/ontology/Respeto",
+        "target": "https://marianomosquera.github.io/ontology/Tolerancia",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e377",
+        "source": "https://marianomosquera.github.io/ontology/Respeto",
+        "target": "https://marianomosquera.github.io/ontology/Integridad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e378",
+        "source": "https://marianomosquera.github.io/ontology/Respeto",
+        "target": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e379",
         "source": "https://marianomosquera.github.io/ontology/RespetoHistoria",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -5814,7 +5845,7 @@
     },
     {
       "data": {
-        "id": "e377",
+        "id": "e380",
         "source": "https://marianomosquera.github.io/ontology/RespetoHistoria",
         "target": "https://marianomosquera.github.io/ontology/Comunidad",
         "tipo": "related"
@@ -5822,7 +5853,7 @@
     },
     {
       "data": {
-        "id": "e378",
+        "id": "e381",
         "source": "https://marianomosquera.github.io/ontology/SecretoEmpresarial",
         "target": "https://marianomosquera.github.io/ontology/Propiedad",
         "tipo": "broader"
@@ -5830,7 +5861,7 @@
     },
     {
       "data": {
-        "id": "e379",
+        "id": "e382",
         "source": "https://marianomosquera.github.io/ontology/SecretoEmpresarial",
         "target": "https://marianomosquera.github.io/ontology/Confidencialidad",
         "tipo": "related"
@@ -5838,7 +5869,7 @@
     },
     {
       "data": {
-        "id": "e380",
+        "id": "e383",
         "source": "https://marianomosquera.github.io/ontology/SecretoEmpresarial",
         "target": "https://marianomosquera.github.io/ontology/Autoria",
         "tipo": "related"
@@ -5846,7 +5877,7 @@
     },
     {
       "data": {
-        "id": "e381",
+        "id": "e384",
         "source": "https://marianomosquera.github.io/ontology/Seguridad",
         "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "broader"
@@ -5854,15 +5885,7 @@
     },
     {
       "data": {
-        "id": "e382",
-        "source": "https://marianomosquera.github.io/ontology/Seguridad",
-        "target": "https://marianomosquera.github.io/ontology/Paz",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e383",
+        "id": "e385",
         "source": "https://marianomosquera.github.io/ontology/Seguridad",
         "target": "https://marianomosquera.github.io/ontology/NoViolencia",
         "tipo": "related"
@@ -5870,25 +5893,9 @@
     },
     {
       "data": {
-        "id": "e384",
-        "source": "https://marianomosquera.github.io/ontology/Solidaridad",
-        "target": "https://marianomosquera.github.io/ontology/Justicia",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e385",
-        "source": "https://marianomosquera.github.io/ontology/Solidaridad",
-        "target": "https://marianomosquera.github.io/ontology/Equidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
         "id": "e386",
-        "source": "https://marianomosquera.github.io/ontology/Solidaridad",
-        "target": "https://marianomosquera.github.io/ontology/Inclusion",
+        "source": "https://marianomosquera.github.io/ontology/Seguridad",
+        "target": "https://marianomosquera.github.io/ontology/Paz",
         "tipo": "related"
       }
     },
@@ -5896,13 +5903,29 @@
       "data": {
         "id": "e387",
         "source": "https://marianomosquera.github.io/ontology/Solidaridad",
-        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
-        "tipo": "related"
+        "target": "https://marianomosquera.github.io/ontology/Justicia",
+        "tipo": "broader"
       }
     },
     {
       "data": {
         "id": "e388",
+        "source": "https://marianomosquera.github.io/ontology/Solidaridad",
+        "target": "https://marianomosquera.github.io/ontology/Equidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e389",
+        "source": "https://marianomosquera.github.io/ontology/Solidaridad",
+        "target": "https://marianomosquera.github.io/ontology/Inclusion",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e390",
         "source": "https://marianomosquera.github.io/ontology/Solidaridad",
         "target": "https://marianomosquera.github.io/ontology/Cuidado",
         "tipo": "related"
@@ -5910,7 +5933,15 @@
     },
     {
       "data": {
-        "id": "e389",
+        "id": "e391",
+        "source": "https://marianomosquera.github.io/ontology/Solidaridad",
+        "target": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e392",
         "source": "https://marianomosquera.github.io/ontology/Sostenibilidad",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "broader"
@@ -5918,7 +5949,7 @@
     },
     {
       "data": {
-        "id": "e390",
+        "id": "e393",
         "source": "https://marianomosquera.github.io/ontology/Sostenibilidad",
         "target": "https://marianomosquera.github.io/ontology/Cuidado",
         "tipo": "related"
@@ -5926,7 +5957,7 @@
     },
     {
       "data": {
-        "id": "e391",
+        "id": "e394",
         "source": "https://marianomosquera.github.io/ontology/Sostenibilidad",
         "target": "https://marianomosquera.github.io/ontology/Sustentabilidad",
         "tipo": "related"
@@ -5934,7 +5965,7 @@
     },
     {
       "data": {
-        "id": "e392",
+        "id": "e395",
         "source": "https://marianomosquera.github.io/ontology/Subsidiariedad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -5942,7 +5973,7 @@
     },
     {
       "data": {
-        "id": "e393",
+        "id": "e396",
         "source": "https://marianomosquera.github.io/ontology/Sustentabilidad",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "broader"
@@ -5950,7 +5981,7 @@
     },
     {
       "data": {
-        "id": "e394",
+        "id": "e397",
         "source": "https://marianomosquera.github.io/ontology/Sustentabilidad",
         "target": "https://marianomosquera.github.io/ontology/Cuidado",
         "tipo": "related"
@@ -5958,7 +5989,7 @@
     },
     {
       "data": {
-        "id": "e395",
+        "id": "e398",
         "source": "https://marianomosquera.github.io/ontology/Sustentabilidad",
         "target": "https://marianomosquera.github.io/ontology/Sostenibilidad",
         "tipo": "related"
@@ -5966,7 +5997,7 @@
     },
     {
       "data": {
-        "id": "e396",
+        "id": "e399",
         "source": "https://marianomosquera.github.io/ontology/Tolerancia",
         "target": "https://marianomosquera.github.io/ontology/Igualdad",
         "tipo": "broader"
@@ -5974,7 +6005,7 @@
     },
     {
       "data": {
-        "id": "e397",
+        "id": "e400",
         "source": "https://marianomosquera.github.io/ontology/Tolerancia",
         "target": "https://marianomosquera.github.io/ontology/Respeto",
         "tipo": "related"
@@ -5982,23 +6013,7 @@
     },
     {
       "data": {
-        "id": "e398",
-        "source": "https://marianomosquera.github.io/ontology/Tolerancia",
-        "target": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e399",
-        "source": "https://marianomosquera.github.io/ontology/Tolerancia",
-        "target": "https://marianomosquera.github.io/ontology/Paz",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e400",
+        "id": "e401",
         "source": "https://marianomosquera.github.io/ontology/Tolerancia",
         "target": "https://marianomosquera.github.io/ontology/NoViolencia",
         "tipo": "related"
@@ -6006,7 +6021,31 @@
     },
     {
       "data": {
-        "id": "e401",
+        "id": "e402",
+        "source": "https://marianomosquera.github.io/ontology/Tolerancia",
+        "target": "https://marianomosquera.github.io/ontology/Paz",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e403",
+        "source": "https://marianomosquera.github.io/ontology/Tolerancia",
+        "target": "https://marianomosquera.github.io/ontology/NoEstigmatizacion",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e404",
+        "source": "https://marianomosquera.github.io/ontology/Valores",
+        "target": "https://marianomosquera.github.io/etica/etica#Atencion",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e405",
         "source": "https://marianomosquera.github.io/ontology/Verdad",
         "target": "https://marianomosquera.github.io/ontology/Cooperacion",
         "tipo": "broader"
@@ -6014,7 +6053,7 @@
     },
     {
       "data": {
-        "id": "e402",
+        "id": "e406",
         "source": "https://marianomosquera.github.io/ontology/Verdad",
         "target": "https://marianomosquera.github.io/ontology/Honestidad",
         "tipo": "related"
@@ -6022,7 +6061,7 @@
     },
     {
       "data": {
-        "id": "e403",
+        "id": "e407",
         "source": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
         "target": "https://marianomosquera.github.io/ontology/Justicia",
         "tipo": "broader"
@@ -6030,23 +6069,7 @@
     },
     {
       "data": {
-        "id": "e404",
-        "source": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
-        "target": "https://marianomosquera.github.io/ontology/Equidad",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e405",
-        "source": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
-        "target": "https://marianomosquera.github.io/ontology/Inclusion",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e406",
+        "id": "e408",
         "source": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
         "target": "https://marianomosquera.github.io/ontology/Solidaridad",
         "tipo": "related"
@@ -6054,7 +6077,23 @@
     },
     {
       "data": {
-        "id": "e407",
+        "id": "e409",
+        "source": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "target": "https://marianomosquera.github.io/ontology/Equidad",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e410",
+        "source": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "target": "https://marianomosquera.github.io/ontology/Inclusion",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e411",
         "source": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
         "target": "https://marianomosquera.github.io/ontology/Cuidado",
         "tipo": "related"
@@ -6062,7 +6101,7 @@
     },
     {
       "data": {
-        "id": "e408",
+        "id": "e412",
         "source": "https://marianomosquera.github.io/politica/Actores",
         "target": "https://marianomosquera.github.io/politica/Politica",
         "tipo": "broader"
@@ -6070,7 +6109,7 @@
     },
     {
       "data": {
-        "id": "e409",
+        "id": "e413",
         "source": "https://marianomosquera.github.io/politica/Autoritarismo",
         "target": "https://marianomosquera.github.io/politica/Problemas",
         "tipo": "broader"
@@ -6078,7 +6117,7 @@
     },
     {
       "data": {
-        "id": "e410",
+        "id": "e414",
         "source": "https://marianomosquera.github.io/politica/Ciudadania",
         "target": "https://marianomosquera.github.io/politica/Temas",
         "tipo": "broader"
@@ -6086,7 +6125,7 @@
     },
     {
       "data": {
-        "id": "e411",
+        "id": "e415",
         "source": "https://marianomosquera.github.io/politica/Ciudadania",
         "target": "https://marianomosquera.github.io/politica/Democracia",
         "tipo": "related"
@@ -6094,7 +6133,7 @@
     },
     {
       "data": {
-        "id": "e412",
+        "id": "e416",
         "source": "https://marianomosquera.github.io/politica/Democracia",
         "target": "https://marianomosquera.github.io/politica/Temas",
         "tipo": "broader"
@@ -6102,7 +6141,7 @@
     },
     {
       "data": {
-        "id": "e413",
+        "id": "e417",
         "source": "https://marianomosquera.github.io/politica/Democracia",
         "target": "https://marianomosquera.github.io/politica/Ciudadania",
         "tipo": "related"
@@ -6110,7 +6149,7 @@
     },
     {
       "data": {
-        "id": "e414",
+        "id": "e418",
         "source": "https://marianomosquera.github.io/politica/Desinformacion",
         "target": "https://marianomosquera.github.io/politica/Problemas",
         "tipo": "broader"
@@ -6118,7 +6157,7 @@
     },
     {
       "data": {
-        "id": "e415",
+        "id": "e419",
         "source": "https://marianomosquera.github.io/politica/Desinformacion",
         "target": "https://marianomosquera.github.io/politica/Polarizacion",
         "tipo": "related"
@@ -6126,7 +6165,7 @@
     },
     {
       "data": {
-        "id": "e416",
+        "id": "e420",
         "source": "https://marianomosquera.github.io/politica/Desinformacion",
         "target": "https://marianomosquera.github.io/politica/LibertadExpresion",
         "tipo": "related"
@@ -6134,7 +6173,7 @@
     },
     {
       "data": {
-        "id": "e417",
+        "id": "e421",
         "source": "https://marianomosquera.github.io/politica/Elecciones",
         "target": "https://marianomosquera.github.io/politica/Democracia",
         "tipo": "broader"
@@ -6142,7 +6181,7 @@
     },
     {
       "data": {
-        "id": "e418",
+        "id": "e422",
         "source": "https://marianomosquera.github.io/politica/Genero",
         "target": "https://marianomosquera.github.io/politica/Actores",
         "tipo": "broader"
@@ -6150,7 +6189,7 @@
     },
     {
       "data": {
-        "id": "e419",
+        "id": "e423",
         "source": "https://marianomosquera.github.io/politica/Geopolitica",
         "target": "https://marianomosquera.github.io/politica/Temas",
         "tipo": "broader"
@@ -6158,7 +6197,7 @@
     },
     {
       "data": {
-        "id": "e420",
+        "id": "e424",
         "source": "https://marianomosquera.github.io/politica/Geopolitica",
         "target": "https://marianomosquera.github.io/politica/PoliticaInternacional",
         "tipo": "related"
@@ -6166,7 +6205,7 @@
     },
     {
       "data": {
-        "id": "e421",
+        "id": "e425",
         "source": "https://marianomosquera.github.io/politica/Globalizacion",
         "target": "https://marianomosquera.github.io/politica/PoliticaInternacional",
         "tipo": "broader"
@@ -6174,7 +6213,7 @@
     },
     {
       "data": {
-        "id": "e422",
+        "id": "e426",
         "source": "https://marianomosquera.github.io/politica/Globalizacion",
         "target": "https://marianomosquera.github.io/politica/PoliticaInternacional",
         "tipo": "related"
@@ -6182,7 +6221,7 @@
     },
     {
       "data": {
-        "id": "e423",
+        "id": "e427",
         "source": "https://marianomosquera.github.io/politica/GruposOriginarios",
         "target": "https://marianomosquera.github.io/politica/Actores",
         "tipo": "broader"
@@ -6190,7 +6229,7 @@
     },
     {
       "data": {
-        "id": "e424",
+        "id": "e428",
         "source": "https://marianomosquera.github.io/politica/Ideologia",
         "target": "https://marianomosquera.github.io/politica/Temas",
         "tipo": "broader"
@@ -6198,7 +6237,7 @@
     },
     {
       "data": {
-        "id": "e425",
+        "id": "e429",
         "source": "https://marianomosquera.github.io/politica/Ideologia",
         "target": "https://marianomosquera.github.io/politica/Polarizacion",
         "tipo": "related"
@@ -6206,7 +6245,7 @@
     },
     {
       "data": {
-        "id": "e426",
+        "id": "e430",
         "source": "https://marianomosquera.github.io/politica/LGBT",
         "target": "https://marianomosquera.github.io/politica/Actores",
         "tipo": "broader"
@@ -6214,7 +6253,7 @@
     },
     {
       "data": {
-        "id": "e427",
+        "id": "e431",
         "source": "https://marianomosquera.github.io/politica/LibertadExpresion",
         "target": "https://marianomosquera.github.io/politica/Ciudadania",
         "tipo": "broader"
@@ -6222,7 +6261,7 @@
     },
     {
       "data": {
-        "id": "e428",
+        "id": "e432",
         "source": "https://marianomosquera.github.io/politica/LibertadExpresion",
         "target": "https://marianomosquera.github.io/politica/Desinformacion",
         "tipo": "related"
@@ -6230,7 +6269,7 @@
     },
     {
       "data": {
-        "id": "e429",
+        "id": "e433",
         "source": "https://marianomosquera.github.io/politica/Migrantes",
         "target": "https://marianomosquera.github.io/politica/Actores",
         "tipo": "broader"
@@ -6238,7 +6277,7 @@
     },
     {
       "data": {
-        "id": "e430",
+        "id": "e434",
         "source": "https://marianomosquera.github.io/politica/PartidosPoliticos",
         "target": "https://marianomosquera.github.io/politica/Elecciones",
         "tipo": "broader"
@@ -6246,7 +6285,7 @@
     },
     {
       "data": {
-        "id": "e431",
+        "id": "e435",
         "source": "https://marianomosquera.github.io/politica/PartidosPoliticos",
         "target": "https://marianomosquera.github.io/politica/Ideologia",
         "tipo": "related"
@@ -6254,7 +6293,7 @@
     },
     {
       "data": {
-        "id": "e432",
+        "id": "e436",
         "source": "https://marianomosquera.github.io/politica/Polarizacion",
         "target": "https://marianomosquera.github.io/politica/Problemas",
         "tipo": "broader"
@@ -6262,7 +6301,7 @@
     },
     {
       "data": {
-        "id": "e433",
+        "id": "e437",
         "source": "https://marianomosquera.github.io/politica/Polarizacion",
         "target": "https://marianomosquera.github.io/politica/Desinformacion",
         "tipo": "related"
@@ -6270,7 +6309,7 @@
     },
     {
       "data": {
-        "id": "e434",
+        "id": "e438",
         "source": "https://marianomosquera.github.io/politica/Polarizacion",
         "target": "https://marianomosquera.github.io/politica/Ideologia",
         "tipo": "related"
@@ -6278,7 +6317,15 @@
     },
     {
       "data": {
-        "id": "e435",
+        "id": "e439",
+        "source": "https://marianomosquera.github.io/politica/Politica",
+        "target": "https://marianomosquera.github.io/etica/etica#Agenda",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e440",
         "source": "https://marianomosquera.github.io/politica/PoliticaInternacional",
         "target": "https://marianomosquera.github.io/politica/Temas",
         "tipo": "broader"
@@ -6286,7 +6333,7 @@
     },
     {
       "data": {
-        "id": "e436",
+        "id": "e441",
         "source": "https://marianomosquera.github.io/politica/PoliticaInternacional",
         "target": "https://marianomosquera.github.io/politica/Geopolitica",
         "tipo": "related"
@@ -6294,7 +6341,7 @@
     },
     {
       "data": {
-        "id": "e437",
+        "id": "e442",
         "source": "https://marianomosquera.github.io/politica/PoliticaInternacional",
         "target": "https://marianomosquera.github.io/politica/Globalizacion",
         "tipo": "related"
@@ -6302,7 +6349,7 @@
     },
     {
       "data": {
-        "id": "e438",
+        "id": "e443",
         "source": "https://marianomosquera.github.io/politica/Populismo",
         "target": "https://marianomosquera.github.io/politica/Problemas",
         "tipo": "broader"
@@ -6310,7 +6357,7 @@
     },
     {
       "data": {
-        "id": "e439",
+        "id": "e444",
         "source": "https://marianomosquera.github.io/politica/Problemas",
         "target": "https://marianomosquera.github.io/politica/Politica",
         "tipo": "broader"
@@ -6318,7 +6365,7 @@
     },
     {
       "data": {
-        "id": "e440",
+        "id": "e445",
         "source": "https://marianomosquera.github.io/politica/Temas",
         "target": "https://marianomosquera.github.io/politica/Politica",
         "tipo": "broader"
@@ -6326,7 +6373,7 @@
     },
     {
       "data": {
-        "id": "e441",
+        "id": "e446",
         "source": "https://marianomosquera.github.io/racionalidad/AlternativasPreferencias",
         "target": "https://marianomosquera.github.io/racionalidad/Teleologia",
         "tipo": "broader"
@@ -6334,7 +6381,7 @@
     },
     {
       "data": {
-        "id": "e442",
+        "id": "e447",
         "source": "https://marianomosquera.github.io/racionalidad/Autores",
         "target": "https://marianomosquera.github.io/racionalidad/Teoria",
         "tipo": "broader"
@@ -6342,7 +6389,7 @@
     },
     {
       "data": {
-        "id": "e443",
+        "id": "e448",
         "source": "https://marianomosquera.github.io/racionalidad/Calidad",
         "target": "https://marianomosquera.github.io/racionalidad/Evidencia",
         "tipo": "broader"
@@ -6350,7 +6397,7 @@
     },
     {
       "data": {
-        "id": "e444",
+        "id": "e449",
         "source": "https://marianomosquera.github.io/racionalidad/CherryPicking",
         "target": "https://marianomosquera.github.io/racionalidad/Selectividad",
         "tipo": "broader"
@@ -6358,7 +6405,7 @@
     },
     {
       "data": {
-        "id": "e445",
+        "id": "e450",
         "source": "https://marianomosquera.github.io/racionalidad/Confiabilidad",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6366,7 +6413,7 @@
     },
     {
       "data": {
-        "id": "e446",
+        "id": "e451",
         "source": "https://marianomosquera.github.io/racionalidad/Consistencia",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6374,7 +6421,7 @@
     },
     {
       "data": {
-        "id": "e447",
+        "id": "e452",
         "source": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
         "target": "https://marianomosquera.github.io/racionalidad/Teleologia",
         "tipo": "broader"
@@ -6382,7 +6429,7 @@
     },
     {
       "data": {
-        "id": "e448",
+        "id": "e453",
         "source": "https://marianomosquera.github.io/racionalidad/Dato",
         "target": "https://marianomosquera.github.io/racionalidad/TipoEvidencia",
         "tipo": "broader"
@@ -6390,7 +6437,7 @@
     },
     {
       "data": {
-        "id": "e449",
+        "id": "e454",
         "source": "https://marianomosquera.github.io/racionalidad/Disrupcion",
         "target": "https://marianomosquera.github.io/racionalidad/Teleologia",
         "tipo": "broader"
@@ -6398,7 +6445,7 @@
     },
     {
       "data": {
-        "id": "e450",
+        "id": "e455",
         "source": "https://marianomosquera.github.io/racionalidad/Emergente",
         "target": "https://marianomosquera.github.io/racionalidad/Revision",
         "tipo": "broader"
@@ -6406,7 +6453,7 @@
     },
     {
       "data": {
-        "id": "e451",
+        "id": "e456",
         "source": "https://marianomosquera.github.io/racionalidad/Estadistica",
         "target": "https://marianomosquera.github.io/racionalidad/TipoEvidencia",
         "tipo": "broader"
@@ -6414,7 +6461,7 @@
     },
     {
       "data": {
-        "id": "e452",
+        "id": "e457",
         "source": "https://marianomosquera.github.io/racionalidad/Evidencia",
         "target": "https://marianomosquera.github.io/racionalidad/Racionalidad",
         "tipo": "broader"
@@ -6422,7 +6469,7 @@
     },
     {
       "data": {
-        "id": "e453",
+        "id": "e458",
         "source": "https://marianomosquera.github.io/racionalidad/Fiabilidad",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6430,7 +6477,7 @@
     },
     {
       "data": {
-        "id": "e454",
+        "id": "e459",
         "source": "https://marianomosquera.github.io/racionalidad/HARKing",
         "target": "https://marianomosquera.github.io/racionalidad/Problemas",
         "tipo": "broader"
@@ -6438,7 +6485,7 @@
     },
     {
       "data": {
-        "id": "e455",
+        "id": "e460",
         "source": "https://marianomosquera.github.io/racionalidad/Hallazgo",
         "target": "https://marianomosquera.github.io/racionalidad/Revision",
         "tipo": "broader"
@@ -6446,7 +6493,7 @@
     },
     {
       "data": {
-        "id": "e456",
+        "id": "e461",
         "source": "https://marianomosquera.github.io/racionalidad/Incrementalismo",
         "target": "https://marianomosquera.github.io/racionalidad/Teleologia",
         "tipo": "broader"
@@ -6454,7 +6501,7 @@
     },
     {
       "data": {
-        "id": "e457",
+        "id": "e462",
         "source": "https://marianomosquera.github.io/racionalidad/Indicador",
         "target": "https://marianomosquera.github.io/racionalidad/Variable",
         "tipo": "broader"
@@ -6462,7 +6509,7 @@
     },
     {
       "data": {
-        "id": "e458",
+        "id": "e463",
         "source": "https://marianomosquera.github.io/racionalidad/Indice",
         "target": "https://marianomosquera.github.io/racionalidad/Variable",
         "tipo": "broader"
@@ -6470,7 +6517,7 @@
     },
     {
       "data": {
-        "id": "e459",
+        "id": "e464",
         "source": "https://marianomosquera.github.io/racionalidad/Metodo",
         "target": "https://marianomosquera.github.io/racionalidad/Evidencia",
         "tipo": "broader"
@@ -6478,7 +6525,7 @@
     },
     {
       "data": {
-        "id": "e460",
+        "id": "e465",
         "source": "https://marianomosquera.github.io/racionalidad/Metrica",
         "target": "https://marianomosquera.github.io/racionalidad/Variable",
         "tipo": "broader"
@@ -6486,7 +6533,7 @@
     },
     {
       "data": {
-        "id": "e461",
+        "id": "e466",
         "source": "https://marianomosquera.github.io/racionalidad/Pertinencia",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6494,7 +6541,7 @@
     },
     {
       "data": {
-        "id": "e462",
+        "id": "e467",
         "source": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
         "target": "https://marianomosquera.github.io/racionalidad/Teleologia",
         "tipo": "broader"
@@ -6502,7 +6549,7 @@
     },
     {
       "data": {
-        "id": "e463",
+        "id": "e468",
         "source": "https://marianomosquera.github.io/racionalidad/Problemas",
         "target": "https://marianomosquera.github.io/racionalidad/Evidencia",
         "tipo": "broader"
@@ -6510,7 +6557,7 @@
     },
     {
       "data": {
-        "id": "e464",
+        "id": "e469",
         "source": "https://marianomosquera.github.io/racionalidad/Proceso",
         "target": "https://marianomosquera.github.io/racionalidad/Calidad",
         "tipo": "broader"
@@ -6518,7 +6565,7 @@
     },
     {
       "data": {
-        "id": "e465",
+        "id": "e470",
         "source": "https://marianomosquera.github.io/racionalidad/Racionalidad",
         "target": "https://marianomosquera.github.io/etica/etica#EticaInstitucional",
         "tipo": "broader"
@@ -6526,7 +6573,7 @@
     },
     {
       "data": {
-        "id": "e466",
+        "id": "e471",
         "source": "https://marianomosquera.github.io/racionalidad/Relevancia",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6534,7 +6581,7 @@
     },
     {
       "data": {
-        "id": "e467",
+        "id": "e472",
         "source": "https://marianomosquera.github.io/racionalidad/Replicabilidad",
         "target": "https://marianomosquera.github.io/racionalidad/Reproducibilidad",
         "tipo": "broader"
@@ -6542,7 +6589,7 @@
     },
     {
       "data": {
-        "id": "e468",
+        "id": "e473",
         "source": "https://marianomosquera.github.io/racionalidad/Representatividad",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6550,7 +6597,7 @@
     },
     {
       "data": {
-        "id": "e469",
+        "id": "e474",
         "source": "https://marianomosquera.github.io/racionalidad/Reproducibilidad",
         "target": "https://marianomosquera.github.io/racionalidad/Proceso",
         "tipo": "broader"
@@ -6558,7 +6605,7 @@
     },
     {
       "data": {
-        "id": "e470",
+        "id": "e475",
         "source": "https://marianomosquera.github.io/racionalidad/Revision",
         "target": "https://marianomosquera.github.io/racionalidad/Evidencia",
         "tipo": "broader"
@@ -6566,7 +6613,7 @@
     },
     {
       "data": {
-        "id": "e471",
+        "id": "e476",
         "source": "https://marianomosquera.github.io/racionalidad/Robustez",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6574,7 +6621,7 @@
     },
     {
       "data": {
-        "id": "e472",
+        "id": "e477",
         "source": "https://marianomosquera.github.io/racionalidad/Selectividad",
         "target": "https://marianomosquera.github.io/racionalidad/Problemas",
         "tipo": "broader"
@@ -6582,7 +6629,7 @@
     },
     {
       "data": {
-        "id": "e473",
+        "id": "e478",
         "source": "https://marianomosquera.github.io/racionalidad/SesgoConfirmacion",
         "target": "https://marianomosquera.github.io/racionalidad/Selectividad",
         "tipo": "broader"
@@ -6590,7 +6637,7 @@
     },
     {
       "data": {
-        "id": "e474",
+        "id": "e479",
         "source": "https://marianomosquera.github.io/racionalidad/Significancia",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6598,7 +6645,7 @@
     },
     {
       "data": {
-        "id": "e475",
+        "id": "e480",
         "source": "https://marianomosquera.github.io/racionalidad/Sinopsis",
         "target": "https://marianomosquera.github.io/racionalidad/Teleologia",
         "tipo": "broader"
@@ -6606,7 +6653,7 @@
     },
     {
       "data": {
-        "id": "e476",
+        "id": "e481",
         "source": "https://marianomosquera.github.io/racionalidad/Sobreinterpretacion",
         "target": "https://marianomosquera.github.io/racionalidad/Selectividad",
         "tipo": "broader"
@@ -6614,7 +6661,7 @@
     },
     {
       "data": {
-        "id": "e477",
+        "id": "e482",
         "source": "https://marianomosquera.github.io/racionalidad/Teleologia",
         "target": "https://marianomosquera.github.io/racionalidad/Racionalidad",
         "tipo": "broader"
@@ -6622,7 +6669,7 @@
     },
     {
       "data": {
-        "id": "e478",
+        "id": "e483",
         "source": "https://marianomosquera.github.io/racionalidad/Teoria",
         "target": "https://marianomosquera.github.io/racionalidad/Racionalidad",
         "tipo": "broader"
@@ -6630,7 +6677,7 @@
     },
     {
       "data": {
-        "id": "e479",
+        "id": "e484",
         "source": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "target": "https://marianomosquera.github.io/racionalidad/Calidad",
         "tipo": "broader"
@@ -6638,7 +6685,7 @@
     },
     {
       "data": {
-        "id": "e480",
+        "id": "e485",
         "source": "https://marianomosquera.github.io/racionalidad/TipoEvidencia",
         "target": "https://marianomosquera.github.io/racionalidad/Evidencia",
         "tipo": "broader"
@@ -6646,7 +6693,7 @@
     },
     {
       "data": {
-        "id": "e481",
+        "id": "e486",
         "source": "https://marianomosquera.github.io/racionalidad/Trazabilidad",
         "target": "https://marianomosquera.github.io/racionalidad/Proceso",
         "tipo": "broader"
@@ -6654,7 +6701,7 @@
     },
     {
       "data": {
-        "id": "e482",
+        "id": "e487",
         "source": "https://marianomosquera.github.io/racionalidad/Validez",
         "target": "https://marianomosquera.github.io/racionalidad/TipoCalidad",
         "tipo": "broader"
@@ -6662,7 +6709,7 @@
     },
     {
       "data": {
-        "id": "e483",
+        "id": "e488",
         "source": "https://marianomosquera.github.io/racionalidad/Variable",
         "target": "https://marianomosquera.github.io/racionalidad/TipoEvidencia",
         "tipo": "broader"
@@ -6670,7 +6717,7 @@
     },
     {
       "data": {
-        "id": "e484",
+        "id": "e489",
         "source": "https://marianomosquera.github.io/racionalidad/Verificabilidad",
         "target": "https://marianomosquera.github.io/racionalidad/Proceso",
         "tipo": "broader"
@@ -6678,7 +6725,7 @@
     },
     {
       "data": {
-        "id": "e485",
+        "id": "e490",
         "source": "https://marianomosquera.github.io/social/Actores",
         "target": "https://marianomosquera.github.io/social/Social",
         "tipo": "broader"
@@ -6686,7 +6733,7 @@
     },
     {
       "data": {
-        "id": "e486",
+        "id": "e491",
         "source": "https://marianomosquera.github.io/social/Ancianidad",
         "target": "https://marianomosquera.github.io/social/Actores",
         "tipo": "broader"
@@ -6694,7 +6741,7 @@
     },
     {
       "data": {
-        "id": "e487",
+        "id": "e492",
         "source": "https://marianomosquera.github.io/social/Conectividad",
         "target": "https://marianomosquera.github.io/social/Infraestructura",
         "tipo": "broader"
@@ -6702,7 +6749,7 @@
     },
     {
       "data": {
-        "id": "e488",
+        "id": "e493",
         "source": "https://marianomosquera.github.io/social/Cosmopolitismo",
         "target": "https://marianomosquera.github.io/social/Cultura",
         "tipo": "broader"
@@ -6710,7 +6757,7 @@
     },
     {
       "data": {
-        "id": "e489",
+        "id": "e494",
         "source": "https://marianomosquera.github.io/social/Cultura",
         "target": "https://marianomosquera.github.io/social/Identidad",
         "tipo": "broader"
@@ -6718,7 +6765,7 @@
     },
     {
       "data": {
-        "id": "e490",
+        "id": "e495",
         "source": "https://marianomosquera.github.io/social/Deportes",
         "target": "https://marianomosquera.github.io/social/Infraestructura",
         "tipo": "broader"
@@ -6726,7 +6773,7 @@
     },
     {
       "data": {
-        "id": "e491",
+        "id": "e496",
         "source": "https://marianomosquera.github.io/social/Discapacitados",
         "target": "https://marianomosquera.github.io/social/Actores",
         "tipo": "broader"
@@ -6734,7 +6781,7 @@
     },
     {
       "data": {
-        "id": "e492",
+        "id": "e497",
         "source": "https://marianomosquera.github.io/social/Discapacitados",
         "target": "https://marianomosquera.github.io/social/ServiciosPublicos",
         "tipo": "related"
@@ -6742,7 +6789,7 @@
     },
     {
       "data": {
-        "id": "e493",
+        "id": "e498",
         "source": "https://marianomosquera.github.io/social/Educacion",
         "target": "https://marianomosquera.github.io/social/Infraestructura",
         "tipo": "broader"
@@ -6750,48 +6797,8 @@
     },
     {
       "data": {
-        "id": "e494",
-        "source": "https://marianomosquera.github.io/social/Empleo",
-        "target": "https://marianomosquera.github.io/social/Infraestructura",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e495",
-        "source": "https://marianomosquera.github.io/social/Empleo",
-        "target": "https://marianomosquera.github.io/social/Pobreza",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e496",
-        "source": "https://marianomosquera.github.io/social/Identidad",
-        "target": "https://marianomosquera.github.io/social/Temas",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e497",
-        "source": "https://marianomosquera.github.io/social/Infraestructura",
-        "target": "https://marianomosquera.github.io/social/Temas",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e498",
-        "source": "https://marianomosquera.github.io/social/Juventud",
-        "target": "https://marianomosquera.github.io/social/Actores",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
         "id": "e499",
-        "source": "https://marianomosquera.github.io/social/Movilidad",
+        "source": "https://marianomosquera.github.io/social/Empleo",
         "target": "https://marianomosquera.github.io/social/Infraestructura",
         "tipo": "broader"
       }
@@ -6799,15 +6806,15 @@
     {
       "data": {
         "id": "e500",
-        "source": "https://marianomosquera.github.io/social/Ninez",
-        "target": "https://marianomosquera.github.io/social/Actores",
-        "tipo": "broader"
+        "source": "https://marianomosquera.github.io/social/Empleo",
+        "target": "https://marianomosquera.github.io/social/Pobreza",
+        "tipo": "related"
       }
     },
     {
       "data": {
         "id": "e501",
-        "source": "https://marianomosquera.github.io/social/Poblacion",
+        "source": "https://marianomosquera.github.io/social/Identidad",
         "target": "https://marianomosquera.github.io/social/Temas",
         "tipo": "broader"
       }
@@ -6815,6 +6822,46 @@
     {
       "data": {
         "id": "e502",
+        "source": "https://marianomosquera.github.io/social/Infraestructura",
+        "target": "https://marianomosquera.github.io/social/Temas",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e503",
+        "source": "https://marianomosquera.github.io/social/Juventud",
+        "target": "https://marianomosquera.github.io/social/Actores",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e504",
+        "source": "https://marianomosquera.github.io/social/Movilidad",
+        "target": "https://marianomosquera.github.io/social/Infraestructura",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e505",
+        "source": "https://marianomosquera.github.io/social/Ninez",
+        "target": "https://marianomosquera.github.io/social/Actores",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e506",
+        "source": "https://marianomosquera.github.io/social/Poblacion",
+        "target": "https://marianomosquera.github.io/social/Temas",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e507",
         "source": "https://marianomosquera.github.io/social/Pobreza",
         "target": "https://marianomosquera.github.io/social/Problemas",
         "tipo": "broader"
@@ -6822,7 +6869,7 @@
     },
     {
       "data": {
-        "id": "e503",
+        "id": "e508",
         "source": "https://marianomosquera.github.io/social/Pobreza",
         "target": "https://marianomosquera.github.io/social/Empleo",
         "tipo": "related"
@@ -6830,7 +6877,7 @@
     },
     {
       "data": {
-        "id": "e504",
+        "id": "e509",
         "source": "https://marianomosquera.github.io/social/Problemas",
         "target": "https://marianomosquera.github.io/social/Social",
         "tipo": "broader"
@@ -6838,7 +6885,7 @@
     },
     {
       "data": {
-        "id": "e505",
+        "id": "e510",
         "source": "https://marianomosquera.github.io/social/Religion",
         "target": "https://marianomosquera.github.io/social/Identidad",
         "tipo": "broader"
@@ -6846,7 +6893,7 @@
     },
     {
       "data": {
-        "id": "e506",
+        "id": "e511",
         "source": "https://marianomosquera.github.io/social/Salud",
         "target": "https://marianomosquera.github.io/social/Infraestructura",
         "tipo": "broader"
@@ -6854,7 +6901,7 @@
     },
     {
       "data": {
-        "id": "e507",
+        "id": "e512",
         "source": "https://marianomosquera.github.io/social/ServiciosPublicos",
         "target": "https://marianomosquera.github.io/social/Infraestructura",
         "tipo": "broader"
@@ -6862,7 +6909,7 @@
     },
     {
       "data": {
-        "id": "e508",
+        "id": "e513",
         "source": "https://marianomosquera.github.io/social/ServiciosPublicos",
         "target": "https://marianomosquera.github.io/social/Discapacitados",
         "tipo": "related"
@@ -6870,7 +6917,15 @@
     },
     {
       "data": {
-        "id": "e509",
+        "id": "e514",
+        "source": "https://marianomosquera.github.io/social/Social",
+        "target": "https://marianomosquera.github.io/etica/etica#Agenda",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e515",
         "source": "https://marianomosquera.github.io/social/Temas",
         "target": "https://marianomosquera.github.io/social/Social",
         "tipo": "broader"
@@ -6878,7 +6933,7 @@
     },
     {
       "data": {
-        "id": "e510",
+        "id": "e516",
         "source": "https://marianomosquera.github.io/social/Urbanismo",
         "target": "https://marianomosquera.github.io/social/Vivienda",
         "tipo": "broader"
@@ -6886,7 +6941,7 @@
     },
     {
       "data": {
-        "id": "e511",
+        "id": "e517",
         "source": "https://marianomosquera.github.io/social/Vivienda",
         "target": "https://marianomosquera.github.io/social/Infraestructura",
         "tipo": "broader"
@@ -6894,7 +6949,7 @@
     },
     {
       "data": {
-        "id": "e512",
+        "id": "e518",
         "source": "https://marianomosquera.github.io/tecnologica/Actores",
         "target": "https://marianomosquera.github.io/tecnologica/Tecnologica",
         "tipo": "broader"
@@ -6902,7 +6957,7 @@
     },
     {
       "data": {
-        "id": "e513",
+        "id": "e519",
         "source": "https://marianomosquera.github.io/tecnologica/Algoritmo",
         "target": "https://marianomosquera.github.io/tecnologica/IA",
         "tipo": "broader"
@@ -6910,7 +6965,7 @@
     },
     {
       "data": {
-        "id": "e514",
+        "id": "e520",
         "source": "https://marianomosquera.github.io/tecnologica/Automatizacion",
         "target": "https://marianomosquera.github.io/tecnologica/IA",
         "tipo": "broader"
@@ -6918,7 +6973,7 @@
     },
     {
       "data": {
-        "id": "e515",
+        "id": "e521",
         "source": "https://marianomosquera.github.io/tecnologica/BigData",
         "target": "https://marianomosquera.github.io/tecnologica/Tipos",
         "tipo": "broader"
@@ -6926,7 +6981,7 @@
     },
     {
       "data": {
-        "id": "e516",
+        "id": "e522",
         "source": "https://marianomosquera.github.io/tecnologica/BigData",
         "target": "https://marianomosquera.github.io/tecnologica/IA",
         "tipo": "related"
@@ -6934,7 +6989,7 @@
     },
     {
       "data": {
-        "id": "e517",
+        "id": "e523",
         "source": "https://marianomosquera.github.io/tecnologica/Biotecnologia",
         "target": "https://marianomosquera.github.io/tecnologica/Tipos",
         "tipo": "broader"
@@ -6942,7 +6997,7 @@
     },
     {
       "data": {
-        "id": "e518",
+        "id": "e524",
         "source": "https://marianomosquera.github.io/tecnologica/Blockchain",
         "target": "https://marianomosquera.github.io/tecnologica/Tipos",
         "tipo": "broader"
@@ -6950,7 +7005,7 @@
     },
     {
       "data": {
-        "id": "e519",
+        "id": "e525",
         "source": "https://marianomosquera.github.io/tecnologica/CentrosInvestigacion",
         "target": "https://marianomosquera.github.io/tecnologica/Actores",
         "tipo": "broader"
@@ -6958,7 +7013,7 @@
     },
     {
       "data": {
-        "id": "e520",
+        "id": "e526",
         "source": "https://marianomosquera.github.io/tecnologica/Ciberseguridad",
         "target": "https://marianomosquera.github.io/tecnologica/Problemas",
         "tipo": "broader"
@@ -6966,7 +7021,7 @@
     },
     {
       "data": {
-        "id": "e521",
+        "id": "e527",
         "source": "https://marianomosquera.github.io/tecnologica/Ciencia",
         "target": "https://marianomosquera.github.io/tecnologica/Temas",
         "tipo": "broader"
@@ -6974,56 +7029,8 @@
     },
     {
       "data": {
-        "id": "e522",
-        "source": "https://marianomosquera.github.io/tecnologica/IA",
-        "target": "https://marianomosquera.github.io/tecnologica/Tipos",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e523",
-        "source": "https://marianomosquera.github.io/tecnologica/IA",
-        "target": "https://marianomosquera.github.io/tecnologica/BigData",
-        "tipo": "related"
-      }
-    },
-    {
-      "data": {
-        "id": "e524",
-        "source": "https://marianomosquera.github.io/tecnologica/Ingenieria",
-        "target": "https://marianomosquera.github.io/tecnologica/Ciencia",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e525",
-        "source": "https://marianomosquera.github.io/tecnologica/Innovacion",
-        "target": "https://marianomosquera.github.io/tecnologica/Temas",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e526",
-        "source": "https://marianomosquera.github.io/tecnologica/Investigacion",
-        "target": "https://marianomosquera.github.io/tecnologica/Ciencia",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
-        "id": "e527",
-        "source": "https://marianomosquera.github.io/tecnologica/Metaverso",
-        "target": "https://marianomosquera.github.io/tecnologica/Tipos",
-        "tipo": "broader"
-      }
-    },
-    {
-      "data": {
         "id": "e528",
-        "source": "https://marianomosquera.github.io/tecnologica/Neurotecnologia",
+        "source": "https://marianomosquera.github.io/tecnologica/IA",
         "target": "https://marianomosquera.github.io/tecnologica/Tipos",
         "tipo": "broader"
       }
@@ -7031,6 +7038,54 @@
     {
       "data": {
         "id": "e529",
+        "source": "https://marianomosquera.github.io/tecnologica/IA",
+        "target": "https://marianomosquera.github.io/tecnologica/BigData",
+        "tipo": "related"
+      }
+    },
+    {
+      "data": {
+        "id": "e530",
+        "source": "https://marianomosquera.github.io/tecnologica/Ingenieria",
+        "target": "https://marianomosquera.github.io/tecnologica/Ciencia",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e531",
+        "source": "https://marianomosquera.github.io/tecnologica/Innovacion",
+        "target": "https://marianomosquera.github.io/tecnologica/Temas",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e532",
+        "source": "https://marianomosquera.github.io/tecnologica/Investigacion",
+        "target": "https://marianomosquera.github.io/tecnologica/Ciencia",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e533",
+        "source": "https://marianomosquera.github.io/tecnologica/Metaverso",
+        "target": "https://marianomosquera.github.io/tecnologica/Tipos",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e534",
+        "source": "https://marianomosquera.github.io/tecnologica/Neurotecnologia",
+        "target": "https://marianomosquera.github.io/tecnologica/Tipos",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e535",
         "source": "https://marianomosquera.github.io/tecnologica/Neurotecnologia",
         "target": "https://marianomosquera.github.io/tecnologica/Biotecnologia",
         "tipo": "related"
@@ -7038,7 +7093,7 @@
     },
     {
       "data": {
-        "id": "e530",
+        "id": "e536",
         "source": "https://marianomosquera.github.io/tecnologica/Problemas",
         "target": "https://marianomosquera.github.io/tecnologica/Tecnologica",
         "tipo": "broader"
@@ -7046,7 +7101,7 @@
     },
     {
       "data": {
-        "id": "e531",
+        "id": "e537",
         "source": "https://marianomosquera.github.io/tecnologica/RedesSociales",
         "target": "https://marianomosquera.github.io/tecnologica/Tipos",
         "tipo": "broader"
@@ -7054,7 +7109,7 @@
     },
     {
       "data": {
-        "id": "e532",
+        "id": "e538",
         "source": "https://marianomosquera.github.io/tecnologica/Robotica",
         "target": "https://marianomosquera.github.io/tecnologica/IA",
         "tipo": "broader"
@@ -7062,7 +7117,15 @@
     },
     {
       "data": {
-        "id": "e533",
+        "id": "e539",
+        "source": "https://marianomosquera.github.io/tecnologica/Tecnologica",
+        "target": "https://marianomosquera.github.io/etica/etica#Agenda",
+        "tipo": "broader"
+      }
+    },
+    {
+      "data": {
+        "id": "e540",
         "source": "https://marianomosquera.github.io/tecnologica/Temas",
         "target": "https://marianomosquera.github.io/tecnologica/Tecnologica",
         "tipo": "broader"
@@ -7070,7 +7133,7 @@
     },
     {
       "data": {
-        "id": "e534",
+        "id": "e541",
         "source": "https://marianomosquera.github.io/tecnologica/Tipos",
         "target": "https://marianomosquera.github.io/tecnologica/Temas",
         "tipo": "broader"
@@ -7078,7 +7141,7 @@
     },
     {
       "data": {
-        "id": "e535",
+        "id": "e542",
         "source": "https://marianomosquera.github.io/tecnologica/TransformacionDigital",
         "target": "https://marianomosquera.github.io/tecnologica/Innovacion",
         "tipo": "broader"
@@ -7086,7 +7149,7 @@
     },
     {
       "data": {
-        "id": "e536",
+        "id": "e543",
         "source": "https://marianomosquera.github.io/tecnologica/Universidades",
         "target": "https://marianomosquera.github.io/tecnologica/Actores",
         "tipo": "broader"
