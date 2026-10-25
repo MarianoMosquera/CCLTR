@@ -18,11 +18,6 @@ def validar_relacion(operacion, grafo):
     if source == target:
         raise ValueError("No se permiten autovínculos")
 
-    if tipo in {"PRO", "CON"}:
-        raise ValueError(
-            "PRO y CON están reservados para relaciones originales"
-        )
-
     relaciones = grafo.get("edges", [])
 
     if not isinstance(relaciones, list):
@@ -32,7 +27,7 @@ def validar_relacion(operacion, grafo):
         relacion for relacion in relaciones
         if relacion.get("source") == source
         and relacion.get("target") == target
-        and relacion.get("tipo") == tipo
+        and relacion.get("tipo", relacion.get("valence")) == tipo
     ]
 
     if tipo_operacion == "crear_vinculo" and coincidencias:

@@ -1,99 +1,43 @@
+"""Integridad estructural y auditoría de la copia transformada.
+
+La inmutabilidad del grafo fuente la controla registro.verificar_integridad_original.
+"""
 from collections import Counter
-from copy import deepcopy
 import json
 
 
 def firma(elemento):
-    return json.dumps(
-        elemento, sort_keys=True, ensure_ascii=False
-    )
+    return json.dumps(elemento, sort_keys=True, ensure_ascii=False)
 
 
 def verificar_conservacion_debate(registro):
     original = registro["grafo_original"]
     transformado = registro["grafo_transformado"]
-
     if not isinstance(transformado, dict):
         raise ValueError("Grafo transformado no inicializado")
+    if not isinstance(transformado.get("nodes"), list) or not isinstance(transformado.get("edges"), list):
+        raise ValueError("Estructura del grafo transformado inválida")
 
-    nodos_originales = {
-        str(n["id"]): n for n in original["nodes"]
-    }
-
-    nodos_transformados = {
-        str(n["id"]): n for n in transformado["nodes"]
-    }
-
-    if len(nodos_transformados) != len(transformado["nodes"]):
+    ids = [str(n["id"]) for n in transformado["nodes"]]
+    if len(ids) != len(set(ids)):
         raise ValueError("Identificadores duplicados")
+    actuales = set(ids)
+    for e in transformado["edges"]:
+        if str(e["source"]) not in actuales or str(e["target"]) not in actuales:
+            raise ValueError("Vínculo con extremos inexistentes")
 
-    for identificador, nodo in nodos_originales.items():
-        if identificador not in nodos_transformados:
-            raise ValueError("Se eliminó un nodo original")
+    eventos = [e for e in registro.get("transformaciones", []) if e.get("estado") == "ejecutada"]
+    nodos_retirados = {str(e["nodo_retirado"]["id"]) for e in eventos if "nodo_retirado" in e}
+    aristas_retiradas = Counter(firma(e["relacion_retirada"]) for e in eventos if "relacion_retirada" in e)
+    originales = {str(n["id"]) for n in original["nodes"]}
+    faltantes = originales - actuales
+    if not faltantes <= nodos_retirados:
+        raise ValueError("Se eliminaron nodos originales sin evento auditable")
 
-        transformado_nodo = nodos_transformados[identificador]
-
-        if transformado_nodo.get("id") != nodo.get("id"):
-            raise ValueError("Se alteró un identificador original")
-
-    relaciones_originales = Counter(
-        firma(e) for e in original["edges"]
-    )
-
-    relaciones_transformadas = Counter(
-        firma(e) for e in transformado["edges"]
-    )
-
-    for relacion, cantidad in relaciones_originales.items():
-        if relaciones_transformadas[relacion] < cantidad:
-            raise ValueError(
-                "Se eliminó o modificó una relación original"
-            )
-
+    # No se permite desaparición silenciosa de aristas originales. Si se
+    # retiró un nodo, sus vínculos debieron retirarse explícitamente antes.
+    actuales_aristas = Counter(firma(e) for e in transformado["edges"])
+    for sig, cantidad in Counter(firma(e) for e in original["edges"]).items():
+        if actuales_aristas[sig] + aristas_retiradas[sig] < cantidad:
+            raise ValueError("Se eliminó o alteró una relación original sin evento auditable")
     return True
-
-
-if __name__ == "__main__":
-    original = {
-        "nodes": [
-            {"id": "A", "claim": "Innovación"},
-            {"id": "B", "claim": "Empleo"},
-        ],
-        "edges": [
-            {
-                "source": "A",
-                "target": "B",
-                "target_idx": 0,
-                "valence": "CON",
-            }
-        ],
-    }
-
-    registro = {
-        "grafo_original": deepcopy(original),
-        "grafo_transformado": deepcopy(original),
-    }
-
-    assert verificar_conservacion_debate(registro)
-    print("DEBATE ORIGINAL CONSERVADO: OK")
-
-    registro["grafo_transformado"]["edges"][0]["valence"] = "PRO"
-
-    try:
-        verificar_conservacion_debate(registro)
-    except ValueError:
-        print("ALTERACIÓN DE VALENCIA: BLOQUEADA")
-    else:
-        raise AssertionError("No se detectó alteración")
-
-    registro["grafo_transformado"] = deepcopy(original)
-    registro["grafo_transformado"]["nodes"].pop()
-
-    try:
-        verificar_conservacion_debate(registro)
-    except ValueError:
-        print("ELIMINACIÓN DE NODO ORIGINAL: BLOQUEADA")
-    else:
-        raise AssertionError("No se detectó eliminación")
-
-    print("CONTROL DE INTEGRIDAD: OK")

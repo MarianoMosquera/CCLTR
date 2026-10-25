@@ -32,28 +32,36 @@ explorando perspectivas y relaciones sin reducir las contradicciones genuinas
 a un consenso artificial. La expansión por nuevos nodos es solo una opción.
 
 PROCEDIMIENTO OBLIGATORIO DE DELIBERACIÓN INTERNA
-1. Identificá oposiciones y tensiones del grafo, sin inferir la postura global
-   de cada nodo a partir de la valence de una arista.
-2. Evaluá explícitamente la pertinencia de CADA UNA de las siete operaciones
-   del catálogo, incluso cuando decidas no utilizarla. No hay cuotas.
-3. Considerá especialmente si una reformulación, una fusión que conserve
-   las fuentes, una nueva relación o una jerarquización aportan más que
-   agregar nodos desconectados. No fabriques operaciones para cumplir cuotas.
-4. Para cada operación seleccionada, explicá en justificacion por qué es
-   preferible a las alternativas descartadas en ese contexto, qué elementos
-   existentes afecta y cómo se mantiene la tensión entre posiciones.
-5. Si solo proponés crear_nodo, explicá en la justificacion de cada propuesta
-   por qué las operaciones de reconfiguración no serían pertinentes.
-6. Una fusión genera una nueva representación y no debe borrar las fuentes.
-   Conservá la identidad y la trazabilidad de los argumentos originales.
-7. Nunca inventes conceptos, URI ni relaciones SKOS. Las rutas declaradas
-   deben corresponder a los datos ontológicos suministrados.
-8. No modifiques las aristas originales ni su valence PRO/CON; podés crear
-   relaciones adicionales y proponer nuevas jerarquías. No propongas retirar
-   nodos o vínculos originales si ello viola la integridad del debate.
-9. No accedas a clasificaciones, mediciones ni resultados de la rama A.
-10. No supongas que un aumento de nodos, vínculos o similitud equivale a
-    mayor diversidad. Diferenciá expansión de reconfiguración conceptual.
+1. Evaluá explícitamente las siete operaciones del catálogo: crear,
+   reformular, fusionar y retirar nodos; crear y retirar vínculos; jerarquizar.
+   Elegí según su valor conceptual, sin cuotas ni preferencia por crear nodos.
+2. Identificá oposiciones genuinas sin inferir la posición global de un nodo
+   a partir de la valence de una arista.
+3. Explorá desplazamientos semánticos mediante SKOS, sin inventar conceptos,
+   URI, rutas ni relaciones ontológicas.
+4. Buscá prioritariamente SÍNTESIS CONCEPTUALES NOVEDOSAS que transformen
+   las relaciones entre posiciones contradictorias MANTENIENDO ACTIVAS Y
+   RECONOCIBLES SUS TENSIONES. No confundas síntesis con consenso, promedio,
+   yuxtaposición, compromiso superficial ni resolución ficticia del conflicto.
+5. Podés reformular, fusionar o RETIRAR nodos y vínculos originales EN LA
+   COPIA TRANSFORMADA si existe justificación conceptual sustantiva. El grafo
+   original de entrada permanece íntegro, inmutable y recuperable. Registrar
+   origen, operaciones, nodos afectados y tensiones para permitir auditoría.
+6. Una fusión puede sustituir los nodos fuente EN LA COPIA TRANSFORMADA;
+   no debe borrar su identidad ni sus argumentos del registro histórico.
+   La eliminación no puede hacer desaparecer silenciosamente contradicciones:
+   justificá dónde queda expresada o conservada cada tensión relevante.
+7. Evaluá si reformular, fusionar, retirar, vincular o jerarquizar aporta más
+   que expandir el grafo. No fabriques operaciones para cumplir cuotas.
+8. Para cada operación seleccionada, justificá la novedad de la síntesis,
+   qué posiciones transforma, qué tensión contradictoria conserva y por qué
+   la operación es preferible a las alternativas descartadas. Documentalo en
+   justificacion, tension_conservada y aporte_conceptual cuando corresponda.
+9. Si solo proponés crear_nodo, justificá por qué no conviene reconfigurar.
+10. No accedas a resultados, mediciones ni clasificaciones de la rama A.
+11. No supongas que más nodos, vínculos o similitud implican más diversidad.
+12. Preservá las relaciones y valencias originales EN EL REGISTRO DE ENTRADA;
+    en el grafo transformado pueden retirarse justificadamente con trazabilidad.
 
 REGLA OBLIGATORIA DE INTEGRACIÓN RELACIONAL
 Cada nodo creado o fusionado que permanezca en el grafo final debe quedar

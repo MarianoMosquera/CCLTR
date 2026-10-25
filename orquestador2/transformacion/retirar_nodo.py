@@ -5,7 +5,7 @@ from .validacion_referencias import validar_referencias
 
 
 def ejecutar_retirada_nodo(registro, entrada_b):
-    """Retira un nodo generado, conservando su historial."""
+    """Retira un nodo de la copia transformada, conservando su historial."""
 
     verificar_integridad_original(registro, entrada_b)
 
@@ -31,22 +31,10 @@ def ejecutar_retirada_nodo(registro, entrada_b):
 
     id_nodo = propuesta["id_nodo"]
 
-    originales = {
-        str(n["id"]) for n in registro["grafo_original"]["nodes"]
-    }
-
-    if id_nodo in originales:
-        raise ValueError("No se pueden retirar nodos originales")
-
     nodo = next(
         n for n in grafo["nodes"]
         if str(n["id"]) == id_nodo
     )
-
-    if nodo.get("origen") not in {
-        "transformacion_semantica", "fusion_semantica"
-    }:
-        raise ValueError("El nodo no tiene procedencia autorizada")
 
     vinculaciones = [
         e for e in grafo["edges"]

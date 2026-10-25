@@ -5,7 +5,7 @@ from .validacion_relaciones import validar_relacion
 
 
 def ejecutar_retirada_vinculo(registro, entrada_b):
-    """Retira un vínculo conceptual generado, sin tocar relaciones originales."""
+    """Retira un vínculo de la copia transformada con auditoría."""
 
     verificar_integridad_original(registro, entrada_b)
 
@@ -34,16 +34,13 @@ def ejecutar_retirada_vinculo(registro, entrada_b):
         for indice, relacion in enumerate(grafo["edges"])
         if relacion.get("source") == propuesta["source"]
         and relacion.get("target") == propuesta["target"]
-        and relacion.get("tipo") == propuesta["tipo"]
+        and relacion.get("tipo", relacion.get("valence")) == propuesta["tipo"]
     ]
 
     if len(coincidencias) != 1:
         raise ValueError("La relación debe identificarse de forma única")
 
     indice, relacion = coincidencias[0]
-
-    if relacion.get("origen") != "transformacion_semantica":
-        raise ValueError("No se pueden retirar relaciones originales")
 
     copia = deepcopy(grafo)
     retirada = copia["edges"].pop(indice)
