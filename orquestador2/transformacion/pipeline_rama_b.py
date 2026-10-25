@@ -39,6 +39,11 @@ def procesar_respuesta_rama_b(registro, entrada_b, respuesta):
         verificar_integridad_original(registro, entrada_b)
         verificar_conservacion_debate(registro)
 
+        from .validar_integracion import verificar_integracion_nodos_nuevos
+        verificar_integracion_nodos_nuevos(
+            entrada_b["grafo_original"], registro["grafo_transformado"]
+        )
+
         if registro_lote["cantidad"] != ejecucion["cantidad"]:
             raise RuntimeError("Inconsistencia en cantidad de operaciones")
 
@@ -114,6 +119,17 @@ if __name__ == "__main__":
                 "prioridad": 0.8,
                 "justificacion": "Priorizar la perspectiva emergente.",
             },
+            {
+                "operacion": "crear_vinculo",
+                "source": "S1",
+                "target": "A",
+                "tipo": "SIN_DEFINIR",
+                "anclajes_skos": [igualdad, justicia],
+                "rutas_skos": [ruta],
+                "tension_conservada": "Igualdad frente a justicia.",
+                "aporte_conceptual": "Integración argumentativa.",
+                "justificacion": "Conectar la articulación conceptual con igualdad sin asignar apoyo u oposición.",
+            },
         ]
     }
 
@@ -125,7 +141,7 @@ if __name__ == "__main__":
     )
 
     assert resultado["estado"] == "respuesta_procesada"
-    assert resultado["operaciones"] == 2
+    assert resultado["operaciones"] == 3
     assert len(resultado["grafo_transformado"]["nodes"]) == 3
     assert all(
         evento["estado"] == "ejecutada"
@@ -158,6 +174,18 @@ if __name__ == "__main__":
 
     assert registro_fallo == estado_anterior
     assert registro_fallo["grafo_original"] == debate
+
+    registro_aislado = crear_registro_transformacion(entrada)
+    inicializar_grafo_transformado(registro_aislado, entrada)
+    antes_aislado = deepcopy(registro_aislado)
+    respuesta_aislada = {"propuestas": [respuesta["propuestas"][0]]}
+    try:
+        procesar_respuesta_rama_b(registro_aislado, entrada, respuesta_aislada)
+    except ValueError as exc:
+        assert "sin integración" in str(exc)
+    else:
+        raise AssertionError("Se aceptó un nodo nuevo aislado")
+    assert registro_aislado == antes_aislado
 
     print("REVERSIÓN INTEGRAL DEL PIPELINE: OK")
     print("DEBATE ORIGINAL INTACTO: OK")

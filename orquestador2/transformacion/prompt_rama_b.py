@@ -55,6 +55,18 @@ PROCEDIMIENTO OBLIGATORIO DE DELIBERACIÓN INTERNA
 10. No supongas que un aumento de nodos, vínculos o similitud equivale a
     mayor diversidad. Diferenciá expansión de reconfiguración conceptual.
 
+REGLA OBLIGATORIA DE INTEGRACIÓN RELACIONAL
+Cada nodo creado o fusionado que permanezca en el grafo final debe quedar
+conectado a otro nodo distinto por al menos una operación crear_vinculo.
+Para cada vínculo declarás source, target, tipo y justificacion sustantiva.
+Para relaciones nuevas con nodos nuevos, tipo debe ser PRO, CON o SIN_DEFINIR.
+SIN_DEFINIR identifica una relación conceptual genuina sin orientación de
+apoyo u oposición determinable; no debe ocultar un PRO o CON reconocible.
+No hay cuotas de operaciones ni de tipos de vínculo. Podés crear un nodo y
+vincularlo después en el mismo lote. No crees vínculos arbitrarios.
+El grafo final será rechazado si queda un nodo nuevo aislado o si su vínculo
+carece de tipo permitido y justificación. Conservá las aristas originales.
+
 CONTRATO EXACTO DEL MOTOR
 Usá exclusivamente los siguientes valores de operacion y sus campos
 obligatorios (además de los campos semánticos pertinentes):
