@@ -64,20 +64,22 @@ def validar_clasificacion_a(
     )
 
 
-def validar_clasificacion_b(experimento, respuestas):
-    """Valida B exclusivamente contra su grafo transformado."""
+def validar_clasificacion_b(resultado_transformacion, respuestas):
+    """Valida B exclusivamente contra el registro efectivamente transformado."""
     from .transformacion.clasificacion_posterior import (
-        validar_clasificacion_posterior
+        validar_clasificacion_posterior,
     )
 
-    if experimento.get("estado") != "preparado":
-        raise ValueError("Experimento no preparado")
+    if not isinstance(resultado_transformacion, dict):
+        raise ValueError("Resultado de transformación B inválido")
 
-    registro_b = experimento["rama_b"]["registro"]
+    registro = resultado_transformacion.get("registro")
+
+    if not isinstance(registro, dict):
+        raise ValueError("Falta el registro transformado de B")
 
     return validar_clasificacion_posterior(
-        registro_b,
-        deepcopy(respuestas)
+        registro, deepcopy(respuestas)
     )
 
 
@@ -173,3 +175,48 @@ def comparar_experimento_ab(resultado_a, resultado_b):
         resultado_a["configuracion"],
         resultado_b["configuracion"]
     )
+
+
+def ejecutar_transformacion_b(experimento, respuesta_ia):
+    """
+    Ejecuta las propuestas de transformación de B mediante
+    el motor existente, sin consultar resultados de A.
+    """
+    from .transformacion.inicializar_grafo import (
+        inicializar_grafo_transformado
+    )
+    from .transformacion.pipeline_rama_b import (
+        procesar_respuesta_rama_b
+    )
+    from .transformacion.clasificacion_posterior import (
+        preparar_clasificacion_posterior
+    )
+    from .transformacion.registro import verificar_integridad_original
+
+    if experimento.get("estado") != "preparado":
+        raise ValueError("Experimento no preparado")
+
+    rama_b = experimento["rama_b"]
+    entrada = deepcopy(rama_b["entrada"])
+    registro = deepcopy(rama_b["registro"])
+
+    verificar_integridad_original(registro, entrada)
+
+    if registro["grafo_transformado"] is None:
+        inicializar_grafo_transformado(registro, entrada)
+
+    resultado = procesar_respuesta_rama_b(
+        registro,
+        entrada,
+        deepcopy(respuesta_ia)
+    )
+
+    verificar_integridad_original(registro, entrada)
+
+    solicitudes = preparar_clasificacion_posterior(registro)
+
+    return {
+        "registro": registro,
+        "resultado_transformacion": resultado,
+        "solicitudes_clasificacion": solicitudes,
+    }
