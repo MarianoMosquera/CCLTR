@@ -99,6 +99,7 @@ def medir_rama(
     """
     from .medicion.pipeline_semantico import medir_grafo_semanticamente
     from .medicion.medicion_conjunta import medir_diversidad_conjunta
+    from .medicion.ajuste_tamano import medir_diversidad_ajustada
 
     configuracion.validar()
 
@@ -122,12 +123,21 @@ def medir_rama(
         deepcopy(config_modelo)
     )
 
-    return medir_diversidad_conjunta(
+    resultado = medir_diversidad_conjunta(
         deepcopy(clasificaciones),
         deepcopy(mapa_dimensiones),
         configuracion,
         resultado_semantico["normalizada"]
     )
+
+    resultado["ajuste_tamano"] = medir_diversidad_ajustada(
+        deepcopy(clasificaciones),
+        deepcopy(mapa_dimensiones),
+        resultado_semantico["embeddings"],
+        configuracion
+    )
+
+    return resultado
 
 
 def comparar_experimento_ab(resultado_a, resultado_b):
@@ -169,12 +179,31 @@ def comparar_experimento_ab(resultado_a, resultado_b):
                 f"Componentes incompletos en rama {nombre}"
             )
 
-    return comparar_ramas(
+    comparacion_original = comparar_ramas(
         resultado_a,
         resultado_b,
         resultado_a["configuracion"],
         resultado_b["configuracion"]
     )
+
+    from .medicion.comparacion import comparar_ajustes_tamano
+
+    ajuste_a = resultado_a.get("ajuste_tamano")
+    ajuste_b = resultado_b.get("ajuste_tamano")
+
+    if ajuste_a is None or ajuste_b is None:
+        raise ValueError(
+            "Ambas ramas deben incluir el ajuste por tamaño"
+        )
+
+    comparacion_ajustada = comparar_ajustes_tamano(
+        ajuste_a, ajuste_b
+    )
+
+    return {
+        **comparacion_original,
+        "comparacion_ajustada": comparacion_ajustada,
+    }
 
 
 def ejecutar_transformacion_b(experimento, respuesta_ia):

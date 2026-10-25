@@ -18,6 +18,7 @@ def medir_grafo_semanticamente(grafo, modelo, config):
         "revision": config["revision"],
         "medicion": medicion,
         "normalizada": normalizada,
+        "embeddings": embeddings,
     }
 
 

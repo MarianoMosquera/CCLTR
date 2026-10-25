@@ -21,7 +21,27 @@ def etiqueta(uri):
 G = nx.MultiDiGraph()
 
 conceptos = set(g.subjects(RDF.type, SKOS.Concept))
-conceptos_normalizados = {normalizar(uri) for uri in conceptos}
+
+for predicado in (
+    SKOS.broader,
+    SKOS.narrower,
+    SKOS.related,
+    SKOS.exactMatch,
+    SKOS.closeMatch,
+):
+    for sujeto, objeto in g.subject_objects(predicado):
+        for recurso in (sujeto, objeto):
+            if (
+                isinstance(recurso, URIRef)
+                and str(recurso).startswith(
+                    "https://marianomosquera.github.io/"
+                )
+            ):
+                conceptos.add(recurso)
+
+conceptos_normalizados = {
+    normalizar(uri) for uri in conceptos
+}
 
 for uri in sorted(conceptos_normalizados):
     G.add_node(uri, label=etiqueta(uri), tipo="concepto")
