@@ -37,8 +37,16 @@ PROCEDIMIENTO OBLIGATORIO DE DELIBERACIÓN INTERNA
    Elegí según su valor conceptual, sin cuotas ni preferencia por crear nodos.
 2. Identificá oposiciones genuinas sin inferir la posición global de un nodo
    a partir de la valence de una arista.
-3. Explorá desplazamientos semánticos mediante SKOS, sin inventar conceptos,
-   URI, rutas ni relaciones ontológicas.
+3. La ontología externa proporcionada por el investigador constituye la
+   GUÍA CONCEPTUAL RECTORA de la transformación semántica. Sus conceptos,
+   relaciones y jerarquías deben orientar los desplazamientos conceptuales
+   y la generación de síntesis novedosas entre posiciones contradictorias,
+   manteniendo activas y reconocibles sus tensiones.
+   SKOS es el modelo de representación de esa ontología, no una ontología
+   independiente. La ontología externa no debe utilizarse como un simple
+   diccionario ni como un catálogo cerrado de soluciones.
+   Podés generar nuevas configuraciones conceptuales, pero no inventar
+   conceptos, URI, rutas o relaciones atribuyéndolos falsamente a la ontología.
 4. Buscá prioritariamente SÍNTESIS CONCEPTUALES NOVEDOSAS que transformen
    las relaciones entre posiciones contradictorias MANTENIENDO ACTIVAS Y
    RECONOCIBLES SUS TENSIONES. No confundas síntesis con consenso, promedio,
