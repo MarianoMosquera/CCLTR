@@ -2,3 +2,56 @@
 
 /* Family-first navigation and constellation styling */
 .family{border-radius:13px;padding:14px 13px;min-height:54px}.family.active{box-shadow:inset 3px 0 #65c7f8,0 0 24px #2e78bd1c}.graph-wrap{background:radial-gradient(ellipse at 48% 48%,#183252 0%,#0c1728 64%,#08121f 100%)}.graph-wrap:before{background-image:radial-gradient(#88b4dc2b 1px,transparent 1px);background-size:24px 24px}.sidebar h3:first-of-type{margin-top:18px}
+
+
+/* CCLTR experimental navigation */
+.experiment-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 13px 16px;
+  border-bottom: 1px solid #304460;
+  background: #101c30;
+}
+.experiment-tab {
+  padding: 10px 15px;
+  border-radius: 9px;
+  border: 1px solid #36506f;
+  background: #172841;
+  color: #c2d2e8;
+  font-size: 12px;
+  font-weight: 600;
+}
+.experiment-tab:hover {
+  border-color: #77b8ff;
+}
+.experiment-tab.active {
+  background: #295786;
+  border-color: #82c4ff;
+  color: #fff;
+}
+.experiment-panel {
+  padding: 20px 24px;
+  background: #101d30;
+  border-bottom: 1px solid #304460;
+  color: #d5e2f3;
+  font-size: 13px;
+  line-height: 1.7;
+  max-height: 340px;
+  overflow: auto;
+}
+.experiment-panel h3 {
+  margin: 0 0 10px;
+  color: #a9d2ff;
+}
+.experiment-panel pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  background: #0b1424;
+  padding: 14px;
+  border-radius: 8px;
+}
+.experiment-panel .pending {
+  color: #9fb3cf;
+}

@@ -74,12 +74,13 @@ function layout(){
     coolingFactor:0.95,minTemp:1.0}).run();
 }
 async function show(r){
-  selectedRecord=r;renderResults();$('title').textContent=r.tesis;$('mapId').textContent=r.id;
+  selectedRecord=r;renderResults();experimentLoadForDebate(r.id);$('title').textContent=r.tesis;$('mapId').textContent=r.id;
   $('familyName').textContent=familyLabel(familyOf(r.id)).toUpperCase();
   const link=$('source');if(/^https:\/\//.test(safe(r.fuente))){link.href=r.fuente;link.hidden=false;}else{link.hidden=true;}
   $('graphPlaceholder').textContent='Loading argument constellation…';$('graphPlaceholder').style.display='grid';resetDetail();
   try{
     const g=await fetchJSON(`grafos/${encodeURIComponent(r.id)}.json`);
+      window.ccltrOriginalGraph = g;
     if(selectedRecord?.id!==r.id)return;
     const edgesRaw=g.edges||g.links||[];
     const outgoing=new Set(edgesRaw.map(e=>safe(e.source)));
@@ -109,3 +110,261 @@ $('filterCon').addEventListener('click',()=>{filter='CON';applyFilter();});
 $('fit').addEventListener('click',()=>cy?.fit(cy.elements(':visible'),40));
 $('reset').addEventListener('click',layout);
 init();
+
+
+
+// CCLTR_EXPERIMENT_NAVIGATION
+// Static A/B graph visualization. No inference or API calls.
+
+let experimentView = "debate";
+let experimentData = null;
+let experimentRequest = 0;
+
+function experimentElement(id) {
+  return document.getElementById(id);
+}
+
+function experimentGraphFromData(data) {
+  return (
+    data?.rama_b?.grafo ||
+    data?.rama_b?.graph ||
+    data?.grafo_transformado ||
+    data?.graph_b ||
+    null
+  );
+}
+
+function experimentRenderGraph(graph) {
+  if (!graph || !Array.isArray(graph.nodes) || !cy) return false;
+
+  const nodes = graph.nodes.map(n => ({
+    data: {
+      ...n,
+      id: String(n.id),
+      label: String(n.claim || n.label || n.id).slice(0, 48),
+      isRoot: false
+    }
+  }));
+
+  const edgesRaw = graph.edges || graph.links || [];
+
+  const outgoing = new Set(
+    edgesRaw.map(e => String(e.source))
+  );
+
+  const roots = graph.nodes.filter(
+    n => !outgoing.has(String(n.id))
+  );
+
+  if (roots.length === 1) {
+    const rootId = String(roots[0].id);
+    nodes.forEach(n => {
+      n.data.isRoot = n.data.id === rootId;
+    });
+  }
+
+  const edges = edgesRaw.map((e, i) => ({
+    data: {
+      ...e,
+      id: `experiment-edge-${i}`,
+      source: String(e.source),
+      target: String(e.target),
+      valence: String(e.valence || e.type || "").toUpperCase()
+    }
+  }));
+
+  cy.elements().remove();
+  cy.add([...nodes, ...edges]);
+
+  document.getElementById("nodeCount").textContent =
+    nodes.length.toLocaleString("en-US");
+
+  document.getElementById("edgeCount").textContent =
+    edges.length.toLocaleString("en-US");
+
+  document.getElementById("proCount").textContent =
+    edges.filter(e => e.data.valence === "PRO").length.toLocaleString("en-US");
+
+  document.getElementById("conCount").textContent =
+    edges.filter(e => e.data.valence === "CON").length.toLocaleString("en-US");
+
+  filter = "ALL";
+  applyFilter();
+  layout();
+  resetDetail();
+
+  return true;
+}
+
+function experimentRestoreOriginal() {
+  if (window.ccltrOriginalGraph) {
+    experimentRenderGraph(window.ccltrOriginalGraph);
+  }
+}
+
+function experimentShowMessage(panel, message) {
+  const p = document.createElement("p");
+  p.className = "pending";
+  p.textContent = message;
+  panel.append(p);
+}
+
+function experimentRenderTraceability(panel) {
+  const heading = document.createElement("h3");
+  heading.textContent = "Traceability";
+  panel.append(heading);
+
+  const trace =
+    experimentData?.rama_b?.registro_transformacion ||
+    experimentData?.registro_transformacion ||
+    null;
+
+  const comparison = experimentData?.comparacion || null;
+
+  if (!trace && !comparison) {
+    experimentShowMessage(
+      panel,
+      "No validated transformation trace is available."
+    );
+    return;
+  }
+
+  for (const [title, data] of [
+    ["Transformation record", trace],
+    ["A/B comparison", comparison]
+  ]) {
+    if (!data) continue;
+
+    const h = document.createElement("h3");
+    h.textContent = title;
+    panel.append(h);
+
+    const pre = document.createElement("pre");
+    pre.textContent = JSON.stringify(data, null, 2);
+    panel.append(pre);
+  }
+}
+
+function experimentSetView(view) {
+  experimentView = view;
+
+  const buttons = {
+    debate: "viewDebate",
+    displacement: "viewDisplacement",
+    traceability: "viewTraceability"
+  };
+
+  for (const [name, id] of Object.entries(buttons)) {
+    const button = experimentElement(id);
+    if (button) {
+      button.classList.toggle("active", name === view);
+    }
+  }
+
+  const panel = experimentElement("experimentPanel");
+  if (!panel) return;
+
+  panel.replaceChildren();
+  panel.hidden = view === "debate";
+
+  if (view === "debate") {
+    experimentRestoreOriginal();
+    return;
+  }
+
+  if (!experimentData) {
+    experimentRestoreOriginal();
+    experimentShowMessage(
+      panel,
+      "No validated experimental result is available for this debate."
+    );
+    return;
+  }
+
+  if (view === "displacement") {
+    const graph = experimentGraphFromData(experimentData);
+
+    if (!graph || !experimentRenderGraph(graph)) {
+      experimentRestoreOriginal();
+      experimentShowMessage(
+        panel,
+        "No valid transformed graph is available."
+      );
+      return;
+    }
+
+    const heading = document.createElement("h3");
+    heading.textContent = "Semantic Displacement";
+    panel.append(heading);
+
+    const p = document.createElement("p");
+    p.textContent =
+      "Transformed argument graph. Select a node to inspect its claim.";
+    panel.append(p);
+    return;
+  }
+
+  if (view === "traceability") {
+    experimentRestoreOriginal();
+    experimentRenderTraceability(panel);
+  }
+}
+
+async function experimentLoadForDebate(debateId) {
+  const request = ++experimentRequest;
+
+  experimentData = null;
+  window.ccltrOriginalGraph = null;
+  experimentView = "debate";
+
+  for (const [name, id] of Object.entries({
+    debate: "viewDebate",
+    displacement: "viewDisplacement",
+    traceability: "viewTraceability"
+  })) {
+    experimentElement(id)?.classList.toggle(
+      "active", name === "debate"
+    );
+  }
+
+  const panel = experimentElement("experimentPanel");
+  if (panel) {
+    panel.hidden = true;
+    panel.replaceChildren();
+  }
+
+  if (!debateId) return;
+
+  try {
+    const response = await fetch(
+      `transformaciones/${encodeURIComponent(debateId)}_visualizacion.json`
+    );
+
+    if (!response.ok) return;
+
+    const data = await response.json();
+
+    if (request !== experimentRequest) return;
+
+    // Require the result to belong to the selected debate.
+    if (String(data.identificador) !== String(debateId)) {
+      console.warn("Experiment identifier mismatch");
+      return;
+    }
+
+    experimentData = data;
+  } catch (error) {
+    console.warn("Experimental result unavailable:", error);
+  }
+}
+
+for (const [id, view] of [
+  ["viewDebate", "debate"],
+  ["viewDisplacement", "displacement"],
+  ["viewTraceability", "traceability"]
+]) {
+  experimentElement(id)?.addEventListener(
+    "click",
+    () => experimentSetView(view)
+  );
+}
