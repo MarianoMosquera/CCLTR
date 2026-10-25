@@ -24,52 +24,60 @@ def construir_prompt_rama_b(entrada_b):
         raise ValueError("Faltan las relaciones originales")
 
     instrucciones = """
-Sos un agente de transformación semántica del proyecto CCLTR.
+Sos el agente de transformación semántica de CCLTR.
 
 OBJETIVO
-Proponer nuevas perspectivas conceptuales a partir de posiciones
-argumentativas originales, utilizando la ontología SKOS como
-infraestructura de exploración semántica.
+Reconfigurar conceptualmente un debate con apoyo de la ontología SKOS,
+explorando perspectivas y relaciones sin reducir las contradicciones genuinas
+a un consenso artificial. La expansión por nuevos nodos es solo una opción.
 
-PRINCIPIOS OBLIGATORIOS
-1. Conservá las posiciones originales y sus contradicciones genuinas.
-2. No reduzcas el debate a una posición consensual ni a una síntesis
-   que simplemente elimine las diferencias.
-3. Explorá generalizaciones, especializaciones y asociaciones SKOS.
-4. Podés proponer nuevos nodos, reformulaciones, fusiones, vínculos
-   y prioridades conceptuales.
-5. Una fusión no implica eliminar los nodos originales.
-6. No inventes conceptos ni relaciones atribuyéndolos a la ontología.
-7. Toda ruta SKOS declarada debe existir en los datos proporcionados.
-8. Justificá qué aporta cada transformación y qué tensión conserva.
-9. Distinguí la conservación de una contradicción de su resolución.
-10. No presupongas que más conexiones implican más diversidad.
-11. No solicites ni infieras clasificaciones, métricas o resultados
-    de la rama A.
-12. No modifiques las relaciones originales ni su valence PRO/CON.
-    La valencia de una relación no define automáticamente la
-    posición global de un nodo.
+PROCEDIMIENTO OBLIGATORIO DE DELIBERACIÓN INTERNA
+1. Identificá oposiciones y tensiones del grafo, sin inferir la postura global
+   de cada nodo a partir de la valence de una arista.
+2. Evaluá explícitamente la pertinencia de CADA UNA de las siete operaciones
+   del catálogo, incluso cuando decidas no utilizarla. No hay cuotas.
+3. Considerá especialmente si una reformulación, una fusión que conserve
+   las fuentes, una nueva relación o una jerarquización aportan más que
+   agregar nodos desconectados. No fabriques operaciones para cumplir cuotas.
+4. Para cada operación seleccionada, explicá en justificacion por qué es
+   preferible a las alternativas descartadas en ese contexto, qué elementos
+   existentes afecta y cómo se mantiene la tensión entre posiciones.
+5. Si solo proponés crear_nodo, explicá en la justificacion de cada propuesta
+   por qué las operaciones de reconfiguración no serían pertinentes.
+6. Una fusión genera una nueva representación y no debe borrar las fuentes.
+   Conservá la identidad y la trazabilidad de los argumentos originales.
+7. Nunca inventes conceptos, URI ni relaciones SKOS. Las rutas declaradas
+   deben corresponder a los datos ontológicos suministrados.
+8. No modifiques las aristas originales ni su valence PRO/CON; podés crear
+   relaciones adicionales y proponer nuevas jerarquías. No propongas retirar
+   nodos o vínculos originales si ello viola la integridad del debate.
+9. No accedas a clasificaciones, mediciones ni resultados de la rama A.
+10. No supongas que un aumento de nodos, vínculos o similitud equivale a
+    mayor diversidad. Diferenciá expansión de reconfiguración conceptual.
 
-SALIDA
-Devolvé exclusivamente un objeto JSON con la clave "propuestas",
-que contenga una lista de operaciones candidatas.
+CONTRATO EXACTO DEL MOTOR
+Usá exclusivamente los siguientes valores de operacion y sus campos
+obligatorios (además de los campos semánticos pertinentes):
+- crear_nodo: claim, id_nuevo, justificacion
+- reformular_nodo: claim_nuevo, id_original, justificacion
+- fusionar_nodos: claim, id_nuevo, ids_origen, justificacion
+- crear_vinculo: justificacion, source, target, tipo
+- retirar_vinculo: justificacion, source, target, tipo
+- jerarquizar_nodo: id_nodo, justificacion, prioridad
+- retirar_nodo: id_nodo, justificacion
 
-Cada propuesta debe declarar:
-- operacion
-- justificacion
-
-Las operaciones deben utilizar los campos establecidos por el motor
-de transformación de CCLTR.
-
-Para operaciones semánticas incluí:
-- anclajes_skos: lista de URI existentes
-- rutas_skos: recorridos explícitos con origen, destino,
-  longitud y pasos; cada paso contiene origen, destino, tipo
-  y relacion_skos
-- tension_conservada: explicación de la oposición preservada
-- aporte_conceptual: explicación de la perspectiva emergente
-
-No presentes ninguna propuesta como científicamente validada.
+REGLAS DE SALIDA
+Devolvé exclusivamente JSON válido con la única clave raíz propuestas,
+cuyo valor es una lista no vacía de operaciones. No uses agregar_nodo,
+ni un objeto anidado nodo; para crear_nodo usá id_nuevo y claim.
+Cada propuesta debe contener una justificacion textual sustantiva.
+Para operaciones con desplazamiento semántico, incluí anclajes_skos
+(lista de URI existentes), rutas_skos (origen, destino, longitud y pasos,
+cada paso con origen, destino, tipo y relacion_skos),
+tension_conservada y aporte_conceptual.
+No declares una propuesta científicamente validada.
+No agregues claves raíz como diagnostico o evaluacion: documentá la
+selección y descarte de alternativas dentro de justificacion.
 """
 
     datos = {
