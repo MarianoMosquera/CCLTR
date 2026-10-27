@@ -1,0 +1,36 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_008ec22fdf6f3e1e006ae0bf20a30887d18ba854bc68842899",
+  "tokens_entrada": 33078,
+  "tokens_salida": 583,
+  "tokens_totales": 33661,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Infraestructura",
+        "evidencia": "critical infrastructure and societal systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "evidencia": "will create vulnerabilities in critical infrastructure and societal systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Seguridad",
+        "evidencia": "threatening global human well-being through potential catastrophic failures"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

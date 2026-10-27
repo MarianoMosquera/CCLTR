@@ -1,0 +1,14 @@
+{
+  "grafo_sha256": "1ab6e5022e6cb8278cb8435dbe7fe2383c45144f1d47bcb3131a5445b6e02b93",
+  "configuracion": {
+    "tamano_muestra": 10,
+    "repeticiones": 1000,
+    "semilla": 42,
+    "referencia_riqueza": 398.0,
+    "modelo_embeddings": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "version_embeddings": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+  },
+  "modelo_astra": "gpt-6-astra",
+  "razonamiento": "high",
+  "advertencia": "Referencia de riqueza = cantidad de conceptos SKOS; muestra fija predefinida"
+}

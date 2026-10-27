@@ -1,0 +1,671 @@
+{
+  "4337ee26-e1db-499e-9340-97bce6e0276d": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "enhance global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "29452f42-5dfa-4454-bd13-4522067d38f1": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Imparcialidad",
+        "evidencia": "perpetuate and amplify existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoDiscriminacion",
+        "evidencia": "discriminatory outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "evidencia": "undermining global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "4d0b50b8-d93e-49bc-98d3-2019caa8fbbf": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Imparcialidad",
+        "evidencia": "perpetuate and amplify existing biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoDiscriminacion",
+        "evidencia": "discriminatory outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "evidencia": "marginalized communities"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "evidencia": "harm marginalized communities"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "undermine global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "4f6ae709-894d-4afb-94a0-068ac7fe18b4": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/Automatizacion",
+        "evidencia": "Implementing artificial intelligence will displace human workers"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Empleo",
+        "evidencia": "displace human workers"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Igualdad",
+        "evidencia": "exacerbating income inequality"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Estabilidad",
+        "evidencia": "social unrest"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "undermining global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "a1f09f52-e366-42f7-aafd-55b73c1bd5a5": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Infraestructura",
+        "evidencia": "critical infrastructure and societal systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "evidencia": "will create vulnerabilities in critical infrastructure and societal systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Seguridad",
+        "evidencia": "threatening global human well-being through potential catastrophic failures"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "33006a83-8a64-4436-8058-aa67d23534f6": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "healthcare systems can lead to early disease diagnosis, personalized treatment, and streamlined clinical workflows"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "enhancing global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Teleologia",
+        "evidencia": "Implementing artificial intelligence in healthcare systems can lead to early disease diagnosis, personalized treatment, and streamlined clinical workflows, ultimately enhancing global human well-being."
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "8a684dea-7f1d-4579-af32-5d5ea5be4512": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/CambioClimatico",
+        "evidencia": "climate change"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Sustentabilidad",
+        "evidencia": "mitigate the effects of climate change"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Implementing artificial intelligence can help analyze and mitigate the effects of climate change"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "9bdb0749-aa85-412a-8e6a-8c0a3f89ab79": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/Recursos",
+        "evidencia": "more efficient use of resources"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Alimentaria",
+        "evidencia": "food production"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Produccion",
+        "evidencia": "food production"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/Agua",
+        "evidencia": "water management"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Energetica",
+        "evidencia": "energy distribution"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "improved global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Teleologia",
+        "evidencia": "leading to more efficient use of resources and improved global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "a1b0de03-9f46-4af5-b85b-78c819417e06": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "La analítica de IA puede mejorar las políticas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Tiempo",
+        "evidencia": "tiempo dedicado a procesar datos"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
+        "evidencia": "capacidad institucional para actuar y revisar decisiones"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Afectados",
+        "evidencia": "permitir que los afectados cuestionen sus prioridades"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#RecursosHumanos",
+        "evidencia": "compiten por tiempo, personal y recursos"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "producir análisis, ejecutarlos y permitir que los afectados cuestionen sus prioridades compiten por tiempo, personal y recursos: una mayor capacidad predictiva puede coexistir con una menor capacidad de corregir decisiones."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Informacion",
+        "evidencia": "información disponible"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Control",
+        "evidencia": "capacidad institucional para actuar y revisar decisiones"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/engagement#Oposicion",
+        "evidencia": "permitir que los afectados cuestionen sus prioridades"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional",
+      "prospectiva"
+    ]
+  },
+  "13599dc0-f00c-4635-bf82-d93954b86e8f": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "AI-driven improvements in disease diagnosis, treatment, and clinical workflows"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "A healthier global population"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Poblacion",
+        "evidencia": "global population"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Salud",
+        "evidencia": "reduced healthcare costs"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Economica",
+        "evidencia": "increased economic productivity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "improved overall well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "increased economic productivity, reduced healthcare costs, and improved overall well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "00f57384-fa62-4210-9cd2-2c4493679253": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "fallas de IA"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/Automatizacion",
+        "evidencia": "interrumpir la automatización"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Resiliencia",
+        "evidencia": "Los respaldos pueden evitar que fallas de IA se conviertan en catástrofes cuando constituyen una capacidad efectiva de mantener el servicio"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#AnalisisRiesgo",
+        "evidencia": "requieren alternativas que no compartan los mismos modos de fallo"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
+        "evidencia": "requieren alternativas que no compartan los mismos modos de fallo, personal capaz de operarlas y procedimientos con autoridad para activarlas."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Infraestructura",
+        "evidencia": "duplicar sistemas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#RecursosHumanos",
+        "evidencia": "personal capaz de operarlas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Habilidades",
+        "evidencia": "personal capaz de operarlas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Procedimientos",
+        "evidencia": "procedimientos con autoridad para activarlas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Control",
+        "evidencia": "capacidad efectiva de mantener el servicio e interrumpir la automatización: requieren alternativas que no compartan los mismos modos de fallo, personal capaz de operarlas y procedimientos con autoridad para activarlas."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "Mantener esa capacidad de reserva puede competir con el ahorro y la utilización intensiva de recursos"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Los respaldos pueden evitar que fallas de IA se conviertan en catástrofes cuando constituyen una capacidad efectiva de mantener el servicio e interrumpir la automatización"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional",
+      "prospectiva"
+    ]
+  },
+  "1c3b4681-27a4-4bef-90fa-d25ecefbcbe2": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "AI-driven analytics"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "prevent hospital readmissions, and optimize treatment plans, ultimately leading to improved health outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "ultimately leading to improved health outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "evidencia": "high-risk patients"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Leveraging AI-driven analytics in healthcare can help identify high-risk patients, prevent hospital readmissions, and optimize treatment plans"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "129f7654-1a3d-4511-bd51-968df1be3f92": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoDiscriminacion",
+        "evidencia": "Discriminatory outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/engagement#Dialogo",
+        "evidencia": "spark meaningful conversations"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#AccionColectiva",
+        "evidencia": "mobilize efforts to address and overcome existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Problemas",
+        "evidencia": "existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "mobilize efforts to address and overcome existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "enhancing global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "25f7d32e-8a43-41c9-bdfc-1c8aec6ffe95": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Implementing AI in healthcare"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "healthcare access and outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Equidad",
+        "evidencia": "reduce disparities in healthcare access and outcomes, particularly in underserved communities"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "evidencia": "underserved communities"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "contributing to enhanced global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "enhanced global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Implementing AI in healthcare can reduce disparities in healthcare access and outcomes"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "18392527-0b3d-4fd4-8d43-74fe66e3a146": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Capacidad",
+        "evidencia": "decision-makers may not have the necessary expertise, resources, or willingness to translate those insights into effective actions."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Habilidades",
+        "evidencia": "decision-makers may not have the necessary expertise"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Motivacion",
+        "evidencia": "willingness to translate those insights into effective actions"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional"
+    ]
+  },
+  "2035f702-72f1-4e48-9ff2-e112c8704e2e": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Sobreinformacion",
+        "evidencia": "The complexity and volume of AI-generated data can overwhelm decision-makers"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "AI-generated data"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/BigData",
+        "evidencia": "The complexity and volume of AI-generated data"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Habilidades",
+        "evidencia": "making it difficult for them to extract actionable insights without specialized expertise"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional"
+    ]
+  },
+  "1b05dad6-1551-4faf-8147-3d89dc08addc": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/CambioClimatico",
+        "evidencia": "mitigate climate change"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/Ciberseguridad",
+        "evidencia": "may be vulnerable to cyberattacks"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "potentially leading to catastrophic consequences, thereby outweighing any potential benefits."
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  },
+  "2c255901-73a6-4ce1-8261-87e952ac3bce": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "The pursuit of global human well-being is a moral obligation"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "health"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Dignidad",
+        "evidencia": "dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/Leyes",
+        "evidencia": "enshrined in international law"
+      }
+    ],
+    "funciones": []
+  },
+  "05b7be24-2d22-4dff-9b5c-96aa5593f9d0": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/social/Cultura",
+        "evidencia": "The concept of 'global human well-being' is culturally relative"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Diversidad",
+        "evidencia": "individuals from diverse cultural backgrounds, such as indigenous communities or vegan societies"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "could infringe upon the rights of individuals from diverse cultural backgrounds"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/politica/GruposOriginarios",
+        "evidencia": "indigenous communities"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional",
+      "prospectiva"
+    ]
+  },
+  "156ddc91-18e7-4b9c-8058-1f964b71f8df": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/OrganizacionesInternacionales",
+        "evidencia": "the United Nations"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/Normas",
+        "evidencia": "The Universal Declaration of Human Rights, adopted by the United Nations in 1948, explicitly enshrines fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Dignidad",
+        "evidencia": "dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Compromiso",
+        "evidencia": "international recognition and commitment to these principles"
+      }
+    ],
+    "funciones": []
+  },
+  "b297d3d6-c894-4bcf-9ea3-6f6823ab50d2": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "La contribución de la IA al bienestar global"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "las mejoras sectoriales no bastan para afirmar que implementar IA mejorará finalmente el bienestar global"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Accountability",
+        "evidencia": "debería someterse a una doble exigibilidad: las comunidades afectadas pueden impugnar definiciones externas de bienestar, y las personas pueden impugnar decisiones de sus propias comunidades que vulneren derechos universales."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Afectados",
+        "evidencia": "las comunidades afectadas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Autodeterminacion",
+        "evidencia": "las comunidades afectadas pueden impugnar definiciones externas de bienestar"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "las personas pueden impugnar decisiones de sus propias comunidades que vulneren derechos universales"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Comunidad",
+        "evidencia": "Ni los beneficios agregados ni la aceptación comunitaria cancelan automáticamente la otra exigencia"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/engagement#Oposicion",
+        "evidencia": "las personas pueden impugnar decisiones de sus propias comunidades"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Sobreinterpretacion",
+        "evidencia": "las mejoras sectoriales no bastan para afirmar que implementar IA mejorará finalmente el bienestar global"
+      }
+    ],
+    "funciones": [
+      "condicional",
+      "prospectiva"
+    ]
+  }
+}

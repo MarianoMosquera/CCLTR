@@ -1,0 +1,65 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_01e29ded915af525006ae0bfa56da487d18bcb0345ee6ca1c7",
+  "tokens_entrada": 33144,
+  "tokens_salida": 1464,
+  "tokens_totales": 34608,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "fallas de IA"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/Automatizacion",
+        "evidencia": "interrumpir la automatización"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Resiliencia",
+        "evidencia": "Los respaldos pueden evitar que fallas de IA se conviertan en catástrofes cuando constituyen una capacidad efectiva de mantener el servicio"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#AnalisisRiesgo",
+        "evidencia": "requieren alternativas que no compartan los mismos modos de fallo"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
+        "evidencia": "requieren alternativas que no compartan los mismos modos de fallo, personal capaz de operarlas y procedimientos con autoridad para activarlas."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Infraestructura",
+        "evidencia": "duplicar sistemas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#RecursosHumanos",
+        "evidencia": "personal capaz de operarlas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Habilidades",
+        "evidencia": "personal capaz de operarlas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Procedimientos",
+        "evidencia": "procedimientos con autoridad para activarlas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Control",
+        "evidencia": "capacidad efectiva de mantener el servicio e interrumpir la automatización: requieren alternativas que no compartan los mismos modos de fallo, personal capaz de operarlas y procedimientos con autoridad para activarlas."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "Mantener esa capacidad de reserva puede competir con el ahorro y la utilización intensiva de recursos"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Los respaldos pueden evitar que fallas de IA se conviertan en catástrofes cuando constituyen una capacidad efectiva de mantener el servicio e interrumpir la automatización"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional",
+      "prospectiva"
+    ]
+  }
+}

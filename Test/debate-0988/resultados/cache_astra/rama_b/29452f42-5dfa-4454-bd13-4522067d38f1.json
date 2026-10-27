@@ -1,0 +1,36 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_04c4f258ac4dbd3f006ae0beeda9ec87d1b17bd7de38282de4",
+  "tokens_entrada": 33072,
+  "tokens_salida": 561,
+  "tokens_totales": 33633,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Imparcialidad",
+        "evidencia": "perpetuate and amplify existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoDiscriminacion",
+        "evidencia": "discriminatory outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoMaleficencia",
+        "evidencia": "undermining global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_041ae985c3a1f494006ae0b9f68d8c87d1bfacbbe8a8bd4aa5",
+  "tokens_entrada": 33085,
+  "tokens_salida": 1077,
+  "tokens_totales": 34162,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "AI-driven improvements in disease diagnosis, treatment, and clinical workflows"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "A healthier global population"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Salud",
+        "evidencia": "reduced healthcare costs"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Economica",
+        "evidencia": "increased economic productivity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "increased economic productivity, reduced healthcare costs, and improved overall well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "A healthier global population, resulting from AI-driven improvements in disease diagnosis, treatment, and clinical workflows, can lead to increased economic productivity, reduced healthcare costs, and improved overall well-being."
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

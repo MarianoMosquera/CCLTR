@@ -1,0 +1,52 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_05f802d52102476f006ae0c0666c7887d184c2674f893a8391",
+  "tokens_entrada": 33159,
+  "tokens_salida": 1370,
+  "tokens_totales": 34529,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "La contribución de la IA al bienestar global"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "las mejoras sectoriales no bastan para afirmar que implementar IA mejorará finalmente el bienestar global"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Accountability",
+        "evidencia": "debería someterse a una doble exigibilidad: las comunidades afectadas pueden impugnar definiciones externas de bienestar, y las personas pueden impugnar decisiones de sus propias comunidades que vulneren derechos universales."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Afectados",
+        "evidencia": "las comunidades afectadas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Autodeterminacion",
+        "evidencia": "las comunidades afectadas pueden impugnar definiciones externas de bienestar"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "las personas pueden impugnar decisiones de sus propias comunidades que vulneren derechos universales"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Comunidad",
+        "evidencia": "Ni los beneficios agregados ni la aceptación comunitaria cancelan automáticamente la otra exigencia"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/engagement#Oposicion",
+        "evidencia": "las personas pueden impugnar decisiones de sus propias comunidades"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Sobreinterpretacion",
+        "evidencia": "las mejoras sectoriales no bastan para afirmar que implementar IA mejorará finalmente el bienestar global"
+      }
+    ],
+    "funciones": [
+      "condicional",
+      "prospectiva"
+    ]
+  }
+}

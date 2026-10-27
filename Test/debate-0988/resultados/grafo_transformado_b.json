@@ -1,0 +1,416 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "claim": "Implementing artificial intelligence will ultimately enhance global human well-being.",
+      "label": "AI for Humanity",
+      "id": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "claim": "Artificial intelligence systems can perpetuate and amplify existing social biases, leading to discriminatory outcomes and undermining global human well-being.",
+      "label": "AI Bias Amplification",
+      "premises": [
+        "Artificial intelligence systems can perpetuate existing social biases.",
+        "Artificial intelligence systems can amplify existing social biases.",
+        "Perpetuating and amplifying existing social biases leads to discriminatory outcomes.",
+        "Discriminatory outcomes undermine global human well-being.",
+        "Existing social biases are detrimental to global human well-being."
+      ],
+      "id": "29452f42-5dfa-4454-bd13-4522067d38f1"
+    },
+    {
+      "claim": "Artificial intelligence systems can perpetuate and amplify existing biases, leading to discriminatory outcomes that harm marginalized communities and undermine global human well-being.",
+      "label": "Bias Amplification Threat",
+      "premises": [
+        "Artificial intelligence systems can perpetuate and amplify existing biases.",
+        "Perpetuating and amplifying existing biases leads to discriminatory outcomes.",
+        "Discriminatory outcomes harm marginalized communities.",
+        "Harm to marginalized communities undermines global human well-being.",
+        "Existing biases are present in the data used to develop and train artificial intelligence systems."
+      ],
+      "id": "4d0b50b8-d93e-49bc-98d3-2019caa8fbbf"
+    },
+    {
+      "claim": "Implementing artificial intelligence will displace human workers, exacerbating income inequality and social unrest, thereby undermining global human well-being.",
+      "label": "Job Displacement Dilemma",
+      "premises": [
+        "Implementing artificial intelligence will displace human workers.",
+        "Displacing human workers will exacerbate income inequality.",
+        "Exacerbating income inequality will lead to social unrest.",
+        "Social unrest is detrimental to global human well-being.",
+        "The negative consequences of implementing artificial intelligence will outweigh any potential benefits."
+      ],
+      "id": "4f6ae709-894d-4afb-94a0-068ac7fe18b4"
+    },
+    {
+      "claim": "Over-reliance on artificial intelligence will create vulnerabilities in critical infrastructure and societal systems, threatening global human well-being through potential catastrophic failures.",
+      "label": "Digital Dependence Danger",
+      "premises": [
+        "Over-reliance on artificial intelligence can create vulnerabilities in critical infrastructure and societal systems.",
+        "Vulnerabilities in critical infrastructure and societal systems can lead to potential catastrophic failures.",
+        "Potential catastrophic failures in critical infrastructure and societal systems can threaten global human well-being.",
+        "The potential risks associated with over-reliance on artificial intelligence outweigh its potential benefits.",
+        "Global human well-being is a value that should be prioritized and protected."
+      ],
+      "id": "a1f09f52-e366-42f7-aafd-55b73c1bd5a5"
+    },
+    {
+      "claim": "Implementing artificial intelligence in healthcare systems can lead to early disease diagnosis, personalized treatment, and streamlined clinical workflows, ultimately enhancing global human well-being.",
+      "label": "AI-Driven Healthcare",
+      "premises": [
+        "Implementing artificial intelligence in healthcare systems can lead to early disease diagnosis.",
+        "Implementing artificial intelligence in healthcare systems can lead to personalized treatment.",
+        "Implementing artificial intelligence in healthcare systems can lead to streamlined clinical workflows.",
+        "Early disease diagnosis, personalized treatment, and streamlined clinical workflows are factors that contribute to enhanced global human well-being.",
+        "The benefits of implementing artificial intelligence in healthcare systems can be generalized to a global scale, impacting human well-being worldwide."
+      ],
+      "id": "33006a83-8a64-4436-8058-aa67d23534f6"
+    },
+    {
+      "claim": "Implementing artificial intelligence can help analyze and mitigate the effects of climate change, which is a major threat to global human well-being.",
+      "label": "AI for Climate Change Mitigation",
+      "premises": [
+        "Climate change is a major threat to global human well-being.",
+        "Analyzing and mitigating the effects of climate change will contribute to enhancing global human well-being.",
+        "Artificial intelligence has the capability to effectively analyze and mitigate the effects of climate change.",
+        "The benefits of implementing artificial intelligence in addressing climate change outweigh any potential drawbacks or risks.",
+        "Enhancing global human well-being is a desirable goal."
+      ],
+      "id": "8a684dea-7f1d-4579-af32-5d5ea5be4512"
+    },
+    {
+      "claim": "Artificial intelligence can optimize resource allocation in critical sectors such as food production, water management, and energy distribution, leading to more efficient use of resources and improved global human well-being.",
+      "label": "Intelligent Resource Allocation",
+      "premises": [
+        "Artificial intelligence can optimize resource allocation in critical sectors such as food production, water management, and energy distribution.",
+        "Optimizing resource allocation in critical sectors leads to more efficient use of resources.",
+        "More efficient use of resources in critical sectors contributes to improved global human well-being.",
+        "The implementation of artificial intelligence is feasible and can be effectively integrated into critical sectors.",
+        "The benefits of artificial intelligence in optimizing resource allocation outweigh any potential drawbacks or risks."
+      ],
+      "id": "9bdb0749-aa85-412a-8e6a-8c0a3f89ab79"
+    },
+    {
+      "claim": "La analítica de IA puede mejorar las políticas al convertir tiempo dedicado a procesar datos en capacidad institucional para actuar y revisar decisiones. Sin embargo, producir análisis, ejecutarlos y permitir que los afectados cuestionen sus prioridades compiten por tiempo, personal y recursos: una mayor capacidad predictiva puede coexistir con una menor capacidad de corregir decisiones. El beneficio debe distinguir entre información disponible, acción efectiva y posibilidad de impugnación, sin asumir que una garantiza las otras.",
+      "label": "Data-Driven Decision Making",
+      "premises": [
+        "Artificial intelligence can analyze vast amounts of data to identify patterns and provide insights.",
+        "The patterns and insights provided by artificial intelligence can inform decision-making.",
+        "Informed decision-making leads to more effective policies.",
+        "Effective policies can promote global human well-being.",
+        "The benefits of artificial intelligence in promoting global human well-being outweigh any potential drawbacks or risks."
+      ],
+      "id": "a1b0de03-9f46-4af5-b85b-78c819417e06",
+      "historial_reformulaciones": [
+        {
+          "secuencia": 1,
+          "claim_anterior": "Artificial intelligence can analyze vast amounts of data to identify patterns and provide insights that inform decision-making, leading to more informed and effective policies that promote global human well-being.",
+          "claim_nuevo": "La analítica de IA puede mejorar las políticas al convertir tiempo dedicado a procesar datos en capacidad institucional para actuar y revisar decisiones. Sin embargo, producir análisis, ejecutarlos y permitir que los afectados cuestionen sus prioridades compiten por tiempo, personal y recursos: una mayor capacidad predictiva puede coexistir con una menor capacidad de corregir decisiones. El beneficio debe distinguir entre información disponible, acción efectiva y posibilidad de impugnación, sin asumir que una garantiza las otras.",
+          "justificacion": "Se transforma la promesa informativa mediante la jerarquía de CapacidadInstitucional: Información es un componente junto con Tiempo, RecursosHumanos y Procedimientos, no su sustituto. La distinción entre Explicabilidad y Answerability permite separar comprender un resultado de exigir respuestas sobre su uso. Se prefiere reformular este nodo a agregar otra advertencia desconectada. En el lote se seleccionan reformulaciones, creación de vínculos y un único nodo transversal. Se descarta fusionar las dos críticas al sesgo porque conservan alcances y relaciones argumentativas diferentes; retirar nodos o vínculos no aporta a estas síntesis; y jerarquizar introduciría una prioridad no acordada entre exigencias normativas. El registro de entrada permanece intacto y todas sus aristas se conservan. El CON de Insight-Action Gap sigue cuestionando la viabilidad de convertir información en mejora institucional, no el valor global del nodo."
+        }
+      ]
+    },
+    {
+      "claim": "A healthier global population, resulting from AI-driven improvements in disease diagnosis, treatment, and clinical workflows, can lead to increased economic productivity, reduced healthcare costs, and improved overall well-being.",
+      "label": "Economic Benefits of Healthy Populations",
+      "premises": [
+        "AI-driven improvements in disease diagnosis, treatment, and clinical workflows can lead to a healthier global population.",
+        "A healthier global population is a necessary condition for increased economic productivity.",
+        "Reduced healthcare costs are a direct result of improved disease diagnosis, treatment, and clinical workflows.",
+        "Improved overall well-being is a consequence of a healthier global population.",
+        "Economic productivity, healthcare costs, and overall well-being are important indicators of global human well-being."
+      ],
+      "id": "13599dc0-f00c-4635-bf82-d93954b86e8f"
+    },
+    {
+      "claim": "Los respaldos pueden evitar que fallas de IA se conviertan en catástrofes cuando constituyen una capacidad efectiva de mantener el servicio e interrumpir la automatización: requieren alternativas que no compartan los mismos modos de fallo, personal capaz de operarlas y procedimientos con autoridad para activarlas. Mantener esa capacidad de reserva puede competir con el ahorro y la utilización intensiva de recursos; duplicar sistemas no demuestra por sí mismo que la dependencia digital esté controlada.",
+      "label": "Redundancy Mitigates",
+      "premises": [
+        "Redundant systems and backup infrastructure can prevent potential catastrophic failures in critical infrastructure and societal systems.",
+        "Critical infrastructure and societal systems are crucial for maintaining global human well-being.",
+        "Catastrophic failures in critical infrastructure and societal systems can have severe consequences for global human well-being.",
+        "Redundant systems and backup infrastructure are effective measures for mitigating the risk of catastrophic failures.",
+        "The implementation of redundant systems and backup infrastructure is feasible and practical in critical infrastructure and societal systems."
+      ],
+      "id": "00f57384-fa62-4210-9cd2-2c4493679253",
+      "historial_reformulaciones": [
+        {
+          "secuencia": 2,
+          "claim_anterior": "The existence of redundant systems and backup infrastructure can prevent potential catastrophic failures in critical infrastructure and societal systems from threatening global human well-being.",
+          "claim_nuevo": "Los respaldos pueden evitar que fallas de IA se conviertan en catástrofes cuando constituyen una capacidad efectiva de mantener el servicio e interrumpir la automatización: requieren alternativas que no compartan los mismos modos de fallo, personal capaz de operarlas y procedimientos con autoridad para activarlas. Mantener esa capacidad de reserva puede competir con el ahorro y la utilización intensiva de recursos; duplicar sistemas no demuestra por sí mismo que la dependencia digital esté controlada.",
+          "justificacion": "La ontología sitúa Infraestructura y Procedimientos dentro de CapacidadInstitucional, lo que permite transformar la redundancia de un inventario de equipos en una capacidad organizada de interrupción y continuidad. La relación entre NoMaleficencia y Proporcionalidad orienta el examen del costo de mantener reservas sin equiparar seguridad con ausencia de riesgo. Se prefiere reformular el argumento mitigador existente a crear otro nodo de seguridad o fusionarlo con Digital Dependence Danger: así permanece identificable la respuesta favorable a los respaldos y también su adversario. Su arista CON original se conserva como objeción a la inevitabilidad o predominio de las consecuencias catastróficas, no como negación de toda vulnerabilidad."
+        }
+      ]
+    },
+    {
+      "claim": "Leveraging AI-driven analytics in healthcare can help identify high-risk patients, prevent hospital readmissions, and optimize treatment plans, ultimately leading to improved health outcomes.",
+      "label": "Data-Driven Healthcare",
+      "premises": [
+        "AI-driven analytics can accurately identify high-risk patients.",
+        "Identifying high-risk patients can help prevent hospital readmissions.",
+        "Optimizing treatment plans through AI-driven analytics can lead to improved health outcomes.",
+        "AI-driven analytics can provide actionable insights for healthcare professionals to make informed decisions.",
+        "The use of AI-driven analytics in healthcare is feasible and can be effectively implemented."
+      ],
+      "id": "1c3b4681-27a4-4bef-90fa-d25ecefbcbe2"
+    },
+    {
+      "claim": "Discriminatory outcomes can actually spark meaningful conversations and mobilize efforts to address and overcome existing social biases, ultimately enhancing global human well-being.",
+      "label": "Contextualizing Discrimination",
+      "premises": [
+        "Discriminatory outcomes can spark meaningful conversations.",
+        "Meaningful conversations can mobilize efforts to address social biases.",
+        "Addressing and overcoming social biases can enhance global human well-being.",
+        "Social biases exist and are a problem that needs to be addressed.",
+        "The conversations and efforts sparked by discriminatory outcomes can be effective in overcoming social biases."
+      ],
+      "id": "129f7654-1a3d-4511-bd51-968df1be3f92"
+    },
+    {
+      "claim": "Implementing AI in healthcare can reduce disparities in healthcare access and outcomes, particularly in underserved communities, ultimately contributing to enhanced global human well-being.",
+      "label": "Reducing Healthcare Inequality",
+      "premises": [
+        "Implementing AI in healthcare can reduce disparities in healthcare access.",
+        "Reducing disparities in healthcare access can improve health outcomes, particularly in underserved communities.",
+        "Improving health outcomes in underserved communities contributes to enhanced global human well-being.",
+        "Disparities in healthcare access and outcomes currently exist, particularly in underserved communities.",
+        "AI has the capability to address and mitigate the existing disparities in healthcare access and outcomes."
+      ],
+      "id": "25f7d32e-8a43-41c9-bdfc-1c8aec6ffe95"
+    },
+    {
+      "claim": "Even with accurate insights provided by artificial intelligence, decision-makers may not have the necessary expertise, resources, or willingness to translate those insights into effective actions.",
+      "label": "Insight-Action Gap",
+      "premises": [
+        "Decision-makers may lack the necessary expertise to translate AI insights into effective actions.",
+        "Decision-makers may not have the necessary resources to translate AI insights into effective actions.",
+        "Decision-makers may not have the willingness to translate AI insights into effective actions.",
+        "Effective actions require more than just accurate insights, such as expertise, resources, and willingness.",
+        "Artificial intelligence insights alone are not sufficient to guarantee effective decision-making."
+      ],
+      "id": "18392527-0b3d-4fd4-8d43-74fe66e3a146"
+    },
+    {
+      "claim": "The complexity and volume of AI-generated data can overwhelm decision-makers, making it difficult for them to extract actionable insights without specialized expertise.",
+      "label": "Information Overload",
+      "premises": [
+        "The complexity of AI-generated data can be overwhelming for decision-makers.",
+        "The volume of AI-generated data can be overwhelming for decision-makers.",
+        "Decision-makers require specialized expertise to extract actionable insights from AI-generated data."
+      ],
+      "id": "2035f702-72f1-4e48-9ff2-e112c8704e2e"
+    },
+    {
+      "claim": "Artificial intelligence systems used to mitigate climate change may be vulnerable to cyberattacks, compromising their effectiveness and potentially leading to catastrophic consequences, thereby outweighing any potential benefits.",
+      "label": "Cybersecurity Vulnerability",
+      "premises": [
+        "Artificial intelligence systems used to mitigate climate change are vulnerable to cyberattacks.",
+        "Cyberattacks on artificial intelligence systems can compromise their effectiveness.",
+        "Compromised artificial intelligence systems can lead to catastrophic consequences.",
+        "The potential catastrophic consequences of compromised artificial intelligence systems outweigh any potential benefits of using these systems to mitigate climate change.",
+        "The effectiveness of artificial intelligence systems in mitigating climate change is crucial to their overall value."
+      ],
+      "id": "1b05dad6-1551-4faf-8147-3d89dc08addc"
+    },
+    {
+      "claim": "The pursuit of global human well-being is a moral obligation, as it aligns with the fundamental human rights to life, health, and dignity enshrined in international law.",
+      "label": "Humanitarian Imperative",
+      "premises": [
+        "Fundamental human rights to life, health, and dignity are enshrined in international law.",
+        "Human rights are morally obligatory.",
+        "The pursuit of global human well-being is aligned with fundamental human rights.",
+        "International law is a legitimate source of moral obligations.",
+        "Global human well-being is a valuable goal that should be pursued."
+      ],
+      "id": "2c255901-73a6-4ce1-8261-87e952ac3bce"
+    },
+    {
+      "claim": "The concept of 'global human well-being' is culturally relative, and imposing a single definition of well-being could infringe upon the rights of individuals from diverse cultural backgrounds, such as indigenous communities or vegan societies.",
+      "label": "Cultural Variance",
+      "premises": [
+        "The concept of 'global human well-being' is culturally relative.",
+        "Different cultures have varying definitions of well-being.",
+        "Imposing a single definition of well-being on diverse cultural backgrounds could be a form of cultural imperialism.",
+        "Individuals from diverse cultural backgrounds, such as indigenous communities or vegan societies, have the right to define their own well-being.",
+        "Respecting cultural diversity and individual rights is more important than pursuing a universal definition of global human well-being."
+      ],
+      "id": "05b7be24-2d22-4dff-9b5c-96aa5593f9d0"
+    },
+    {
+      "claim": "The Universal Declaration of Human Rights, adopted by the United Nations in 1948, explicitly enshrines fundamental human rights to life, health, and dignity, demonstrating international recognition and commitment to these principles.",
+      "label": "Universal Declaration",
+      "premises": [
+        "The Universal Declaration of Human Rights, adopted by the United Nations in 1948, explicitly enshrines fundamental human rights to life, health, and dignity.",
+        "The Universal Declaration of Human Rights is a widely recognized and authoritative document in international law.",
+        "The adoption of the Universal Declaration of Human Rights by the United Nations in 1948 represents a broad international consensus on the importance of human rights.",
+        "Fundamental human rights to life, health, and dignity are universally applicable and not limited to specific countries or cultures.",
+        "International law has moral authority and should guide our actions and decisions."
+      ],
+      "id": "156ddc91-18e7-4b9c-8058-1f964b71f8df"
+    },
+    {
+      "id": "b297d3d6-c894-4bcf-9ea3-6f6823ab50d2",
+      "claim": "La contribución de la IA al bienestar global debería someterse a una doble exigibilidad: las comunidades afectadas pueden impugnar definiciones externas de bienestar, y las personas pueden impugnar decisiones de sus propias comunidades que vulneren derechos universales. Ambas exigencias pueden reclamar decisiones incompatibles sobre un mismo despliegue. Ni los beneficios agregados ni la aceptación comunitaria cancelan automáticamente la otra exigencia; por eso, las mejoras sectoriales no bastan para afirmar que implementar IA mejorará finalmente el bienestar global.",
+      "origen": "transformacion_semantica",
+      "secuencia_transformacion": 3
+    }
+  ],
+  "edges": [
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "33006a83-8a64-4436-8058-aa67d23534f6",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "9bdb0749-aa85-412a-8e6a-8c0a3f89ab79",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "8a684dea-7f1d-4579-af32-5d5ea5be4512",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "a1b0de03-9f46-4af5-b85b-78c819417e06",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "4f6ae709-894d-4afb-94a0-068ac7fe18b4",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "4d0b50b8-d93e-49bc-98d3-2019caa8fbbf",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "a1f09f52-e366-42f7-aafd-55b73c1bd5a5",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 0,
+      "source": "29452f42-5dfa-4454-bd13-4522067d38f1",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 3,
+      "source": "25f7d32e-8a43-41c9-bdfc-1c8aec6ffe95",
+      "target": "33006a83-8a64-4436-8058-aa67d23534f6"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 3,
+      "source": "13599dc0-f00c-4635-bf82-d93954b86e8f",
+      "target": "33006a83-8a64-4436-8058-aa67d23534f6"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 0,
+      "source": "1c3b4681-27a4-4bef-90fa-d25ecefbcbe2",
+      "target": "13599dc0-f00c-4635-bf82-d93954b86e8f"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 4,
+      "source": "2c255901-73a6-4ce1-8261-87e952ac3bce",
+      "target": "8a684dea-7f1d-4579-af32-5d5ea5be4512"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "1b05dad6-1551-4faf-8147-3d89dc08addc",
+      "target": "8a684dea-7f1d-4579-af32-5d5ea5be4512"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 0,
+      "source": "156ddc91-18e7-4b9c-8058-1f964b71f8df",
+      "target": "2c255901-73a6-4ce1-8261-87e952ac3bce"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 4,
+      "source": "05b7be24-2d22-4dff-9b5c-96aa5593f9d0",
+      "target": "2c255901-73a6-4ce1-8261-87e952ac3bce"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 1,
+      "source": "18392527-0b3d-4fd4-8d43-74fe66e3a146",
+      "target": "a1b0de03-9f46-4af5-b85b-78c819417e06"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 0,
+      "source": "2035f702-72f1-4e48-9ff2-e112c8704e2e",
+      "target": "18392527-0b3d-4fd4-8d43-74fe66e3a146"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "00f57384-fa62-4210-9cd2-2c4493679253",
+      "target": "a1f09f52-e366-42f7-aafd-55b73c1bd5a5"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "129f7654-1a3d-4511-bd51-968df1be3f92",
+      "target": "29452f42-5dfa-4454-bd13-4522067d38f1"
+    },
+    {
+      "source": "2c255901-73a6-4ce1-8261-87e952ac3bce",
+      "target": "b297d3d6-c894-4bcf-9ea3-6f6823ab50d2",
+      "tipo": "PRO",
+      "origen": "transformacion_semantica",
+      "secuencia_transformacion": 4,
+      "justificacion": "El imperativo humanitario aporta una razón normativa para que las personas puedan cuestionar decisiones que lesionen vida, salud y dignidad, incluso cuando tengan respaldo comunitario. El apoyo corresponde a esa dimensión de la doble exigibilidad, no implica que el nodo fuente acepte toda la síntesis. Vincular permite conservar la tesis universalista independiente, a diferencia de fusionarla con la crítica cultural o reemplazarla por una formulación consensual."
+    },
+    {
+      "source": "05b7be24-2d22-4dff-9b5c-96aa5593f9d0",
+      "target": "b297d3d6-c894-4bcf-9ea3-6f6823ab50d2",
+      "tipo": "PRO",
+      "origen": "transformacion_semantica",
+      "secuencia_transformacion": 5,
+      "justificacion": "La crítica a imponer una definición homogénea de bienestar fundamenta la capacidad de las comunidades para cuestionar objetivos, indicadores y despliegues externos. Este PRO apoya el componente de autodeterminación de la síntesis; no convierte la objeción cultural en aceptación de límites universales. Se prefiere el vínculo a reformular Cultural Variance porque su prioridad explícita por la diversidad debe seguir siendo discutible y reconocible."
+    },
+    {
+      "source": "b297d3d6-c894-4bcf-9ea3-6f6823ab50d2",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d",
+      "tipo": "CON",
+      "origen": "transformacion_semantica",
+      "secuencia_transformacion": 6,
+      "justificacion": "La doble exigibilidad cuestiona la suficiencia del paso desde beneficios sectoriales de la IA hasta la afirmación incondicionada de mejora final del bienestar global. Un resultado agregado favorable puede seguir siendo objetado por daños a derechos o por imposición de fines culturales. Es un CON sobre la justificación y el alcance de la conclusión, no una afirmación de que toda implementación empeore el bienestar. Se conserva la tesis optimista original para que esta objeción la confronte, en lugar de reformularla hasta volverla compatible con cualquier resultado."
+    },
+    {
+      "source": "4d0b50b8-d93e-49bc-98d3-2019caa8fbbf",
+      "target": "25f7d32e-8a43-41c9-bdfc-1c8aec6ffe95",
+      "tipo": "CON",
+      "origen": "transformacion_semantica",
+      "secuencia_transformacion": 7,
+      "justificacion": "La amplificación de sesgos que perjudica a comunidades marginadas objeta el mecanismo distributivo invocado por Reducing Healthcare Inequality: ampliar el acceso mediante IA no basta si sus decisiones reproducen exclusiones o deterioran resultados para esos grupos. La relación cuestiona la suficiencia de las premisas favorables, no niega la posibilidad de aplicaciones sanitarias equitativas ni afirma que todo sesgo tenga origen clínico. Se prefiere conectar los argumentos existentes a crear otro nodo de equidad o fusionar beneficios y daños, porque sus explicaciones causales deben poder confrontarse por separado."
+    },
+    {
+      "source": "18392527-0b3d-4fd4-8d43-74fe66e3a146",
+      "target": "00f57384-fa62-4210-9cd2-2c4493679253",
+      "tipo": "CON",
+      "origen": "transformacion_semantica",
+      "secuencia_transformacion": 8,
+      "justificacion": "La falta de conocimientos, recursos o voluntad para actuar también puede impedir reconocer una contingencia, activar un respaldo o sostener un servicio alternativo. Por eso Insight-Action Gap objeta la viabilidad de la capacidad de interrupción propuesta en la reformulación de Redundancy Mitigates. El vínculo no demuestra que todos los respaldos fallen; identifica un impedimento operativo que la mera disponibilidad de infraestructura no responde. Se prefiere esta conexión a añadir otro nodo sobre supervisión humana, porque reutiliza una crítica existente y conserva separadas la capacidad de interpretar y la de mantener continuidad."
+    }
+  ]
+}

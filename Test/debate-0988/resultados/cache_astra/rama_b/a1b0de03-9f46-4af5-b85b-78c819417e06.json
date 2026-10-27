@@ -1,0 +1,53 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0235539a2b4329d1006ae0bf64eb5087d1b5ce5df69b7019df",
+  "tokens_entrada": 33145,
+  "tokens_salida": 1297,
+  "tokens_totales": 34442,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "La analítica de IA puede mejorar las políticas"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Tiempo",
+        "evidencia": "tiempo dedicado a procesar datos"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#CapacidadInstitucional",
+        "evidencia": "capacidad institucional para actuar y revisar decisiones"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Afectados",
+        "evidencia": "permitir que los afectados cuestionen sus prioridades"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#RecursosHumanos",
+        "evidencia": "compiten por tiempo, personal y recursos"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "producir análisis, ejecutarlos y permitir que los afectados cuestionen sus prioridades compiten por tiempo, personal y recursos: una mayor capacidad predictiva puede coexistir con una menor capacidad de corregir decisiones."
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Informacion",
+        "evidencia": "información disponible"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Control",
+        "evidencia": "capacidad institucional para actuar y revisar decisiones"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/engagement#Oposicion",
+        "evidencia": "permitir que los afectados cuestionen sus prioridades"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional",
+      "prospectiva"
+    ]
+  }
+}

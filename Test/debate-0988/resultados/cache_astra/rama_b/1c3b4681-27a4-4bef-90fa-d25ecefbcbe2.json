@@ -1,0 +1,36 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_06db1ab10df94302006ae0bfcb095487d1b1b8c1806bbdec57",
+  "tokens_entrada": 33081,
+  "tokens_salida": 508,
+  "tokens_totales": 33589,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "AI-driven analytics"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "prevent hospital readmissions, and optimize treatment plans, ultimately leading to improved health outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "ultimately leading to improved health outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "evidencia": "high-risk patients"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Leveraging AI-driven analytics in healthcare can help identify high-risk patients, prevent hospital readmissions, and optimize treatment plans"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

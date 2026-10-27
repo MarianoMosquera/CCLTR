@@ -1,0 +1,37 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0290858b9b309ac9006ae0c03154c087d1b48e47a22a7a3a58",
+  "tokens_entrada": 33084,
+  "tokens_salida": 624,
+  "tokens_totales": 33708,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "The pursuit of global human well-being is a moral obligation"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "health"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Dignidad",
+        "evidencia": "dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/Leyes",
+        "evidencia": "enshrined in international law"
+      }
+    ],
+    "funciones": []
+  }
+}

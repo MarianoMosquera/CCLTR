@@ -1,0 +1,36 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_090ff6b9163753f1006ae0bf45711887d1ac1767d053e8d285",
+  "tokens_entrada": 33076,
+  "tokens_salida": 463,
+  "tokens_totales": 33539,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/CambioClimatico",
+        "evidencia": "climate change"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Sustentabilidad",
+        "evidencia": "mitigate the effects of climate change"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Implementing artificial intelligence can help analyze and mitigate the effects of climate change"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

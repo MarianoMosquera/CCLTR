@@ -1,0 +1,32 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_009480a6e01f2581006ae0ba75053087d1a9b4a78eead9f58f",
+  "tokens_entrada": 33082,
+  "tokens_salida": 466,
+  "tokens_totales": 33548,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/CambioClimatico",
+        "evidencia": "mitigate climate change"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/Ciberseguridad",
+        "evidencia": "may be vulnerable to cyberattacks, compromising their effectiveness"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/CostoBeneficio",
+        "evidencia": "potentially leading to catastrophic consequences, thereby outweighing any potential benefits"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

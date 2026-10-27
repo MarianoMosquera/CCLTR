@@ -1,0 +1,40 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0e5bb80cfac8766e006ae0bfd805dc87d1a82c56c7b6f68593",
+  "tokens_entrada": 33078,
+  "tokens_salida": 694,
+  "tokens_totales": 33772,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/ontology/NoDiscriminacion",
+        "evidencia": "Discriminatory outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/engagement#Dialogo",
+        "evidencia": "spark meaningful conversations"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#AccionColectiva",
+        "evidencia": "mobilize efforts to address and overcome existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Problemas",
+        "evidencia": "existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "mobilize efforts to address and overcome existing social biases"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "enhancing global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

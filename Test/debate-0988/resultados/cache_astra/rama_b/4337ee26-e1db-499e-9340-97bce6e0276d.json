@@ -1,0 +1,28 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_00dd744f0bcf05fc006ae0bee12dc087d1a1ce89d8d33f5aa8",
+  "tokens_entrada": 33061,
+  "tokens_salida": 384,
+  "tokens_totales": 33445,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "enhance global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

@@ -1,0 +1,762 @@
+
+
+============================================================
+orquestador2/experimento_ab.py
+============================================================
+from copy import deepcopy
+
+from .clasificacion.rama_a import preparar_rama_a
+from .transformacion.rama_b import preparar_rama_b
+from .transformacion.registro import crear_registro_transformacion
+
+
+def preparar_experimento_ab(debate_original, conceptos_skos):
+    """
+    Prepara las dos ramas independientes del experimento.
+
+    Rama A: clasificación del debate original.
+    Rama B: transformación del debate original mediante SKOS.
+
+    No comunica clasificaciones ni mediciones de A hacia B.
+    """
+    original = deepcopy(debate_original)
+    ontologia = deepcopy(conceptos_skos)
+
+    solicitudes_a = preparar_rama_a(
+        deepcopy(original),
+        deepcopy(ontologia)
+    )
+
+    entrada_b = preparar_rama_b(
+        deepcopy(original),
+        deepcopy(ontologia)
+    )
+
+    registro_b = crear_registro_transformacion(entrada_b)
+
+    return {
+        "rama_a": {
+            "solicitudes_clasificacion": solicitudes_a
+        },
+        "rama_b": {
+            "entrada": entrada_b,
+            "registro": registro_b
+        },
+        "estado": "preparado"
+    }
+
+
+if __name__ == "__main__":
+    print("COORDINADOR EXPERIMENTAL A/B: DISPONIBLE")
+    print("PREPARACIÓN INDEPENDIENTE: IMPLEMENTADA")
+    print("SIN EJECUCIÓN DE IA: OK")
+    print("SIN COMPARACIÓN PREMATURA: OK")
+
+
+def validar_clasificacion_a(
+    experimento, respuestas, debate_original, conceptos_skos
+):
+    """Valida A sin modificar ni consultar la rama B."""
+    from .clasificacion.rama_a import validar_resultados_rama_a
+
+    if experimento.get("estado") != "preparado":
+        raise ValueError("Experimento no preparado")
+
+    return validar_resultados_rama_a(
+        deepcopy(debate_original),
+        deepcopy(respuestas),
+        deepcopy(conceptos_skos)
+    )
+
+
+def validar_clasificacion_b(resultado_transformacion, respuestas):
+    """Valida B exclusivamente contra el registro efectivamente transformado."""
+    from .transformacion.clasificacion_posterior import (
+        validar_clasificacion_posterior,
+    )
+
+    if not isinstance(resultado_transformacion, dict):
+        raise ValueError("Resultado de transformación B inválido")
+
+    registro = resultado_transformacion.get("registro")
+
+    if not isinstance(registro, dict):
+        raise ValueError("Falta el registro transformado de B")
+
+    return validar_clasificacion_posterior(
+        registro, deepcopy(respuestas)
+    )
+
+
+def medir_rama(
+    grafo,
+    clasificaciones,
+    mapa_dimensiones,
+    configuracion,
+    modelo,
+    config_modelo
+):
+    """
+    Mide una rama con los cuatro indicadores de diversidad.
+
+    Exige correspondencia entre la configuración experimental
+    y el modelo semántico efectivamente utilizado.
+    """
+    from .medicion.pipeline_semantico import medir_grafo_semanticamente
+    from .medicion.medicion_conjunta import medir_diversidad_conjunta
+    from .medicion.ajuste_tamano import medir_diversidad_ajustada
+
+    configuracion.validar()
+
+    if config_modelo["modelo"] != configuracion.modelo_embeddings:
+        raise ValueError("Modelo de embeddings incompatible")
+
+    if config_modelo["revision"] != configuracion.version_embeddings:
+        raise ValueError("Revisión de embeddings incompatible")
+
+    ids_grafo = [str(nodo["id"]) for nodo in grafo["nodes"]]
+
+    if len(ids_grafo) != len(set(ids_grafo)):
+        raise ValueError("Identificadores duplicados en el grafo")
+
+    if set(ids_grafo) != set(clasificaciones):
+        raise ValueError("Clasificaciones y grafo no coinciden")
+
+    resultado_semantico = medir_grafo_semanticamente(
+        deepcopy(grafo),
+        modelo,
+        deepcopy(config_modelo)
+    )
+
+    resultado = medir_diversidad_conjunta(
+        deepcopy(clasificaciones),
+        deepcopy(mapa_dimensiones),
+        configuracion,
+        resultado_semantico["normalizada"]
+    )
+
+    resultado["ajuste_tamano"] = medir_diversidad_ajustada(
+        deepcopy(clasificaciones),
+        deepcopy(mapa_dimensiones),
+        resultado_semantico["embeddings"],
+        configuracion
+    )
+
+    return resultado
+
+
+def comparar_experimento_ab(resultado_a, resultado_b):
+    """
+    Compara dos mediciones completas e independientes.
+
+    No ejecuta clasificaciones ni transformaciones.
+    No permite comparar configuraciones diferentes.
+    """
+    from .medicion.comparacion import comparar_ramas
+
+    for nombre, resultado in [
+        ("A", resultado_a),
+        ("B", resultado_b)
+    ]:
+        if not isinstance(resultado, dict):
+            raise ValueError(f"Resultado de rama {nombre} inválido")
+
+        if resultado.get("estado") != "calculado":
+            raise ValueError(f"Medición de rama {nombre} incompleta")
+
+        if "configuracion" not in resultado:
+            raise ValueError(f"Falta configuración de rama {nombre}")
+
+        if "mediciones" not in resultado:
+            raise ValueError(f"Faltan mediciones de rama {nombre}")
+
+        componentes = resultado.get("componentes", {})
+
+        esperados = {
+            "dimensional",
+            "riqueza_skos",
+            "funcional",
+            "semantica"
+        }
+
+        if set(componentes) != esperados:
+            raise ValueError(
+                f"Componentes incompletos en rama {nombre}"
+            )
+
+    comparacion_original = comparar_ramas(
+        resultado_a,
+        resultado_b,
+        resultado_a["configuracion"],
+        resultado_b["configuracion"]
+    )
+
+    from .medicion.comparacion import comparar_ajustes_tamano
+
+    ajuste_a = resultado_a.get("ajuste_tamano")
+    ajuste_b = resultado_b.get("ajuste_tamano")
+
+    if ajuste_a is None or ajuste_b is None:
+        raise ValueError(
+            "Ambas ramas deben incluir el ajuste por tamaño"
+        )
+
+    comparacion_ajustada = comparar_ajustes_tamano(
+        ajuste_a, ajuste_b
+    )
+
+    return {
+        **comparacion_original,
+        "comparacion_ajustada": comparacion_ajustada,
+    }
+
+
+def ejecutar_transformacion_b(experimento, respuesta_ia):
+    """
+    Ejecuta las propuestas de transformación de B mediante
+    el motor existente, sin consultar resultados de A.
+    """
+    from .transformacion.inicializar_grafo import (
+        inicializar_grafo_transformado
+    )
+    from .transformacion.pipeline_rama_b import (
+        procesar_respuesta_rama_b
+    )
+    from .transformacion.clasificacion_posterior import (
+        preparar_clasificacion_posterior
+    )
+    from .transformacion.registro import verificar_integridad_original
+
+    if experimento.get("estado") != "preparado":
+        raise ValueError("Experimento no preparado")
+
+    rama_b = experimento["rama_b"]
+    entrada = deepcopy(rama_b["entrada"])
+    registro = deepcopy(rama_b["registro"])
+
+    verificar_integridad_original(registro, entrada)
+
+    if registro["grafo_transformado"] is None:
+        inicializar_grafo_transformado(registro, entrada)
+
+    resultado = procesar_respuesta_rama_b(
+        registro,
+        entrada,
+        deepcopy(respuesta_ia)
+    )
+
+    verificar_integridad_original(registro, entrada)
+
+    solicitudes = preparar_clasificacion_posterior(registro)
+
+    return {
+        "registro": registro,
+        "resultado_transformacion": resultado,
+        "solicitudes_clasificacion": solicitudes,
+    }
+
+
+============================================================
+orquestador2/integracion/ejecutor_ab.py
+============================================================
+"""Coordinación integral del experimento A/B."""
+
+from copy import deepcopy
+
+from orquestador2.experimento_ab import (
+    preparar_experimento_ab,
+    validar_clasificacion_a,
+    ejecutar_transformacion_b,
+    validar_clasificacion_b,
+    medir_rama,
+    comparar_experimento_ab,
+)
+from orquestador2.integracion.exportador import exportar_experimento
+
+
+def ejecutar_experimento_ab(
+    identificador,
+    debate_original,
+    conceptos_skos,
+    respuestas_a,
+    respuesta_transformacion_b,
+    respuestas_b,
+    mapa_dimensiones,
+    configuracion,
+    modelo,
+    config_modelo,
+    destino="orquestador2/resultados",
+):
+    """Ejecuta ambas ramas con respuestas externas ya obtenidas."""
+
+    experimento = preparar_experimento_ab(
+        deepcopy(debate_original),
+        deepcopy(conceptos_skos),
+    )
+
+    clasificaciones_a = validar_clasificacion_a(
+        experimento,
+        deepcopy(respuestas_a),
+        deepcopy(debate_original),
+        deepcopy(conceptos_skos),
+    )
+
+    transformacion_b = ejecutar_transformacion_b(
+        experimento,
+        deepcopy(respuesta_transformacion_b),
+    )
+
+    clasificaciones_b = validar_clasificacion_b(
+        transformacion_b,
+        deepcopy(respuestas_b),
+    )
+
+    grafo_b = transformacion_b["registro"]["grafo_transformado"]
+
+    medicion_a = medir_rama(
+        deepcopy(debate_original),
+        clasificaciones_a,
+        mapa_dimensiones,
+        configuracion,
+        modelo,
+        config_modelo,
+    )
+
+    medicion_b = medir_rama(
+        deepcopy(grafo_b),
+        clasificaciones_b,
+        mapa_dimensiones,
+        configuracion,
+        modelo,
+        config_modelo,
+    )
+
+    comparacion = comparar_experimento_ab(
+        medicion_a,
+        medicion_b,
+    )
+
+    rama_a = {
+        "grafo": deepcopy(debate_original),
+        "clasificaciones": clasificaciones_a,
+        "medicion": medicion_a,
+    }
+
+    rama_b = {
+        "grafo": grafo_b,
+        "clasificaciones": clasificaciones_b,
+        "registro_transformacion": transformacion_b["registro"],
+        "medicion": medicion_b,
+    }
+
+    archivos = exportar_experimento(
+        identificador,
+        deepcopy(debate_original),
+        rama_a,
+        rama_b,
+        comparacion,
+        destino,
+    )
+
+    return {
+        "estado": "calculado",
+        "rama_a": rama_a,
+        "rama_b": rama_b,
+        "comparacion": comparacion,
+        "archivos": archivos,
+    }
+
+
+============================================================
+orquestador2/lectores/ontologia.py
+============================================================
+import json
+from pathlib import Path
+
+SKOS = "http://www.w3.org/2004/02/skos/core#"
+
+
+def cargar_ontologia(raiz="."):
+    raiz = Path(raiz)
+
+    ruta_ont = raiz / "ontologia/jsonld/ontologia.jsonld"
+    ruta_en = raiz / "ontologia/visualizacion/ontology_labels_en.json"
+
+    ontologia = json.loads(ruta_ont.read_text(encoding="utf-8"))
+    etiquetas_en = json.loads(ruta_en.read_text(encoding="utf-8"))
+
+    if not isinstance(ontologia, list):
+        raise ValueError("La ontología debe ser una lista JSON-LD.")
+    if not isinstance(etiquetas_en, dict):
+        raise ValueError("Las etiquetas inglesas deben ser un diccionario.")
+
+    conceptos = {}
+
+    for entrada in ontologia:
+        uri = entrada.get("@id")
+        tipos = entrada.get("@type", [])
+
+        if isinstance(tipos, str):
+            tipos = [tipos]
+
+        if not uri or SKOS + "Concept" not in tipos:
+            continue
+
+        if uri in conceptos:
+            raise ValueError(f"Concepto duplicado: {uri}")
+
+        etiquetas = entrada.get(SKOS + "prefLabel", [])
+        if isinstance(etiquetas, dict):
+            etiquetas = [etiquetas]
+
+        etiqueta_es = next(
+            (
+                e.get("@value")
+                for e in etiquetas
+                if e.get("@language") == "es"
+            ),
+            None
+        )
+
+        relaciones = {}
+
+        for tipo in ("broader", "narrower", "related"):
+            valores = entrada.get(SKOS + tipo, [])
+            if isinstance(valores, dict):
+                valores = [valores]
+
+            relaciones[tipo] = [
+                v["@id"]
+                for v in valores
+                if isinstance(v, dict) and "@id" in v
+            ]
+
+        conceptos[uri] = {
+            "uri": uri,
+            "label_es": etiqueta_es,
+            "label_en": etiquetas_en.get(uri),
+            "relaciones": relaciones,
+        }
+
+    return conceptos
+
+
+def diagnostico(conceptos):
+    sin_ingles = [
+        uri for uri, c in conceptos.items()
+        if not c["label_en"]
+    ]
+
+    sin_espanol = [
+        uri for uri, c in conceptos.items()
+        if not c["label_es"]
+    ]
+
+    relaciones = {
+        tipo: sum(
+            len(c["relaciones"][tipo])
+            for c in conceptos.values()
+        )
+        for tipo in ("broader", "narrower", "related")
+    }
+
+    return {
+        "conceptos_skos": len(conceptos),
+        "sin_etiqueta_ingles": sin_ingles,
+        "sin_etiqueta_espanol": sin_espanol,
+        "relaciones": relaciones,
+    }
+
+
+if __name__ == "__main__":
+    conceptos = cargar_ontologia()
+    print(json.dumps(
+        diagnostico(conceptos),
+        ensure_ascii=False,
+        indent=2
+    ))
+
+
+============================================================
+orquestador2/medicion/configuracion.py
+============================================================
+"""Configuración reproducible de la medición de diversidad CCLTR."""
+
+from dataclasses import dataclass, asdict
+
+
+@dataclass(frozen=True)
+class ConfiguracionMedicion:
+    tamano_muestra: int
+    repeticiones: int = 1000
+    semilla: int = 42
+    referencia_riqueza: float = 1.0
+    modelo_embeddings: str = "PENDIENTE"
+    version_embeddings: str = "PENDIENTE"
+
+    def validar(self):
+        if self.tamano_muestra < 1:
+            raise ValueError("Tamaño de muestra inválido")
+        if self.repeticiones < 1:
+            raise ValueError("Repeticiones inválidas")
+        if self.referencia_riqueza <= 0:
+            raise ValueError("Referencia de riqueza inválida")
+        if self.modelo_embeddings == "PENDIENTE":
+            raise ValueError("Modelo de embeddings no definido")
+        if self.version_embeddings == "PENDIENTE":
+            raise ValueError("Versión de embeddings no definida")
+        return True
+
+    def exportar(self):
+        return asdict(self)
+
+
+if __name__ == "__main__":
+    configuracion = ConfiguracionMedicion(
+        tamano_muestra=100,
+        repeticiones=1000,
+        semilla=42,
+        referencia_riqueza=50.0,
+        modelo_embeddings="MODELO_DE_PRUEBA",
+        version_embeddings="VERSION_DE_PRUEBA"
+    )
+
+    assert configuracion.validar()
+    assert configuracion.exportar()["tamano_muestra"] == 100
+
+    print("CONFIGURACIÓN EXPERIMENTAL: OK")
+    print("MUESTRA:", configuracion.tamano_muestra)
+    print("REPETICIONES:", configuracion.repeticiones)
+
+
+============================================================
+orquestador2/medicion/integracion.py
+============================================================
+"""Integración de las mediciones de diversidad CCLTR."""
+
+from orquestador2.medicion.indice_global import calcular_indice_global
+
+
+def integrar_mediciones(
+    diversidad_dimensional,
+    riqueza_skos,
+    diversidad_funcional,
+    diversidad_semantica,
+):
+    componentes = {
+        "dimensional": diversidad_dimensional.get("diversidad"),
+        "riqueza_skos": riqueza_skos.get("riqueza_normalizada"),
+        "funcional": diversidad_funcional.get("diversidad"),
+        "semantica": diversidad_semantica.get("diversidad_normalizada"),
+    }
+
+    faltantes = [
+        nombre
+        for nombre, valor in componentes.items()
+        if valor is None
+    ]
+
+    if faltantes:
+        return {
+            "estado": "incompleto",
+            "componentes": componentes,
+            "faltantes": faltantes,
+            "indice_global": None,
+        }
+
+    return calcular_indice_global(componentes)
+
+
+if __name__ == "__main__":
+    resultado = integrar_mediciones(
+        diversidad_dimensional={"diversidad": 1.0},
+        riqueza_skos={"riqueza_normalizada": 0.5},
+        diversidad_funcional={"diversidad": 1.0},
+        diversidad_semantica={"diversidad_normalizada": 0.5},
+    )
+
+    assert abs(resultado["indice_global"] - 0.75) < 1e-12
+
+    incompleto = integrar_mediciones(
+        diversidad_dimensional={"diversidad": None},
+        riqueza_skos={"riqueza_normalizada": 0.5},
+        diversidad_funcional={"diversidad": 1.0},
+        diversidad_semantica={"diversidad_normalizada": 0.5},
+    )
+
+    assert incompleto["estado"] == "incompleto"
+    assert incompleto["indice_global"] is None
+
+    print("INTEGRACIÓN DE DIVERSIDAD: OK")
+    print("ÍNDICE DE PRUEBA:", resultado["indice_global"])
+    print("CONTROL DE DATOS INCOMPLETOS: OK")
+
+
+============================================================
+orquestador2/transformacion/rama_b.py
+============================================================
+from copy import deepcopy
+
+
+CAMPOS_PROHIBIDOS = {
+    "rama_a",
+    "clasificaciones",
+    "indicadores",
+    "diversidad",
+    "resultados_rama_a",
+    "ponderaciones_rama_a",
+}
+
+
+def preparar_rama_b(debate_original, conceptos_skos):
+    """Prepara una entrada independiente para transformación semántica."""
+
+    if not isinstance(debate_original, dict):
+        raise TypeError("El debate debe ser un diccionario")
+
+    if not isinstance(conceptos_skos, dict):
+        raise TypeError("Los conceptos SKOS deben ser un diccionario")
+
+    contaminacion = CAMPOS_PROHIBIDOS.intersection(debate_original)
+
+    if contaminacion:
+        raise ValueError(
+            f"Información prohibida de la rama A: {sorted(contaminacion)}"
+        )
+
+    if "nodes" not in debate_original or "edges" not in debate_original:
+        raise ValueError("El grafo debe contener nodes y edges")
+
+    return {
+        "grafo_original": deepcopy(debate_original),
+        "ontologia_skos": deepcopy(conceptos_skos),
+    }
+
+
+if __name__ == "__main__":
+    debate = {
+        "nodes": [
+            {"id": "A", "claim": "La IA mejora la productividad."},
+            {"id": "B", "claim": "La IA puede desplazar empleos."},
+        ],
+        "edges": [
+            {
+                "source": "A",
+                "target": "B",
+                "target_idx": 0,
+                "valence": "CON",
+            }
+        ],
+    }
+
+    conceptos = {
+        "concepto_1": {"label": "Responsabilidad"},
+        "concepto_2": {"label": "Innovación"},
+    }
+
+    entrada = preparar_rama_b(debate, conceptos)
+
+    assert entrada["grafo_original"] == debate
+    assert entrada["ontologia_skos"] == conceptos
+    assert set(entrada) == {"grafo_original", "ontologia_skos"}
+
+    entrada["grafo_original"]["nodes"][0]["claim"] = "Texto modificado"
+    assert debate["nodes"][0]["claim"] == "La IA mejora la productividad."
+
+    try:
+        preparar_rama_b({**debate, "resultados_rama_a": {}}, conceptos)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("No se bloqueó la información prohibida")
+
+    print("ENTRADA INDEPENDIENTE RAMA B: OK")
+    print("NODOS ORIGINALES:", len(debate["nodes"]))
+    print("RELACIONES ORIGINALES:", len(debate["edges"]))
+    print("INDEPENDENCIA DE COPIAS: OK")
+    print("BLOQUEO DE RESULTADOS RAMA A: OK")
+
+
+============================================================
+orquestador2/integracion/cliente_astra.py
+============================================================
+"""Conexión API para el Orquestador 2 de CCLTR.
+
+No modifica prompts, grafos, ontologías ni validadores.
+"""
+import json
+from pathlib import Path
+from openai import OpenAI
+
+MODELO = "gpt-6-astra"
+RAZONAMIENTO = "high"
+
+
+def consultar_astra(instrucciones, datos, archivo_cache):
+    """Consulta ASTRA High o recupera una respuesta ya guardada."""
+    ruta = Path(archivo_cache)
+
+    if ruta.exists():
+        with ruta.open(encoding="utf-8") as f:
+            registro = json.load(f)
+        print(f"Respuesta recuperada: {ruta}")
+        return registro["respuesta"]
+
+    cliente = OpenAI(timeout=600.0)
+
+    respuesta = cliente.responses.create(
+        model=MODELO,
+        reasoning={"effort": RAZONAMIENTO},
+        instructions=instrucciones,
+        input="Devolvé exclusivamente un objeto JSON válido.\\n"
+              + json.dumps(datos, ensure_ascii=False),
+        text={"format": {"type": "json_object"}},
+        max_output_tokens=12000,
+    )
+
+    if respuesta.status != "completed":
+        raise RuntimeError(
+            f"Respuesta incompleta de ASTRA: {respuesta.status}"
+        )
+
+    contenido = json.loads(respuesta.output_text)
+
+    registro = {
+        "modelo": respuesta.model,
+        "razonamiento": RAZONAMIENTO,
+        "respuesta_id": respuesta.id,
+        "tokens_entrada": respuesta.usage.input_tokens,
+        "tokens_salida": respuesta.usage.output_tokens,
+        "tokens_totales": respuesta.usage.total_tokens,
+        "respuesta": contenido,
+    }
+
+    ruta.parent.mkdir(parents=True, exist_ok=True)
+
+    with ruta.open("w", encoding="utf-8") as f:
+        json.dump(registro, f, ensure_ascii=False, indent=2)
+
+    print(
+        f"ASTRA: {respuesta.usage.total_tokens} tokens. "
+        f"Guardado: {ruta}"
+    )
+
+    return contenido
+
+
+def ejecutar_solicitudes(solicitudes, carpeta_cache):
+    """Ejecuta las solicitudes originales del clasificador."""
+    resultados = {}
+
+    for indice, (nodo_id, solicitud) in enumerate(
+        solicitudes.items(), start=1
+    ):
+        print(f"Clasificación {indice}/{len(solicitudes)}: {nodo_id}")
+
+        resultados[nodo_id] = consultar_astra(
+            instrucciones=solicitud["instrucciones"],
+            datos=solicitud["entrada"],
+            archivo_cache=Path(carpeta_cache) / f"{nodo_id}.json",
+        )
+
+    return resultados

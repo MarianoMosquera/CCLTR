@@ -1,0 +1,32 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0555a48234fc9dba006ae0ba64ff0487d1a330a26069cfe6dc",
+  "tokens_entrada": 33077,
+  "tokens_salida": 578,
+  "tokens_totales": 33655,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "AI-generated data"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/accountability#Sobreinformacion",
+        "evidencia": "The complexity and volume of AI-generated data can overwhelm decision-makers"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/BigData",
+        "evidencia": "The complexity and volume of AI-generated data"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Habilidades",
+        "evidencia": "making it difficult for them to extract actionable insights without specialized expertise"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional"
+    ]
+  }
+}

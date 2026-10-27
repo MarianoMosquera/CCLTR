@@ -1,0 +1,33 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0942f7a5ff11e9e3006ae0ba8fe5fc87d1a8a693d78f02df58",
+  "tokens_entrada": 33096,
+  "tokens_salida": 638,
+  "tokens_totales": 33734,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/social/Cultura",
+        "evidencia": "The concept of 'global human well-being' is culturally relative"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Diversidad",
+        "evidencia": "individuals from diverse cultural backgrounds"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "could infringe upon the rights of individuals from diverse cultural backgrounds"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/politica/GruposOriginarios",
+        "evidencia": "indigenous communities"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional",
+      "prospectiva"
+    ]
+  }
+}

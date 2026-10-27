@@ -1,0 +1,32 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_069f3cd82ee3f9f5006ae0ba531f4087d1a1c76c0339be7e07",
+  "tokens_entrada": 33081,
+  "tokens_salida": 579,
+  "tokens_totales": 33660,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Capacidad",
+        "evidencia": "decision-makers may not have the necessary expertise, resources, or willingness to translate those insights into effective actions"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Habilidades",
+        "evidencia": "may not have the necessary expertise"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/compliance#Motivacion",
+        "evidencia": "willingness to translate those insights into effective actions"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "condicional"
+    ]
+  }
+}

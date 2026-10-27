@@ -1,0 +1,36 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_07fc264d8775e218006ae0bf30ff0087d198afd20d79d01085",
+  "tokens_entrada": 33077,
+  "tokens_salida": 633,
+  "tokens_totales": 33710,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "healthcare systems can lead to early disease diagnosis, personalized treatment, and streamlined clinical workflows"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "enhancing global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Teleologia",
+        "evidencia": "Implementing artificial intelligence in healthcare systems can lead to early disease diagnosis, personalized treatment, and streamlined clinical workflows, ultimately enhancing global human well-being."
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}
