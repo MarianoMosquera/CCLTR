@@ -1,0 +1,48 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_01ae308211f76670006ae0b9d487cc87d1bb4f528c3d77327d",
+  "tokens_entrada": 33087,
+  "tokens_salida": 676,
+  "tokens_totales": 33763,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/Recursos",
+        "evidencia": "more efficient use of resources"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Alimentaria",
+        "evidencia": "food production"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Produccion",
+        "evidencia": "food production"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ambiental/Agua",
+        "evidencia": "water management"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/economica/Energetica",
+        "evidencia": "energy distribution"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "improved global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Teleologia",
+        "evidencia": "leading to more efficient use of resources and improved global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

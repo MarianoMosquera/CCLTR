@@ -1,0 +1,40 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_094e070b19ed3f45006ae0b9959f3487d190fc4e746c05c0a3",
+  "tokens_entrada": 33076,
+  "tokens_salida": 628,
+  "tokens_totales": 33704,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/Automatizacion",
+        "evidencia": "Implementing artificial intelligence will displace human workers"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Empleo",
+        "evidencia": "will displace human workers"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Igualdad",
+        "evidencia": "exacerbating income inequality"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Estabilidad",
+        "evidencia": "social unrest"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "undermining global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

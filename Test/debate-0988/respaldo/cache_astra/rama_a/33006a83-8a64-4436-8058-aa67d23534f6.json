@@ -1,0 +1,36 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0589dfdaa033a68b006ae0b9b8426487d19caa5496fabd9df3",
+  "tokens_entrada": 33077,
+  "tokens_salida": 635,
+  "tokens_totales": 33712,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "healthcare systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "enhancing global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Teleologia",
+        "evidencia": "can lead to early disease diagnosis, personalized treatment, and streamlined clinical workflows, ultimately enhancing global human well-being."
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

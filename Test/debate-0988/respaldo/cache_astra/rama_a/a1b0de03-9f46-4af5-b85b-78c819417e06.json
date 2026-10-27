@@ -1,0 +1,40 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_024c5e9b7b991705006ae0b9e5c1f887d192ae90b74f9733c5",
+  "tokens_entrada": 33084,
+  "tokens_salida": 614,
+  "tokens_totales": 33698,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Artificial intelligence"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/BigData",
+        "evidencia": "analyze vast amounts of data"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Dato",
+        "evidencia": "vast amounts of data"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/Evidencia",
+        "evidencia": "identify patterns and provide insights that inform decision-making"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "policies that promote global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "promote global human well-being"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

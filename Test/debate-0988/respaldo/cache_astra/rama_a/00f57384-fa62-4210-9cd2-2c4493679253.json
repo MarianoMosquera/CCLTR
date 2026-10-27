@@ -1,0 +1,36 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_09dc0ff77683f8ff006ae0ba12947c87d1b4354f370837f7b6",
+  "tokens_entrada": 33073,
+  "tokens_salida": 682,
+  "tokens_totales": 33755,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Resiliencia",
+        "evidencia": "redundant systems and backup infrastructure can prevent potential catastrophic failures"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Infraestructura",
+        "evidencia": "critical infrastructure and societal systems"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Seguridad",
+        "evidencia": "prevent potential catastrophic failures in critical infrastructure and societal systems from threatening global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "The existence of redundant systems and backup infrastructure can prevent potential catastrophic failures in critical infrastructure and societal systems from threatening global human well-being."
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}

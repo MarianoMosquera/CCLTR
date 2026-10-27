@@ -1,0 +1,37 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0470bc7aab6e17b3006ae0baa039e087d18d42b6169842fbc3",
+  "tokens_entrada": 33093,
+  "tokens_salida": 601,
+  "tokens_totales": 33694,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/institucional/DerechosHumanos",
+        "evidencia": "fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/Normas",
+        "evidencia": "The Universal Declaration of Human Rights, adopted by the United Nations in 1948, explicitly enshrines fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/institucional/OrganizacionesInternacionales",
+        "evidencia": "United Nations"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "fundamental human rights to life, health, and dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Dignidad",
+        "evidencia": "dignity"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Compromiso",
+        "evidencia": "international recognition and commitment to these principles"
+      }
+    ],
+    "funciones": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "modelo": "gpt-6-astra",
+  "razonamiento": "high",
+  "respuesta_id": "resp_0b9d709da13199c8006ae0ba42d7c087d1b36b192d9df92cf7",
+  "tokens_entrada": 33080,
+  "tokens_salida": 711,
+  "tokens_totales": 33791,
+  "respuesta": {
+    "anclajes": [
+      {
+        "uri": "https://marianomosquera.github.io/tecnologica/IA",
+        "evidencia": "Implementing AI in healthcare"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/social/Salud",
+        "evidencia": "healthcare access and outcomes"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Equidad",
+        "evidencia": "reduce disparities in healthcare access and outcomes, particularly in underserved communities"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Vulnerabilidad",
+        "evidencia": "underserved communities"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/Beneficencia",
+        "evidencia": "ultimately contributing to enhanced global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/ontology/BienComun",
+        "evidencia": "enhanced global human well-being"
+      },
+      {
+        "uri": "https://marianomosquera.github.io/racionalidad/ProblemaSolucion",
+        "evidencia": "Implementing AI in healthcare can reduce disparities in healthcare access and outcomes"
+      }
+    ],
+    "funciones": [
+      "pragmatica",
+      "prospectiva"
+    ]
+  }
+}
