@@ -1,0 +1,1194 @@
+
+
+======================================================================
+orquestador2/transformacion/prompt_rama_b.py
+======================================================================
+import json
+from copy import deepcopy
+
+
+def construir_prompt_rama_b(entrada_b):
+    """Construye instrucciones para una transformación semántica independiente."""
+
+    if not isinstance(entrada_b, dict):
+        raise TypeError("La entrada debe ser un diccionario")
+
+    if set(entrada_b) != {"grafo_original", "ontologia_skos"}:
+        raise ValueError("La rama B solo admite grafo original y ontología SKOS")
+
+    grafo = entrada_b["grafo_original"]
+    conceptos = entrada_b["ontologia_skos"]
+
+    if not isinstance(grafo, dict) or not isinstance(conceptos, dict):
+        raise TypeError("Grafo y ontología deben ser diccionarios")
+
+    if not isinstance(grafo.get("nodes"), list):
+        raise ValueError("Faltan los nodos originales")
+
+    if not isinstance(grafo.get("edges"), list):
+        raise ValueError("Faltan las relaciones originales")
+
+    instrucciones = """
+Sos un agente de transformación semántica del proyecto CCLTR.
+
+OBJETIVO
+Proponer nuevas perspectivas conceptuales a partir de posiciones
+argumentativas originales, utilizando la ontología SKOS como
+infraestructura de exploración semántica.
+
+PRINCIPIOS OBLIGATORIOS
+1. Conservá las posiciones originales y sus contradicciones genuinas.
+2. No reduzcas el debate a una posición consensual ni a una síntesis
+   que simplemente elimine las diferencias.
+3. Explorá generalizaciones, especializaciones y asociaciones SKOS.
+4. Podés proponer nuevos nodos, reformulaciones, fusiones, vínculos
+   y prioridades conceptuales.
+5. Una fusión no implica eliminar los nodos originales.
+6. No inventes conceptos ni relaciones atribuyéndolos a la ontología.
+7. Toda ruta SKOS declarada debe existir en los datos proporcionados.
+8. Justificá qué aporta cada transformación y qué tensión conserva.
+9. Distinguí la conservación de una contradicción de su resolución.
+10. No presupongas que más conexiones implican más diversidad.
+11. No solicites ni infieras clasificaciones, métricas o resultados
+    de la rama A.
+12. No modifiques las relaciones originales ni su valence PRO/CON.
+    La valencia de una relación no define automáticamente la
+    posición global de un nodo.
+
+SALIDA
+Devolvé exclusivamente un objeto JSON con la clave "propuestas",
+que contenga una lista de operaciones candidatas.
+
+Cada propuesta debe declarar:
+- operacion
+- justificacion
+
+Las operaciones deben utilizar los campos establecidos por el motor
+de transformación de CCLTR.
+
+Para operaciones semánticas incluí:
+- anclajes_skos: lista de URI existentes
+- rutas_skos: recorridos explícitos con origen, destino,
+  longitud y pasos; cada paso contiene origen, destino, tipo
+  y relacion_skos
+- tension_conservada: explicación de la oposición preservada
+- aporte_conceptual: explicación de la perspectiva emergente
+
+No presentes ninguna propuesta como científicamente validada.
+"""
+
+    datos = {
+        "grafo_original": deepcopy(grafo),
+        "ontologia_skos": deepcopy(conceptos),
+    }
+
+    return {
+        "instrucciones": instrucciones.strip(),
+        "datos": datos,
+    }
+
+
+if __name__ == "__main__":
+    entrada = {
+        "grafo_original": {
+            "nodes": [
+                {"id": "A", "claim": "Priorizar innovación"},
+                {"id": "B", "claim": "Priorizar protección laboral"},
+            ],
+            "edges": [
+                {
+                    "source": "A",
+                    "target": "B",
+                    "target_idx": 0,
+                    "valence": "CON",
+                }
+            ],
+        },
+        "ontologia_skos": {},
+    }
+
+    resultado = construir_prompt_rama_b(entrada)
+
+    assert set(resultado) == {"instrucciones", "datos"}
+    assert resultado["datos"]["grafo_original"] == entrada["grafo_original"]
+    assert "rama A" in resultado["instrucciones"]
+    assert "tension_conservada" in resultado["instrucciones"]
+
+    json.dumps(resultado, ensure_ascii=False)
+
+    print("PROMPT DE RAMA B CONSTRUIDO: OK")
+    print("INDEPENDENCIA DE RAMA A: OK")
+    print("CONSERVACIÓN DE CONTRADICCIONES: OK")
+    print("FORMATO JSON SERIALIZABLE: OK")
+
+
+======================================================================
+orquestador2/transformacion/pipeline_rama_b.py
+======================================================================
+from copy import deepcopy
+
+from .registro import verificar_integridad_original
+from .registrar_lote_ia import registrar_lote_ia
+from .ejecutar_lote_ia import ejecutar_lote_ia
+from .integridad_debate import verificar_conservacion_debate
+
+
+def procesar_respuesta_rama_b(registro, entrada_b, respuesta):
+    """Valida, registra y ejecuta una respuesta completa de la rama B."""
+
+    verificar_integridad_original(registro, entrada_b)
+
+    if registro["grafo_transformado"] is None:
+        raise ValueError("El grafo transformado debe estar inicializado")
+
+    if any(
+        evento["estado"] == "pendiente"
+        for evento in registro["transformaciones"]
+    ):
+        raise ValueError(
+            "No se admite un nuevo lote con operaciones anteriores pendientes"
+        )
+
+    conceptos = entrada_b["ontologia_skos"]
+    estado_anterior = deepcopy(registro)
+
+    try:
+        verificar_conservacion_debate(registro)
+
+        registro_lote = registrar_lote_ia(
+            registro, entrada_b, respuesta, conceptos
+        )
+
+        ejecucion = ejecutar_lote_ia(
+            registro, entrada_b, conceptos
+        )
+
+        verificar_integridad_original(registro, entrada_b)
+        verificar_conservacion_debate(registro)
+
+        if registro_lote["cantidad"] != ejecucion["cantidad"]:
+            raise RuntimeError("Inconsistencia en cantidad de operaciones")
+
+    except Exception:
+        registro.clear()
+        registro.update(estado_anterior)
+        raise
+
+    return {
+        "estado": "respuesta_procesada",
+        "operaciones": ejecucion["cantidad"],
+        "grafo_transformado": deepcopy(registro["grafo_transformado"]),
+    }
+
+
+if __name__ == "__main__":
+    from orquestador2.lectores.ontologia import cargar_ontologia
+    from .registro import crear_registro_transformacion
+    from .inicializar_grafo import inicializar_grafo_transformado
+    from .rutas_skos import buscar_rutas_skos
+
+    conceptos = cargar_ontologia(".")
+
+    igualdad = next(
+        uri for uri, concepto in conceptos.items()
+        if concepto.get("label_es") == "Igualdad"
+    )
+    justicia = next(
+        uri for uri, concepto in conceptos.items()
+        if concepto.get("label_es") == "Justicia"
+    )
+
+    ruta = next(
+        ruta for ruta in buscar_rutas_skos(igualdad, conceptos, 2)
+        if ruta["destino"] == justicia and ruta["longitud"] == 1
+    )
+
+    debate = {
+        "nodes": [
+            {"id": "A", "claim": "Priorizar igualdad"},
+            {"id": "B", "claim": "Priorizar justicia"},
+        ],
+        "edges": [
+            {
+                "source": "A",
+                "target": "B",
+                "target_idx": 0,
+                "valence": "CON",
+            }
+        ],
+    }
+
+    entrada = {
+        "grafo_original": deepcopy(debate),
+        "ontologia_skos": deepcopy(conceptos),
+    }
+
+    respuesta = {
+        "propuestas": [
+            {
+                "operacion": "crear_nodo",
+                "id_nuevo": "S1",
+                "claim": "Articular igualdad y justicia",
+                "justificacion": "Explorar una nueva perspectiva.",
+                "anclajes_skos": [igualdad, justicia],
+                "rutas_skos": [ruta],
+                "tension_conservada": "Igualdad frente a justicia.",
+                "aporte_conceptual": "Articulación alternativa.",
+            },
+            {
+                "operacion": "jerarquizar_nodo",
+                "id_nodo": "S1",
+                "prioridad": 0.8,
+                "justificacion": "Priorizar la perspectiva emergente.",
+            },
+        ]
+    }
+
+    registro = crear_registro_transformacion(entrada)
+    inicializar_grafo_transformado(registro, entrada)
+
+    resultado = procesar_respuesta_rama_b(
+        registro, entrada, respuesta
+    )
+
+    assert resultado["estado"] == "respuesta_procesada"
+    assert resultado["operaciones"] == 2
+    assert len(resultado["grafo_transformado"]["nodes"]) == 3
+    assert all(
+        evento["estado"] == "ejecutada"
+        for evento in registro["transformaciones"]
+    )
+
+    print("PIPELINE COMPLETO RAMA B: OK")
+    print("REGISTRO Y EJECUCIÓN INTEGRADOS: OK")
+
+    registro_fallo = crear_registro_transformacion(entrada)
+    inicializar_grafo_transformado(registro_fallo, entrada)
+
+    respuesta_fallo = deepcopy(respuesta)
+    respuesta_fallo["propuestas"][1] = {
+        "operacion": "retirar_nodo",
+        "id_nodo": "A",
+        "justificacion": "Comprobar reversión integral.",
+    }
+
+    estado_anterior = deepcopy(registro_fallo)
+
+    try:
+        procesar_respuesta_rama_b(
+            registro_fallo, entrada, respuesta_fallo
+        )
+    except ValueError:
+        print("FALLO DE EJECUCIÓN: DETECTADO")
+    else:
+        raise AssertionError("Se aceptó una operación imposible")
+
+    assert registro_fallo == estado_anterior
+    assert registro_fallo["grafo_original"] == debate
+
+    print("REVERSIÓN INTEGRAL DEL PIPELINE: OK")
+    print("DEBATE ORIGINAL INTACTO: OK")
+
+
+======================================================================
+orquestador2/transformacion/operaciones.py
+======================================================================
+OPERACIONES_PERMITIDAS = {
+    "crear_nodo",
+    "reformular_nodo",
+    "fusionar_nodos",
+    "crear_vinculo",
+    "retirar_vinculo",
+    "jerarquizar_nodo",
+    "retirar_nodo",
+}
+
+CAMPOS_OBLIGATORIOS = {
+    "crear_nodo": {"id_nuevo", "claim", "justificacion"},
+    "reformular_nodo": {"id_original", "claim_nuevo", "justificacion"},
+    "fusionar_nodos": {"ids_origen", "id_nuevo", "claim", "justificacion"},
+    "crear_vinculo": {"source", "target", "tipo", "justificacion"},
+    "retirar_vinculo": {"source", "target", "tipo", "justificacion"},
+    "jerarquizar_nodo": {"id_nodo", "prioridad", "justificacion"},
+    "retirar_nodo": {"id_nodo", "justificacion"},
+}
+
+
+def validar_operacion(operacion):
+    if not isinstance(operacion, dict):
+        raise TypeError("La operación debe ser un diccionario")
+
+    tipo = operacion.get("operacion")
+
+    if tipo not in OPERACIONES_PERMITIDAS:
+        raise ValueError(f"Operación no permitida: {tipo}")
+
+    faltantes = CAMPOS_OBLIGATORIOS[tipo] - set(operacion)
+
+    if faltantes:
+        raise ValueError(f"Campos faltantes: {sorted(faltantes)}")
+
+    if not isinstance(operacion["justificacion"], str):
+        raise ValueError("La justificación debe ser textual")
+
+    if not operacion["justificacion"].strip():
+        raise ValueError("La justificación no puede estar vacía")
+
+    campos_textuales = {
+        "id_nuevo", "id_original", "id_nodo",
+        "claim", "claim_nuevo", "source", "target", "tipo"
+    }
+
+    for campo in CAMPOS_OBLIGATORIOS[tipo] & campos_textuales:
+        valor = operacion[campo]
+        if not isinstance(valor, str) or not valor.strip():
+            raise ValueError(f"Campo textual inválido: {campo}")
+
+    if tipo == "fusionar_nodos":
+        origenes = operacion["ids_origen"]
+        if (
+            not isinstance(origenes, list)
+            or len(origenes) < 2
+            or any(not isinstance(x, str) or not x.strip() for x in origenes)
+            or len(origenes) != len(set(origenes))
+        ):
+            raise ValueError("ids_origen debe contener al menos dos IDs distintos")
+
+    if tipo == "jerarquizar_nodo":
+        prioridad = operacion["prioridad"]
+        if (
+            isinstance(prioridad, bool)
+            or not isinstance(prioridad, (int, float))
+            or not 0 <= prioridad <= 1
+        ):
+            raise ValueError("La prioridad debe ser numérica entre 0 y 1")
+
+    return True
+
+
+if __name__ == "__main__":
+    ejemplos = [
+        {
+            "operacion": "crear_nodo",
+            "id_nuevo": "C",
+            "claim": "La innovación requiere responsabilidad institucional.",
+            "justificacion": "Nueva relación conceptual propuesta.",
+        },
+        {
+            "operacion": "retirar_nodo",
+            "id_nodo": "B",
+            "justificacion": "Se conserva en el registro histórico.",
+        },
+    ]
+
+    assert all(validar_operacion(op) for op in ejemplos)
+
+    try:
+        validar_operacion({
+            "operacion": "borrar_grafo_original",
+            "justificacion": "Prueba",
+        })
+    except ValueError:
+        print("OPERACIÓN PROHIBIDA BLOQUEADA: OK")
+    else:
+        raise AssertionError("No se bloqueó la operación prohibida")
+
+    print("CATÁLOGO DE OPERACIONES: OK")
+    print("OPERACIONES DISPONIBLES:", len(OPERACIONES_PERMITIDAS))
+    print("VALIDACIÓN DE CAMPOS: OK")
+
+
+======================================================================
+orquestador2/transformacion/motor.py
+======================================================================
+from copy import deepcopy
+from .registro import verificar_integridad_original
+from .integridad_debate import verificar_conservacion_debate
+from .ejecutor import ejecutar_creacion_nodo
+from .reformular import ejecutar_reformulacion
+from .fusionar import ejecutar_fusion
+from .crear_vinculo import ejecutar_creacion_vinculo
+from .retirar_vinculo import ejecutar_retirada_vinculo
+from .jerarquizar import ejecutar_jerarquizacion
+from .retirar_nodo import ejecutar_retirada_nodo
+
+
+EJECUTORES = {
+    "crear_nodo": ejecutar_creacion_nodo,
+    "reformular_nodo": ejecutar_reformulacion,
+    "fusionar_nodos": ejecutar_fusion,
+    "crear_vinculo": ejecutar_creacion_vinculo,
+    "retirar_vinculo": ejecutar_retirada_vinculo,
+    "jerarquizar_nodo": ejecutar_jerarquizacion,
+    "retirar_nodo": ejecutar_retirada_nodo,
+}
+
+
+def ejecutar_siguiente_operacion(registro, entrada_b, conceptos_skos=None):
+    """Despacha la primera operación pendiente al ejecutor correspondiente."""
+
+    verificar_integridad_original(registro, entrada_b)
+
+    pendientes = [
+        evento for evento in registro["transformaciones"]
+        if evento["estado"] == "pendiente"
+    ]
+
+    if not pendientes:
+        raise ValueError("No hay operaciones pendientes")
+
+    tipo = pendientes[0]["propuesta"]["operacion"]
+
+    if tipo not in EJECUTORES:
+        raise ValueError(f"Operación sin ejecutor: {tipo}")
+
+    estado_anterior = deepcopy(registro)
+
+    try:
+        verificar_conservacion_debate(registro)
+
+        if conceptos_skos is not None:
+            from .politica_skos import evaluar_politica_skos
+            evaluar_politica_skos(
+                pendientes[0]["propuesta"],
+                conceptos_skos
+            )
+
+        resultado = EJECUTORES[tipo](registro, entrada_b)
+
+        verificar_integridad_original(registro, entrada_b)
+        verificar_conservacion_debate(registro)
+
+    except Exception:
+        registro.clear()
+        registro.update(estado_anterior)
+        raise
+
+    return resultado
+
+
+if __name__ == "__main__":
+    from copy import deepcopy
+    from .registro import crear_registro_transformacion
+    from .registro_operaciones import registrar_operacion
+    from .inicializar_grafo import inicializar_grafo_transformado
+
+    debate = {
+        "nodes": [
+            {"id": "A", "claim": "La IA mejora la productividad"},
+            {"id": "B", "claim": "La IA puede desplazar empleos"},
+        ],
+        "edges": [
+            {"source": "A", "target": "B",
+             "target_idx": 0, "valence": "CON"}
+        ],
+    }
+
+    entrada = {
+        "grafo_original": deepcopy(debate),
+        "ontologia_skos": {},
+    }
+
+    registro = crear_registro_transformacion(entrada)
+    inicializar_grafo_transformado(registro, entrada)
+
+    propuestas = [
+        {
+            "operacion": "crear_nodo",
+            "id_nuevo": "C",
+            "claim": "Innovación con protección laboral",
+            "justificacion": "Explorar una tercera perspectiva.",
+        },
+        {
+            "operacion": "jerarquizar_nodo",
+            "id_nodo": "C",
+            "prioridad": 0.8,
+            "justificacion": "Priorizar la perspectiva emergente.",
+        },
+        {
+            "operacion": "crear_vinculo",
+            "source": "A",
+            "target": "C",
+            "tipo": "relacion_conceptual",
+            "justificacion": "Vincular innovación y protección.",
+        },
+    ]
+
+    for propuesta in propuestas:
+        registrar_operacion(registro, entrada, propuesta)
+        resultado = ejecutar_siguiente_operacion(registro, entrada)
+        assert resultado["estado"] == "ejecutada"
+
+    grafo = registro["grafo_transformado"]
+
+    assert len(grafo["nodes"]) == 3
+    assert len(grafo["edges"]) == 2
+    assert grafo["nodes"][2]["prioridad_semantica"] == 0.8
+    assert registro["grafo_original"] == debate
+    assert all(
+        evento["estado"] == "ejecutada"
+        for evento in registro["transformaciones"]
+    )
+
+    print("MOTOR INTEGRADO: OK")
+    print("OPERACIONES DISPONIBLES:", len(EJECUTORES))
+    print("OPERACIONES EJECUTADAS:", len(registro["transformaciones"]))
+    print("TRAZABILIDAD CONSERVADA: OK")
+    print("GRAFO ORIGINAL INTACTO: OK")
+
+
+======================================================================
+orquestador2/transformacion/ejecutor.py
+======================================================================
+from copy import deepcopy
+
+from .registro import verificar_integridad_original
+from .validacion_referencias import validar_referencias
+
+
+def ejecutar_creacion_nodo(registro, entrada_b):
+    """Ejecuta la primera operación pendiente de creación de nodo."""
+
+    verificar_integridad_original(registro, entrada_b)
+
+    grafo = registro.get("grafo_transformado")
+    if not isinstance(grafo, dict):
+        raise ValueError("Primero debe inicializarse el grafo transformado")
+
+    pendientes = [
+        evento for evento in registro["transformaciones"]
+        if evento["estado"] == "pendiente"
+    ]
+
+    if not pendientes:
+        raise ValueError("No hay operaciones pendientes")
+
+    evento = pendientes[0]
+    propuesta = evento["propuesta"]
+
+    if propuesta["operacion"] != "crear_nodo":
+        raise ValueError("Esta versión solo ejecuta crear_nodo")
+
+    validar_referencias(propuesta, grafo)
+
+    copia = deepcopy(grafo)
+
+    copia["nodes"].append({
+        "id": propuesta["id_nuevo"],
+        "claim": propuesta["claim"],
+        "origen": "transformacion_semantica",
+        "secuencia_transformacion": evento["secuencia"],
+    })
+
+    registro["grafo_transformado"] = copia
+    evento["estado"] = "ejecutada"
+
+    verificar_integridad_original(registro, entrada_b)
+
+    return deepcopy(evento)
+
+
+if __name__ == "__main__":
+    from .registro import crear_registro_transformacion
+    from .registro_operaciones import registrar_operacion
+    from .inicializar_grafo import inicializar_grafo_transformado
+
+    debate = {
+        "nodes": [
+            {"id": "A", "claim": "La IA aumenta la productividad"},
+            {"id": "B", "claim": "La IA desplaza empleos"},
+        ],
+        "edges": [
+            {
+                "source": "A",
+                "target": "B",
+                "target_idx": 0,
+                "valence": "CON",
+            }
+        ],
+    }
+
+    entrada = {
+        "grafo_original": deepcopy(debate),
+        "ontologia_skos": {},
+    }
+
+    registro = crear_registro_transformacion(entrada)
+
+    inicializar_grafo_transformado(registro, entrada)
+
+    registrar_operacion(registro, entrada, {
+        "operacion": "crear_nodo",
+        "id_nuevo": "C",
+        "claim": "La innovación requiere protección laboral",
+        "justificacion": "Introducir una perspectiva que articule innovación y empleo.",
+    })
+
+    resultado = ejecutar_creacion_nodo(registro, entrada)
+
+    assert resultado["estado"] == "ejecutada"
+    assert len(registro["grafo_transformado"]["nodes"]) == 3
+    assert len(registro["grafo_original"]["nodes"]) == 2
+    assert registro["grafo_original"] == debate
+    assert registro["grafo_transformado"]["edges"] == debate["edges"]
+
+    print("TRANSFORMACIÓN EJECUTADA: OK")
+    print("NODOS ORIGINALES:", len(registro["grafo_original"]["nodes"]))
+    print("NODOS TRANSFORMADOS:", len(registro["grafo_transformado"]["nodes"]))
+    print("RELACIONES PRO/CON CONSERVADAS: OK")
+    print("TRAZABILIDAD DE LA OPERACIÓN: OK")
+
+
+======================================================================
+orquestador2/transformacion/validar_lote_ia.py
+======================================================================
+from copy import deepcopy
+
+from .respuesta_ia import validar_respuesta_ia
+from .politica_skos import evaluar_politica_skos
+from .calidad_conceptual import validar_calidad_conceptual
+
+
+def validar_lote_ia(respuesta, conceptos_skos):
+    """Valida todas las propuestas antes de autorizar su registro."""
+
+    if not isinstance(conceptos_skos, dict):
+        raise TypeError("La ontología SKOS debe ser un diccionario")
+
+    resultado = validar_respuesta_ia(respuesta)
+    propuestas = resultado["propuestas"]
+    verificaciones = []
+
+    for indice, propuesta in enumerate(propuestas, start=1):
+        try:
+            fundamento = evaluar_politica_skos(
+                propuesta, conceptos_skos
+            )
+            validar_calidad_conceptual(propuesta)
+        except (ValueError, TypeError, KeyError) as error:
+            raise ValueError(
+                f"Propuesta {indice} rechazada: {error}"
+            ) from error
+
+        verificaciones.append({
+            "indice": indice,
+            "operacion": propuesta["operacion"],
+            "categoria": fundamento["categoria"],
+            "estado": fundamento["estado"],
+        })
+
+    return {
+        "estado": "lote_validado",
+        "cantidad": len(propuestas),
+        "verificaciones": verificaciones,
+        "propuestas": deepcopy(propuestas),
+    }
+
+
+if __name__ == "__main__":
+    from orquestador2.lectores.ontologia import cargar_ontologia
+    from .rutas_skos import buscar_rutas_skos
+
+    conceptos = cargar_ontologia(".")
+
+    igualdad = next(
+        uri for uri, c in conceptos.items()
+        if c.get("label_es") == "Igualdad"
+    )
+    justicia = next(
+        uri for uri, c in conceptos.items()
+        if c.get("label_es") == "Justicia"
+    )
+
+    ruta = next(
+        r for r in buscar_rutas_skos(igualdad, conceptos, 2)
+        if r["destino"] == justicia and r["longitud"] == 1
+    )
+
+    propuesta_valida = {
+        "operacion": "crear_nodo",
+        "id_nuevo": "S1",
+        "claim": "Articular igualdad y justicia",
+        "justificacion": "Explorar una perspectiva conceptual.",
+        "anclajes_skos": [igualdad, justicia],
+        "rutas_skos": [ruta],
+        "tension_conservada": "Igualdad frente a justicia.",
+        "aporte_conceptual": "Nueva articulación argumentativa.",
+    }
+
+    lote = {
+        "propuestas": [
+            propuesta_valida,
+            {
+                "operacion": "jerarquizar_nodo",
+                "id_nodo": "S1",
+                "prioridad": 0.7,
+                "justificacion": "Priorizar para evaluación posterior.",
+            },
+        ]
+    }
+
+    resultado = validar_lote_ia(lote, conceptos)
+
+    assert resultado["estado"] == "lote_validado"
+    assert resultado["cantidad"] == 2
+    print("LOTE COMPLETO VALIDADO: OK")
+
+    lote_invalido = deepcopy(lote)
+    lote_invalido["propuestas"][1] = {
+        "operacion": "crear_nodo",
+        "id_nuevo": "S2",
+        "claim": "Propuesta sin fundamento",
+        "justificacion": "Comprobar rechazo del lote.",
+    }
+
+    try:
+        validar_lote_ia(lote_invalido, conceptos)
+    except ValueError:
+        print("LOTE CON PROPUESTA INVÁLIDA: BLOQUEADO")
+    else:
+        raise AssertionError("Se aceptó un lote inválido")
+
+    assert lote["propuestas"][0] == propuesta_valida
+    print("PROPUESTAS ORIGINALES CONSERVADAS: OK")
+    print("VALIDACIÓN ATÓMICA PREVIA AL REGISTRO: OK")
+
+
+======================================================================
+orquestador2/transformacion/respuesta_ia.py
+======================================================================
+import json
+from copy import deepcopy
+
+from .operaciones import validar_operacion
+from .rama_b import CAMPOS_PROHIBIDOS
+
+
+def validar_respuesta_ia(respuesta):
+    """Valida la estructura de una respuesta candidata de la rama B."""
+
+    if isinstance(respuesta, str):
+        try:
+            respuesta = json.loads(respuesta)
+        except json.JSONDecodeError as error:
+            raise ValueError("La respuesta no contiene JSON válido") from error
+
+    if not isinstance(respuesta, dict):
+        raise ValueError("La respuesta debe ser un objeto JSON")
+
+    if set(respuesta) != {"propuestas"}:
+        raise ValueError("La respuesta debe contener solo 'propuestas'")
+
+    propuestas = respuesta["propuestas"]
+
+    if not isinstance(propuestas, list):
+        raise ValueError("'propuestas' debe ser una lista")
+
+    if not propuestas:
+        raise ValueError("No se recibieron propuestas")
+
+    for indice, propuesta in enumerate(propuestas, start=1):
+        if not isinstance(propuesta, dict):
+            raise ValueError(f"Propuesta {indice} inválida")
+
+        contaminacion = CAMPOS_PROHIBIDOS.intersection(propuesta)
+
+        if contaminacion:
+            raise ValueError(
+                f"Información de rama A en propuesta {indice}"
+            )
+
+        validar_operacion(propuesta)
+
+    return {
+        "estado": "estructura_validada",
+        "cantidad": len(propuestas),
+        "propuestas": deepcopy(propuestas),
+    }
+
+
+if __name__ == "__main__":
+    valida = {
+        "propuestas": [
+            {
+                "operacion": "crear_nodo",
+                "id_nuevo": "S1",
+                "claim": "Innovación con protección laboral",
+                "justificacion": "Explorar una perspectiva alternativa.",
+                "anclajes_skos": [],
+                "rutas_skos": [],
+                "tension_conservada": "Innovación frente a protección.",
+                "aporte_conceptual": "Nueva articulación conceptual.",
+            }
+        ]
+    }
+
+    resultado = validar_respuesta_ia(json.dumps(valida))
+    assert resultado["cantidad"] == 1
+    print("RESPUESTA JSON RECONOCIDA: OK")
+
+    invalida = deepcopy(valida)
+    invalida["propuestas"][0]["operacion"] = "inventar_operacion"
+
+    try:
+        validar_respuesta_ia(invalida)
+    except ValueError:
+        print("OPERACIÓN DESCONOCIDA: BLOQUEADA")
+    else:
+        raise AssertionError("Se aceptó una operación desconocida")
+
+    contaminada = deepcopy(valida)
+    contaminada["propuestas"][0]["rama_a"] = {}
+
+    try:
+        validar_respuesta_ia(contaminada)
+    except ValueError:
+        print("CONTAMINACIÓN DE RAMA A: BLOQUEADA")
+    else:
+        raise AssertionError("Se aceptó información de rama A")
+
+    print("VALIDADOR ESTRUCTURAL DE RESPUESTAS: OK")
+
+
+======================================================================
+orquestador2/integracion/normalizar_astra.py
+======================================================================
+"""Adaptación auditable de respuestas ASTRA al contrato del Orquestador 2."""
+
+import json
+import re
+from copy import deepcopy
+from pathlib import Path
+
+from orquestador2.transformacion.operaciones import validar_operacion
+
+PATRON_URI = re.compile(r"^\[(https?://[^\]]+)\]\((https?://[^)]+)\)$")
+
+
+def normalizar_uri(valor):
+    if not isinstance(valor, str):
+        return valor
+    coincidencia = PATRON_URI.fullmatch(valor)
+    if coincidencia:
+        etiqueta, destino = coincidencia.groups()
+        if etiqueta != destino:
+            raise ValueError(f"URI Markdown inconsistente: {valor}")
+        return destino
+    return valor
+
+
+def normalizar_valores(objeto):
+    if isinstance(objeto, dict):
+        return {k: normalizar_valores(v) for k, v in objeto.items()}
+    if isinstance(objeto, list):
+        return [normalizar_valores(v) for v in objeto]
+    return normalizar_uri(objeto)
+
+
+def adaptar_respuesta(respuesta):
+    original = deepcopy(respuesta)
+
+    if not isinstance(original, dict):
+        raise ValueError("Respuesta ASTRA inválida")
+
+    propuestas = original.get("propuestas")
+    if not isinstance(propuestas, list):
+        raise ValueError("Falta la lista de propuestas")
+
+    adaptadas = []
+
+    for indice, propuesta in enumerate(propuestas, 1):
+        p = normalizar_valores(deepcopy(propuesta))
+
+        if p.get("operacion") == "agregar_nodo":
+            nodo = p.get("nodo")
+
+            if not isinstance(nodo, dict):
+                raise ValueError(f"Propuesta {indice}: falta nodo")
+
+            if not nodo.get("id") or not nodo.get("claim"):
+                raise ValueError(
+                    f"Propuesta {indice}: faltan id o claim"
+                )
+
+            p["operacion"] = "crear_nodo"
+            p["id_nuevo"] = nodo["id"]
+            p["claim"] = nodo["claim"]
+
+        # Validar usando el contrato original del motor.
+        validar_operacion(p)
+        adaptadas.append(p)
+
+    return {
+        "original": original,
+        "adaptada": {"propuestas": adaptadas},
+        "cantidad": len(adaptadas),
+    }
+
+
+def guardar_adaptacion(resultado, carpeta):
+    destino = Path(carpeta)
+    destino.mkdir(parents=True, exist_ok=True)
+
+    archivo = destino / "transformacion_b_adaptada.json"
+
+    with archivo.open("w", encoding="utf-8") as f:
+        json.dump(resultado, f, ensure_ascii=False, indent=2)
+
+    return archivo
+
+
+======================================================================
+orquestador2/experimento_ab.py
+======================================================================
+from copy import deepcopy
+
+from .clasificacion.rama_a import preparar_rama_a
+from .transformacion.rama_b import preparar_rama_b
+from .transformacion.registro import crear_registro_transformacion
+
+
+def preparar_experimento_ab(debate_original, conceptos_skos):
+    """
+    Prepara las dos ramas independientes del experimento.
+
+    Rama A: clasificación del debate original.
+    Rama B: transformación del debate original mediante SKOS.
+
+    No comunica clasificaciones ni mediciones de A hacia B.
+    """
+    original = deepcopy(debate_original)
+    ontologia = deepcopy(conceptos_skos)
+
+    solicitudes_a = preparar_rama_a(
+        deepcopy(original),
+        deepcopy(ontologia)
+    )
+
+    entrada_b = preparar_rama_b(
+        deepcopy(original),
+        deepcopy(ontologia)
+    )
+
+    registro_b = crear_registro_transformacion(entrada_b)
+
+    return {
+        "rama_a": {
+            "solicitudes_clasificacion": solicitudes_a
+        },
+        "rama_b": {
+            "entrada": entrada_b,
+            "registro": registro_b
+        },
+        "estado": "preparado"
+    }
+
+
+if __name__ == "__main__":
+    print("COORDINADOR EXPERIMENTAL A/B: DISPONIBLE")
+    print("PREPARACIÓN INDEPENDIENTE: IMPLEMENTADA")
+    print("SIN EJECUCIÓN DE IA: OK")
+    print("SIN COMPARACIÓN PREMATURA: OK")
+
+
+def validar_clasificacion_a(
+    experimento, respuestas, debate_original, conceptos_skos
+):
+    """Valida A sin modificar ni consultar la rama B."""
+    from .clasificacion.rama_a import validar_resultados_rama_a
+
+    if experimento.get("estado") != "preparado":
+        raise ValueError("Experimento no preparado")
+
+    return validar_resultados_rama_a(
+        deepcopy(debate_original),
+        deepcopy(respuestas),
+        deepcopy(conceptos_skos)
+    )
+
+
+def validar_clasificacion_b(resultado_transformacion, respuestas):
+    """Valida B exclusivamente contra el registro efectivamente transformado."""
+    from .transformacion.clasificacion_posterior import (
+        validar_clasificacion_posterior,
+    )
+
+    if not isinstance(resultado_transformacion, dict):
+        raise ValueError("Resultado de transformación B inválido")
+
+    registro = resultado_transformacion.get("registro")
+
+    if not isinstance(registro, dict):
+        raise ValueError("Falta el registro transformado de B")
+
+    return validar_clasificacion_posterior(
+        registro, deepcopy(respuestas)
+    )
+
+
+def medir_rama(
+    grafo,
+    clasificaciones,
+    mapa_dimensiones,
+    configuracion,
+    modelo,
+    config_modelo
+):
+    """
+    Mide una rama con los cuatro indicadores de diversidad.
+
+    Exige correspondencia entre la configuración experimental
+    y el modelo semántico efectivamente utilizado.
+    """
+    from .medicion.pipeline_semantico import medir_grafo_semanticamente
+    from .medicion.medicion_conjunta import medir_diversidad_conjunta
+    from .medicion.ajuste_tamano import medir_diversidad_ajustada
+
+    configuracion.validar()
+
+    if config_modelo["modelo"] != configuracion.modelo_embeddings:
+        raise ValueError("Modelo de embeddings incompatible")
+
+    if config_modelo["revision"] != configuracion.version_embeddings:
+        raise ValueError("Revisión de embeddings incompatible")
+
+    ids_grafo = [str(nodo["id"]) for nodo in grafo["nodes"]]
+
+    if len(ids_grafo) != len(set(ids_grafo)):
+        raise ValueError("Identificadores duplicados en el grafo")
+
+    if set(ids_grafo) != set(clasificaciones):
+        raise ValueError("Clasificaciones y grafo no coinciden")
+
+    resultado_semantico = medir_grafo_semanticamente(
+        deepcopy(grafo),
+        modelo,
+        deepcopy(config_modelo)
+    )
+
+    resultado = medir_diversidad_conjunta(
+        deepcopy(clasificaciones),
+        deepcopy(mapa_dimensiones),
+        configuracion,
+        resultado_semantico["normalizada"]
+    )
+
+    resultado["ajuste_tamano"] = medir_diversidad_ajustada(
+        deepcopy(clasificaciones),
+        deepcopy(mapa_dimensiones),
+        resultado_semantico["embeddings"],
+        configuracion
+    )
+
+    return resultado
+
+
+def comparar_experimento_ab(resultado_a, resultado_b):
+    """
+    Compara dos mediciones completas e independientes.
+
+    No ejecuta clasificaciones ni transformaciones.
+    No permite comparar configuraciones diferentes.
+    """
+    from .medicion.comparacion import comparar_ramas
+
+    for nombre, resultado in [
+        ("A", resultado_a),
+        ("B", resultado_b)
+    ]:
+        if not isinstance(resultado, dict):
+            raise ValueError(f"Resultado de rama {nombre} inválido")
+
+        if resultado.get("estado") != "calculado":
+            raise ValueError(f"Medición de rama {nombre} incompleta")
+
+        if "configuracion" not in resultado:
+            raise ValueError(f"Falta configuración de rama {nombre}")
+
+        if "mediciones" not in resultado:
+            raise ValueError(f"Faltan mediciones de rama {nombre}")
+
+        componentes = resultado.get("componentes", {})
+
+        esperados = {
+            "dimensional",
+            "riqueza_skos",
+            "funcional",
+            "semantica"
+        }
+
+        if set(componentes) != esperados:
+            raise ValueError(
+                f"Componentes incompletos en rama {nombre}"
+            )
+
+    comparacion_original = comparar_ramas(
+        resultado_a,
+        resultado_b,
+        resultado_a["configuracion"],
+        resultado_b["configuracion"]
+    )
+
+    from .medicion.comparacion import comparar_ajustes_tamano
+
+    ajuste_a = resultado_a.get("ajuste_tamano")
+    ajuste_b = resultado_b.get("ajuste_tamano")
+
+    if ajuste_a is None or ajuste_b is None:
+        raise ValueError(
+            "Ambas ramas deben incluir el ajuste por tamaño"
+        )
+
+    comparacion_ajustada = comparar_ajustes_tamano(
+        ajuste_a, ajuste_b
+    )
+
+    return {
+        **comparacion_original,
+        "comparacion_ajustada": comparacion_ajustada,
+    }
+
+
+def ejecutar_transformacion_b(experimento, respuesta_ia):
+    """
+    Ejecuta las propuestas de transformación de B mediante
+    el motor existente, sin consultar resultados de A.
+    """
+    from .transformacion.inicializar_grafo import (
+        inicializar_grafo_transformado
+    )
+    from .transformacion.pipeline_rama_b import (
+        procesar_respuesta_rama_b
+    )
+    from .transformacion.clasificacion_posterior import (
+        preparar_clasificacion_posterior
+    )
+    from .transformacion.registro import verificar_integridad_original
+
+    if experimento.get("estado") != "preparado":
+        raise ValueError("Experimento no preparado")
+
+    rama_b = experimento["rama_b"]
+    entrada = deepcopy(rama_b["entrada"])
+    registro = deepcopy(rama_b["registro"])
+
+    verificar_integridad_original(registro, entrada)
+
+    if registro["grafo_transformado"] is None:
+        inicializar_grafo_transformado(registro, entrada)
+
+    resultado = procesar_respuesta_rama_b(
+        registro,
+        entrada,
+        deepcopy(respuesta_ia)
+    )
+
+    verificar_integridad_original(registro, entrada)
+
+    solicitudes = preparar_clasificacion_posterior(registro)
+
+    return {
+        "registro": registro,
+        "resultado_transformacion": resultado,
+        "solicitudes_clasificacion": solicitudes,
+    }

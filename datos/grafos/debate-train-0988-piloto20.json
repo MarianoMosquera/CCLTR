@@ -1,0 +1,356 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "claim": "Implementing artificial intelligence will ultimately enhance global human well-being.",
+      "label": "AI for Humanity",
+      "id": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "claim": "Artificial intelligence systems can perpetuate and amplify existing social biases, leading to discriminatory outcomes and undermining global human well-being.",
+      "label": "AI Bias Amplification",
+      "premises": [
+        "Artificial intelligence systems can perpetuate existing social biases.",
+        "Artificial intelligence systems can amplify existing social biases.",
+        "Perpetuating and amplifying existing social biases leads to discriminatory outcomes.",
+        "Discriminatory outcomes undermine global human well-being.",
+        "Existing social biases are detrimental to global human well-being."
+      ],
+      "id": "29452f42-5dfa-4454-bd13-4522067d38f1"
+    },
+    {
+      "claim": "Artificial intelligence systems can perpetuate and amplify existing biases, leading to discriminatory outcomes that harm marginalized communities and undermine global human well-being.",
+      "label": "Bias Amplification Threat",
+      "premises": [
+        "Artificial intelligence systems can perpetuate and amplify existing biases.",
+        "Perpetuating and amplifying existing biases leads to discriminatory outcomes.",
+        "Discriminatory outcomes harm marginalized communities.",
+        "Harm to marginalized communities undermines global human well-being.",
+        "Existing biases are present in the data used to develop and train artificial intelligence systems."
+      ],
+      "id": "4d0b50b8-d93e-49bc-98d3-2019caa8fbbf"
+    },
+    {
+      "claim": "Implementing artificial intelligence will displace human workers, exacerbating income inequality and social unrest, thereby undermining global human well-being.",
+      "label": "Job Displacement Dilemma",
+      "premises": [
+        "Implementing artificial intelligence will displace human workers.",
+        "Displacing human workers will exacerbate income inequality.",
+        "Exacerbating income inequality will lead to social unrest.",
+        "Social unrest is detrimental to global human well-being.",
+        "The negative consequences of implementing artificial intelligence will outweigh any potential benefits."
+      ],
+      "id": "4f6ae709-894d-4afb-94a0-068ac7fe18b4"
+    },
+    {
+      "claim": "Over-reliance on artificial intelligence will create vulnerabilities in critical infrastructure and societal systems, threatening global human well-being through potential catastrophic failures.",
+      "label": "Digital Dependence Danger",
+      "premises": [
+        "Over-reliance on artificial intelligence can create vulnerabilities in critical infrastructure and societal systems.",
+        "Vulnerabilities in critical infrastructure and societal systems can lead to potential catastrophic failures.",
+        "Potential catastrophic failures in critical infrastructure and societal systems can threaten global human well-being.",
+        "The potential risks associated with over-reliance on artificial intelligence outweigh its potential benefits.",
+        "Global human well-being is a value that should be prioritized and protected."
+      ],
+      "id": "a1f09f52-e366-42f7-aafd-55b73c1bd5a5"
+    },
+    {
+      "claim": "Implementing artificial intelligence in healthcare systems can lead to early disease diagnosis, personalized treatment, and streamlined clinical workflows, ultimately enhancing global human well-being.",
+      "label": "AI-Driven Healthcare",
+      "premises": [
+        "Implementing artificial intelligence in healthcare systems can lead to early disease diagnosis.",
+        "Implementing artificial intelligence in healthcare systems can lead to personalized treatment.",
+        "Implementing artificial intelligence in healthcare systems can lead to streamlined clinical workflows.",
+        "Early disease diagnosis, personalized treatment, and streamlined clinical workflows are factors that contribute to enhanced global human well-being.",
+        "The benefits of implementing artificial intelligence in healthcare systems can be generalized to a global scale, impacting human well-being worldwide."
+      ],
+      "id": "33006a83-8a64-4436-8058-aa67d23534f6"
+    },
+    {
+      "claim": "Implementing artificial intelligence can help analyze and mitigate the effects of climate change, which is a major threat to global human well-being.",
+      "label": "AI for Climate Change Mitigation",
+      "premises": [
+        "Climate change is a major threat to global human well-being.",
+        "Analyzing and mitigating the effects of climate change will contribute to enhancing global human well-being.",
+        "Artificial intelligence has the capability to effectively analyze and mitigate the effects of climate change.",
+        "The benefits of implementing artificial intelligence in addressing climate change outweigh any potential drawbacks or risks.",
+        "Enhancing global human well-being is a desirable goal."
+      ],
+      "id": "8a684dea-7f1d-4579-af32-5d5ea5be4512"
+    },
+    {
+      "claim": "Artificial intelligence can optimize resource allocation in critical sectors such as food production, water management, and energy distribution, leading to more efficient use of resources and improved global human well-being.",
+      "label": "Intelligent Resource Allocation",
+      "premises": [
+        "Artificial intelligence can optimize resource allocation in critical sectors such as food production, water management, and energy distribution.",
+        "Optimizing resource allocation in critical sectors leads to more efficient use of resources.",
+        "More efficient use of resources in critical sectors contributes to improved global human well-being.",
+        "The implementation of artificial intelligence is feasible and can be effectively integrated into critical sectors.",
+        "The benefits of artificial intelligence in optimizing resource allocation outweigh any potential drawbacks or risks."
+      ],
+      "id": "9bdb0749-aa85-412a-8e6a-8c0a3f89ab79"
+    },
+    {
+      "claim": "Artificial intelligence can analyze vast amounts of data to identify patterns and provide insights that inform decision-making, leading to more informed and effective policies that promote global human well-being.",
+      "label": "Data-Driven Decision Making",
+      "premises": [
+        "Artificial intelligence can analyze vast amounts of data to identify patterns and provide insights.",
+        "The patterns and insights provided by artificial intelligence can inform decision-making.",
+        "Informed decision-making leads to more effective policies.",
+        "Effective policies can promote global human well-being.",
+        "The benefits of artificial intelligence in promoting global human well-being outweigh any potential drawbacks or risks."
+      ],
+      "id": "a1b0de03-9f46-4af5-b85b-78c819417e06"
+    },
+    {
+      "claim": "Discriminatory outcomes can actually spark meaningful conversations and mobilize efforts to address and overcome existing social biases, ultimately enhancing global human well-being.",
+      "label": "Contextualizing Discrimination",
+      "premises": [
+        "Discriminatory outcomes can spark meaningful conversations.",
+        "Meaningful conversations can mobilize efforts to address social biases.",
+        "Addressing and overcoming social biases can enhance global human well-being.",
+        "Social biases exist and are a problem that needs to be addressed.",
+        "The conversations and efforts sparked by discriminatory outcomes can be effective in overcoming social biases."
+      ],
+      "id": "129f7654-1a3d-4511-bd51-968df1be3f92"
+    },
+    {
+      "claim": "Some AI systems employ algorithmic auditing techniques that detect and remove biases from the data, ensuring that the training data is fair and unbiased.",
+      "label": "Algorithmic Auditing",
+      "premises": [
+        "Some AI systems employ algorithmic auditing techniques that detect and remove biases from the data.",
+        "Algorithmic auditing techniques are effective in removing biases from the data.",
+        "The data used to train AI systems is a primary source of bias in AI decision-making.",
+        "Fair and unbiased training data is sufficient to prevent AI systems from perpetuating and amplifying existing biases.",
+        "The use of algorithmic auditing techniques is widespread or common enough among AI systems to be a significant factor in preventing bias."
+      ],
+      "id": "bfc23026-cee5-4832-aa30-bd383f305969"
+    },
+    {
+      "claim": "Implementing artificial intelligence can augment human workers' capabilities, increasing productivity and creating new job opportunities that outweigh potential displacements.",
+      "label": "Augmenting Human Capabilities",
+      "premises": [
+        "Implementing artificial intelligence can augment human workers' capabilities.",
+        "Augmenting human workers' capabilities increases productivity.",
+        "Increased productivity creates new job opportunities.",
+        "The benefits of implementing artificial intelligence outweigh the potential negative consequences.",
+        "The benefits of increased productivity and new job opportunities are more significant than the potential negative consequences of implementing artificial intelligence."
+      ],
+      "id": "270888fb-4551-4138-8170-0072a3bcf297"
+    },
+    {
+      "claim": "The existence of redundant systems and backup infrastructure can prevent potential catastrophic failures in critical infrastructure and societal systems from threatening global human well-being.",
+      "label": "Redundancy Mitigates",
+      "premises": [
+        "Redundant systems and backup infrastructure can prevent potential catastrophic failures in critical infrastructure and societal systems.",
+        "Critical infrastructure and societal systems are crucial for maintaining global human well-being.",
+        "Catastrophic failures in critical infrastructure and societal systems can have severe consequences for global human well-being.",
+        "Redundant systems and backup infrastructure are effective measures for mitigating the risk of catastrophic failures.",
+        "The implementation of redundant systems and backup infrastructure is feasible and practical in critical infrastructure and societal systems."
+      ],
+      "id": "00f57384-fa62-4210-9cd2-2c4493679253"
+    },
+    {
+      "claim": "Artificial intelligence may struggle to fully comprehend the nuances and complexities of human clinical decision-making, leading to potential errors and inefficiencies in clinical workflows.",
+      "label": "Limited Contextual Understanding",
+      "premises": [
+        "Artificial intelligence may struggle to fully comprehend the nuances and complexities of human clinical decision-making.",
+        "Human clinical decision-making involves nuances and complexities that are essential for accurate and efficient clinical workflows.",
+        "Artificial intelligence's potential struggle to comprehend human clinical decision-making can lead to errors in clinical workflows.",
+        "Errors in clinical workflows can result in inefficiencies in healthcare systems.",
+        "Human clinical decision-making is the current standard for accurate and efficient clinical workflows."
+      ],
+      "id": "8d08b949-6bb5-4c35-b0a7-22268fb19e64"
+    },
+    {
+      "claim": "Artificial intelligence systems used to mitigate climate change may be vulnerable to cyberattacks, compromising their effectiveness and potentially leading to catastrophic consequences, thereby outweighing any potential benefits.",
+      "label": "Cybersecurity Vulnerability",
+      "premises": [
+        "Artificial intelligence systems used to mitigate climate change are vulnerable to cyberattacks.",
+        "Cyberattacks on artificial intelligence systems can compromise their effectiveness.",
+        "Compromised artificial intelligence systems can lead to catastrophic consequences.",
+        "The potential catastrophic consequences of compromised artificial intelligence systems outweigh any potential benefits of using these systems to mitigate climate change.",
+        "The effectiveness of artificial intelligence systems in mitigating climate change is crucial to their overall value."
+      ],
+      "id": "1b05dad6-1551-4faf-8147-3d89dc08addc"
+    },
+    {
+      "claim": "The COVID-19 pandemic has exposed weaknesses in global supply chains and critical infrastructure, highlighting the need for more robust and resilient systems before introducing artificial intelligence, which may exacerbate existing vulnerabilities.",
+      "label": "Pandemic Preparedness Problem",
+      "premises": [
+        "The COVID-19 pandemic has exposed weaknesses in global supply chains and critical infrastructure.",
+        "The introduction of artificial intelligence may interact with and affect existing global supply chains and critical infrastructure.",
+        "The weaknesses in global supply chains and critical infrastructure make them vulnerable to potential disruptions or exacerbations.",
+        "Robust and resilient systems are necessary to mitigate or prevent the exacerbation of existing vulnerabilities.",
+        "The introduction of artificial intelligence should not occur unless the existing vulnerabilities in global supply chains and critical infrastructure are addressed."
+      ],
+      "id": "205b3ecb-7dd1-498f-a54e-b029ba6d8f41"
+    },
+    {
+      "claim": "Even with accurate insights provided by artificial intelligence, decision-makers may not have the necessary expertise, resources, or willingness to translate those insights into effective actions.",
+      "label": "Insight-Action Gap",
+      "premises": [
+        "Decision-makers may lack the necessary expertise to translate AI insights into effective actions.",
+        "Decision-makers may not have the necessary resources to translate AI insights into effective actions.",
+        "Decision-makers may not have the willingness to translate AI insights into effective actions.",
+        "Effective actions require more than just accurate insights, such as expertise, resources, and willingness.",
+        "Artificial intelligence insights alone are not sufficient to guarantee effective decision-making."
+      ],
+      "id": "18392527-0b3d-4fd4-8d43-74fe66e3a146"
+    },
+    {
+      "claim": "Conversations and efforts sparked by discriminatory outcomes may inadvertently perpetuate existing biases, leading to further polarization and harm.",
+      "label": "Unintended Consequences",
+      "premises": [
+        "Conversations sparked by discriminatory outcomes often involve individuals with existing biases.",
+        "The involvement of individuals with existing biases in conversations can perpetuate those biases.",
+        "Efforts to address discriminatory outcomes can be influenced by existing biases, leading to further polarization.",
+        "Polarization can lead to harm, particularly for marginalized groups.",
+        "The harm caused by polarization can outweigh any potential benefits of conversations sparked by discriminatory outcomes."
+      ],
+      "id": "384a175f-c537-41db-b407-a32a775f8528"
+    },
+    {
+      "claim": "Algorithmic auditing techniques can fail to detect and remove biases from data because they lack contextual understanding, similar to how an android may struggle to comprehend the nuances of human biology or the complexities of fandom, such as the Marvel universe.",
+      "label": "Contextual Blindness",
+      "premises": [
+        "Algorithmic auditing techniques lack contextual understanding.",
+        "Contextual understanding is necessary to detect and remove biases from data.",
+        "Androids (or artificial intelligence) struggle to comprehend complex, nuanced domains like human biology or fandoms.",
+        "The ability to comprehend complex, nuanced domains is analogous to detecting and removing biases from data.",
+        "Algorithmic auditing techniques are limited in their ability to understand complex, nuanced domains, just like androids."
+      ],
+      "id": "bfbb62a1-9cd9-4c0e-9573-34f29707222d"
+    },
+    {
+      "claim": "The benefits of increased productivity and new job opportunities may be undermined by corrupt practices, such as exploiting AI for personal gain or using it to further entrench existing social inequalities, ultimately outweighing any positive consequences.",
+      "label": "Corruption of Efficiency",
+      "premises": [
+        "Corrupt practices, such as exploiting AI for personal gain, can undermine the benefits of increased productivity and new job opportunities.",
+        "Corrupt practices, such as using AI to further entrench existing social inequalities, can undermine the benefits of increased productivity and new job opportunities.",
+        "The implementation of artificial intelligence can lead to corrupt practices, such as exploiting AI for personal gain or using it to further entrench existing social inequalities.",
+        "The negative consequences of corrupt practices related to AI implementation can outweigh the positive consequences of increased productivity and new job opportunities.",
+        "The potential for corrupt practices related to AI implementation is significant enough to be a major concern."
+      ],
+      "id": "3016f9de-8fcc-4794-bf74-b22ca7c44c48"
+    }
+  ],
+  "edges": [
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "33006a83-8a64-4436-8058-aa67d23534f6",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "9bdb0749-aa85-412a-8e6a-8c0a3f89ab79",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "8a684dea-7f1d-4579-af32-5d5ea5be4512",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "a1b0de03-9f46-4af5-b85b-78c819417e06",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "4f6ae709-894d-4afb-94a0-068ac7fe18b4",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "4d0b50b8-d93e-49bc-98d3-2019caa8fbbf",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "a1f09f52-e366-42f7-aafd-55b73c1bd5a5",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 0,
+      "source": "29452f42-5dfa-4454-bd13-4522067d38f1",
+      "target": "4337ee26-e1db-499e-9340-97bce6e0276d"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "8d08b949-6bb5-4c35-b0a7-22268fb19e64",
+      "target": "33006a83-8a64-4436-8058-aa67d23534f6"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "205b3ecb-7dd1-498f-a54e-b029ba6d8f41",
+      "target": "9bdb0749-aa85-412a-8e6a-8c0a3f89ab79"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "1b05dad6-1551-4faf-8147-3d89dc08addc",
+      "target": "8a684dea-7f1d-4579-af32-5d5ea5be4512"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 1,
+      "source": "18392527-0b3d-4fd4-8d43-74fe66e3a146",
+      "target": "a1b0de03-9f46-4af5-b85b-78c819417e06"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 4,
+      "source": "270888fb-4551-4138-8170-0072a3bcf297",
+      "target": "4f6ae709-894d-4afb-94a0-068ac7fe18b4"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 4,
+      "source": "3016f9de-8fcc-4794-bf74-b22ca7c44c48",
+      "target": "270888fb-4551-4138-8170-0072a3bcf297"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 4,
+      "source": "bfc23026-cee5-4832-aa30-bd383f305969",
+      "target": "4d0b50b8-d93e-49bc-98d3-2019caa8fbbf"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 1,
+      "source": "bfbb62a1-9cd9-4c0e-9573-34f29707222d",
+      "target": "bfc23026-cee5-4832-aa30-bd383f305969"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "00f57384-fa62-4210-9cd2-2c4493679253",
+      "target": "a1f09f52-e366-42f7-aafd-55b73c1bd5a5"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "129f7654-1a3d-4511-bd51-968df1be3f92",
+      "target": "29452f42-5dfa-4454-bd13-4522067d38f1"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 4,
+      "source": "384a175f-c537-41db-b407-a32a775f8528",
+      "target": "129f7654-1a3d-4511-bd51-968df1be3f92"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+/* Additive layout only: existing HF style.css is unchanged. */
+.ccltr-corpus-heading{background:#FFF2BF;color:#26334A;font-size:22px;font-weight:800;padding:18px 34px;margin-top:14px}
+#ccltr-experiment{margin-top:20px}
+#ccltr-experiment .exp-band{background:#d9f0fa}
+#ccltr-experiment .exp-right h4{font-size:12px;margin:16px 0 7px;color:#d9f0fa}
+#ccltr-experiment #exp-stats{overflow-x:auto}
+#ccltr-experiment #exp-stats table{font-size:10px;min-width:265px}
+#ccltr-experiment #exp-stats td{padding:6px 3px}
+#ccltr-experiment .exp-debate{cursor:default}
+
+/* Experiment-only UI revision. Existing HF styling is untouched. */
+#ccltr-experiment .exp-band{background:#d9f0fa;color:#102333}
+#ccltr-experiment .exp-picker-label{display:block;color:#bed4ec;font-size:12px;margin:16px 0 7px}
+#ccltr-experiment #exp-picker{width:100%;background:#25466b;color:white;border:1px solid #78baff;border-radius:9px;padding:12px;font-size:13px;cursor:pointer}
+#ccltr-experiment .exp-legend{display:grid;gap:10px;margin-top:20px;padding:15px 10px;border:1px solid #355272;border-radius:12px;background:#172a42}
+#ccltr-experiment .exp-legend>div{display:flex;align-items:center;gap:11px;color:#e5f2ff;font-size:12px}
+#ccltr-experiment .exp-swatch{width:20px;height:20px;flex:none;border-radius:50%;border:2px solid #fff8;box-shadow:0 0 12px #fff2}
+#ccltr-experiment .exp-blue{background:#2c8cdd}#ccltr-experiment .exp-orange{background:#f07832}#ccltr-experiment .exp-green{background:#29b76b}
+#ccltr-experiment .exp-yellow{background:#ffe15c;border-radius:5px;height:7px;border:0}
+#ccltr-experiment .exp-dashed{background:transparent;border:0;border-top:4px dashed #ffe15c;border-radius:0;height:0;box-shadow:none}
+#ccltr-experiment .exp-stat-details summary{font-weight:750;font-size:15px;cursor:pointer;padding:3px 0 12px;color:#fff}
+#ccltr-experiment .exp-stat-details summary::marker{color:#8ed5ff}
+#ccltr-experiment .exp-bar-group{margin:11px 0 17px}
+#ccltr-experiment .exp-bar-name{color:#e9f3ff;font-size:11px;font-weight:700;margin-bottom:6px}
+#ccltr-experiment .exp-bar-line{display:grid;grid-template-columns:15px minmax(0,1fr) 51px;align-items:center;gap:6px;margin:5px 0;font-size:10px}
+#ccltr-experiment .exp-bar-line b{text-align:right;font-size:10px;font-variant-numeric:tabular-nums}
+#ccltr-experiment .exp-track{height:11px;border-radius:5px;background:#2c405c;overflow:hidden}
+#ccltr-experiment .exp-track i{display:block;height:100%;border-radius:5px}
+#ccltr-experiment .exp-bar-a{background:#5aa9f4}#ccltr-experiment .exp-bar-b{background:#f6b65c}
+#ccltr-experiment .exp-micro{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:12px 0}
+#ccltr-experiment .exp-micro>div{border:1px solid #395777;background:#172a42;padding:9px;border-radius:9px}
+#ccltr-experiment .exp-micro strong{display:block;font-size:20px;color:#e9f5ff}
+#ccltr-experiment .exp-micro span{font-size:10px;color:#b6c9de}
+#ccltr-experiment .exp-metrics{width:100%;border-collapse:collapse;font-size:10px}
+#ccltr-experiment .exp-metrics th{text-align:left;color:#bbd5ee}
+#ccltr-experiment .exp-metrics td,#ccltr-experiment .exp-metrics th{padding:6px 3px;border-bottom:1px solid #2b405d}
+#ccltr-experiment .exp-metrics td:not(:first-child){font-variant-numeric:tabular-nums;text-align:right}
+#ccltr-experiment #exp-cy{border:2px solid #426c95;box-shadow:inset 0 0 40px #132d4d}
+
+/* CCLTR requested pink footer */
+footer, .shell > footer { background: #F8DCE7 !important; color: #26334A !important; }
+footer a, .shell > footer a { color: #26334A !important; }
+
+
+/* Full-width statistics dashboard below Experiment graph; no changes to Corpus. */
+#ccltr-experiment .exp-stats-below{margin-top:14px;background:#101d30;border:1px solid #304563;border-radius:14px;padding:15px 20px;color:#e7eefb}
+#ccltr-experiment .exp-stats-below>section{background:transparent;border:0;padding:0}
+#ccltr-experiment .exp-stats-below .exp-stat-details>summary{background:#d9f0fa!important;color:#102333!important;border:2px solid #62b4df!important;padding:17px 22px!important;font-size:17px!important;font-weight:800!important;box-shadow:0 5px 16px #0003;cursor:pointer}
+#ccltr-experiment .exp-stats-below #exp-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;row-gap:6px;align-items:start;margin-top:18px;overflow:visible}
+#ccltr-experiment .exp-stats-below #exp-stats>h4{grid-column:1/-1;font-size:15px;color:#bceaff;margin:22px 0 4px;border-bottom:1px solid #34506c;padding-bottom:7px}
+#ccltr-experiment .exp-stats-below #exp-stats>.exp-note{grid-column:1/-1}
+#ccltr-experiment .exp-stats-below #exp-stats>.exp-micro{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr))}
+#ccltr-experiment .exp-stats-below #exp-stats>.exp-metrics{grid-column:1/-1;font-size:12px}
+#ccltr-experiment .exp-stats-below #exp-stats .exp-bar-name{font-size:13px}
+#ccltr-experiment .exp-stats-below #exp-stats .exp-bar-line{grid-template-columns:20px minmax(0,1fr) 72px;font-size:12px}
+#ccltr-experiment .exp-stats-below #exp-stats .exp-bar-line b{font-size:12px}
+#ccltr-experiment .exp-stats-below #exp-stats .exp-track{height:15px}
+#ccltr-experiment .exp-solid{width:24px!important;height:0!important;border:0!important;border-top:4px solid #7db7ed!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+@media(max-width:760px){#ccltr-experiment .exp-stats-below #exp-stats{display:block}#ccltr-experiment .exp-stats-below{padding:12px}}
+
+
+/* Clear SKOS comparison and PRO legend, experiment only */
+#ccltr-experiment .exp-stats-below #exp-stats .exp-bar-group{padding:11px 14px;background:#172a42;border:1px solid #324e6c;border-radius:12px;margin:8px 0}
+#ccltr-experiment .exp-stats-below #exp-stats .exp-bar-name{font-weight:750;color:#e6f5ff;font-size:13px}
+#ccltr-experiment .exp-legend .exp-yellow{background:#ffe15c!important}
+
+/* Align Experiment metric tables only; minimal patch */
+#ccltr-experiment .exp-stats-below #exp-stats table.exp-metrics{table-layout:fixed;width:100%;border-collapse:collapse}
+#ccltr-experiment .exp-stats-below #exp-stats table.exp-metrics th:first-child,
+#ccltr-experiment .exp-stats-below #exp-stats table.exp-metrics td:first-child{width:49%;text-align:left}
+#ccltr-experiment .exp-stats-below #exp-stats table.exp-metrics th:not(:first-child),
+#ccltr-experiment .exp-stats-below #exp-stats table.exp-metrics td:not(:first-child){width:17%;text-align:right;font-variant-numeric:tabular-nums}
+#ccltr-experiment .exp-stats-below #exp-stats table.exp-metrics th,
+#ccltr-experiment .exp-stats-below #exp-stats table.exp-metrics td{vertical-align:middle;padding:9px 10px;box-sizing:border-box}

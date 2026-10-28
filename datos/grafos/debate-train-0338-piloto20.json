@@ -1,0 +1,356 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "claim": "Implementing artificial intelligence in education undermines critical thinking and creativity.",
+      "label": "AI Stifles Young Minds",
+      "id": "10132480-711f-466d-b58c-5505c83b2bc1"
+    },
+    {
+      "claim": "Relying on artificial intelligence in education can lead to students memorizing automated responses rather than developing their own critical thinking skills.",
+      "label": "Automated Insights",
+      "premises": [
+        "Relying on artificial intelligence in education can lead to students memorizing automated responses.",
+        "Memorizing automated responses rather than developing one's own thinking is detrimental to critical thinking skills.",
+        "Critical thinking skills are essential for students to develop.",
+        "Artificial intelligence in education provides automated responses that students can rely on.",
+        "Developing critical thinking skills requires students to think independently and not just memorize responses."
+      ],
+      "id": "56fec9fb-22ec-4fdd-81eb-de5eecb99ce1"
+    },
+    {
+      "claim": "AI-driven educational platforms often prioritize standardized solutions and conformity over creative problem-solving, potentially stifling students' ability to think outside the box and develop innovative perspectives.",
+      "label": "Homogenized Insights",
+      "premises": [
+        "AI-driven educational platforms prioritize standardized solutions and conformity over creative problem-solving.",
+        "Creative problem-solving is essential for developing critical thinking and creativity.",
+        "Standardized solutions and conformity can stifle students' ability to think outside the box.",
+        "Thinking outside the box is necessary for developing innovative perspectives.",
+        "The primary goal of education should include fostering critical thinking and creativity."
+      ],
+      "id": "681ff00a-cf34-4769-a243-a8c64ddce9ac"
+    },
+    {
+      "claim": "The integration of AI in education can result in students becoming overly dependent on technology, stifling their creativity and ability to think outside the box.",
+      "label": "Over-Reliance on Technology",
+      "premises": [
+        "The integration of AI in education can lead to students becoming overly dependent on technology.",
+        "Overdependence on technology can stifle creativity.",
+        "Overdependence on technology can hinder the ability to think outside the box.",
+        "Creativity and thinking outside the box are essential skills that should be fostered in education.",
+        "The integration of AI in education can have a significant impact on the development of critical thinking and problem-solving skills."
+      ],
+      "id": "6c1a23f1-959c-4ca4-8621-34214dd7e215"
+    },
+    {
+      "claim": "Integrating artificial intelligence in education can actually foster creativity by teaching students to design, code, and develop innovative AI-powered projects that require critical thinking and problem-solving skills.",
+      "label": "Creative Coding",
+      "premises": [
+        "Teaching students to design, code, and develop innovative AI-powered projects requires critical thinking and problem-solving skills.",
+        "Critical thinking and problem-solving skills are essential components of creativity.",
+        "Students who develop innovative AI-powered projects are likely to develop their critical thinking and problem-solving skills.",
+        "The integration of artificial intelligence in education can be done in a way that emphasizes the development of innovative AI-powered projects.",
+        "The skills acquired through designing, coding, and developing AI-powered projects can transfer to other areas of life, fostering creativity in general."
+      ],
+      "id": "401ec64b-eccf-4882-9635-1ca27f2dfaaf"
+    },
+    {
+      "claim": "Artificial intelligence can collaborate with humans in creative tasks, generating new ideas and exploring innovative solutions, thereby augmenting human creativity rather than undermining it.",
+      "label": "Creative Collaboration",
+      "premises": [
+        "Artificial intelligence can collaborate with humans in creative tasks.",
+        "Artificial intelligence can generate new ideas and explore innovative solutions.",
+        "Collaboration with artificial intelligence in creative tasks enhances human creativity.",
+        "The generation of new ideas and exploration of innovative solutions by artificial intelligence contributes to the augmentation of human creativity.",
+        "Augmenting human creativity implies a supportive or complementary relationship between artificial intelligence and human creativity, rather than a detrimental one."
+      ],
+      "id": "fd865bb1-de5f-442e-9670-8c71154b01d5"
+    },
+    {
+      "claim": "Artificial intelligence can serve as a creative catalyst in education, offering tools and simulations that allow students to explore complex concepts in an interactive and immersive way, thereby stimulating their critical thinking and creative problem-solving skills.",
+      "label": "Creative Catalyst",
+      "premises": [
+        "Artificial intelligence can offer tools and simulations that allow students to explore complex concepts in an interactive and immersive way.",
+        "Interactive and immersive learning experiences stimulate critical thinking and creative problem-solving skills.",
+        "Artificial intelligence can be designed and implemented in a way that complements human teaching and learning.",
+        "The use of artificial intelligence in education does not inherently limit or replace human critical thinking and creativity.",
+        "The benefits of artificial intelligence in education, such as enhanced interactivity and immersion, outweigh any potential drawbacks."
+      ],
+      "id": "dc9613e0-5306-484e-83a6-4dde37820921"
+    },
+    {
+      "claim": "Historical examples of innovative thinkers, such as Albert Einstein from Germany, demonstrate that groundbreaking discoveries are often the result of independent thought and critical thinking, rather than mere memorization.",
+      "label": "Independent Minds",
+      "premises": [
+        "Historical examples of innovative thinkers, such as Albert Einstein from Germany, demonstrate that groundbreaking discoveries are often the result of independent thought and critical thinking.",
+        "Independent thought and critical thinking are essential for making groundbreaking discoveries.",
+        "Memorization is not sufficient for making groundbreaking discoveries.",
+        "The way innovative thinkers like Albert Einstein thought and worked is a good model for how students should learn and develop their skills.",
+        "Critical thinking skills are not typically developed through memorization."
+      ],
+      "id": "700c9869-8db3-45ae-af56-04eb99027589"
+    },
+    {
+      "claim": "Observing the natural world and asking questions about its workings requires students to think creatively and develop their own explanations, rather than simply relying on pre-programmed responses, thereby fostering critical thinking skills.",
+      "label": "Nature of Inquiry",
+      "premises": [
+        "Observing the natural world and asking questions about its workings requires creative thinking.",
+        "Relying on pre-programmed responses hinders the development of critical thinking skills.",
+        "Developing one's own explanations is essential for fostering critical thinking skills.",
+        "Critical thinking skills are valuable and desirable in education.",
+        "The process of observing the natural world and asking questions is an effective way to develop one's own explanations."
+      ],
+      "id": "b7bd4150-ed42-41d9-9e38-16286c2341f3"
+    },
+    {
+      "claim": "In a rapidly changing economy, critical thinking skills are necessary for students to adapt to new situations and make informed decisions.",
+      "label": "Critical Thinking for Economic Success",
+      "premises": [
+        "The economy is rapidly changing.",
+        "Students need to adapt to new situations in a rapidly changing economy.",
+        "Critical thinking skills are necessary for making informed decisions.",
+        "Students are not born with critical thinking skills, but rather they need to be developed.",
+        "The ability to adapt to new situations and make informed decisions is crucial for students' success."
+      ],
+      "id": "053c1114-ea56-4971-a7e5-9b85a1b5190f"
+    },
+    {
+      "claim": "In today's digital age, critical thinking skills help students effectively evaluate and filter the vast amount of information available, ensuring they can distinguish fact from fiction and make informed decisions.",
+      "label": "Navigating Information Overload",
+      "premises": [
+        "Critical thinking skills are necessary for effectively evaluating and filtering information.",
+        "Students are exposed to a vast amount of information in today's digital age.",
+        "Without critical thinking skills, students may not be able to distinguish fact from fiction.",
+        "Critical thinking skills are essential for making informed decisions.",
+        "Students need to develop their own critical thinking skills to effectively navigate the digital age."
+      ],
+      "id": "4eafd424-1369-4443-b670-6b2d10ced0d9"
+    },
+    {
+      "claim": "Encouraging critical thinking and creativity in education is crucial for producing informed, open-minded, and engaged citizens who can participate meaningfully in democratic processes, such as referendums.",
+      "label": "Fostering Free Thinkers",
+      "premises": [
+        "Critical thinking and creativity are essential skills for informed, open-minded, and engaged citizens.",
+        "Democratic processes, such as referendums, require citizens to think critically and creatively.",
+        "Education plays a significant role in developing critical thinking and creativity in individuals.",
+        "Informed, open-minded, and engaged citizens are necessary for the functioning of democratic processes.",
+        "The development of critical thinking and creativity in education has a direct impact on the quality of democratic participation."
+      ],
+      "id": "53c7c4a1-aea8-4ff0-a2ad-696634511a15"
+    },
+    {
+      "claim": "By prioritizing critical thinking and creativity, education can equip students with the skills to adapt and innovate in the face of rapidly changing technologies, economies, and societies, such as those driven by AI and automation.",
+      "label": "Preparing for an Uncertain Future",
+      "premises": [
+        "Education can influence students' ability to adapt and innovate.",
+        "Critical thinking and creativity are essential skills for adapting and innovating in a rapidly changing world.",
+        "The current pace of technological, economic, and societal change (driven by AI and automation) requires students to be adaptable and innovative.",
+        "Education has a significant impact on students' future success and ability to thrive in a rapidly changing world.",
+        "The skills acquired through education (such as critical thinking and creativity) can be applied in real-world situations to drive innovation and adaptation."
+      ],
+      "id": "30dbe144-aa76-4475-9879-8ec0e37b69e3"
+    },
+    {
+      "claim": "Encouraging creative problem-solving in education helps foster a curious mindset, leading to a deeper understanding of complex concepts and the development of innovative solutions.",
+      "label": "Cultivating Curiosity",
+      "premises": [
+        "Encouraging creative problem-solving in education fosters a curious mindset.",
+        "A curious mindset leads to a deeper understanding of complex concepts.",
+        "A deeper understanding of complex concepts is valuable in education.",
+        "The development of innovative solutions is a desirable outcome in education.",
+        "Creative problem-solving is an effective way to develop innovative solutions."
+      ],
+      "id": "7a8db8e6-d0b6-494a-aa37-5d60128e0341"
+    },
+    {
+      "claim": "Incorporating AI-powered projects in education can increase cybersecurity risks, as students may inadvertently create vulnerabilities or expose sensitive information, compromising the safety of the educational environment.",
+      "label": "Cybersecurity Risks",
+      "premises": [
+        "Students may inadvertently create vulnerabilities or expose sensitive information when working on AI-powered projects.",
+        "The safety of the educational environment is a priority that should be protected.",
+        "Inadvertently creating vulnerabilities or exposing sensitive information can compromise the safety of the educational environment.",
+        "Students are not yet equipped with the necessary skills or knowledge to handle AI-powered projects securely.",
+        "The potential risks associated with AI-powered projects in education outweigh the potential benefits."
+      ],
+      "id": "66842e27-f076-451f-9f30-a5d305e1a67f"
+    },
+    {
+      "claim": "The integration of artificial intelligence in education may exacerbate existing inequalities in access to technology and digital literacy, hindering the development of innovative AI-powered projects in under-resourced schools.",
+      "label": "Inequitable Access",
+      "premises": [
+        "The integration of artificial intelligence in education requires access to technology and digital literacy.",
+        "Under-resourced schools lack sufficient access to technology and digital literacy.",
+        "Existing inequalities in access to technology and digital literacy hinder the development of innovative projects.",
+        "The development of innovative AI-powered projects requires adequate resources and infrastructure.",
+        "Under-resourced schools are unlikely to have the necessary resources and infrastructure to support the development of innovative AI-powered projects."
+      ],
+      "id": "33f75965-2f1e-4d4b-b554-234431c21abf"
+    },
+    {
+      "claim": "Integrating artificial intelligence in education may lead to an overemphasis on technical skills, potentially marginalizing other essential subjects and undermining a well-rounded education.",
+      "label": "Overemphasis on Tech",
+      "premises": [
+        "Integrating artificial intelligence in education may lead to an overemphasis on technical skills.",
+        "An overemphasis on technical skills can marginalize other essential subjects.",
+        "A well-rounded education requires a balance of technical skills and other essential subjects.",
+        "The integration of artificial intelligence in education can potentially disrupt this balance.",
+        "The marginalization of other essential subjects is undesirable and can have negative consequences for students' overall education."
+      ],
+      "id": "6ac35961-e7fd-4d8f-a68e-9286642f5de6"
+    },
+    {
+      "claim": "The integration of artificial intelligence in education is often hindered by limited resources, such as outdated hardware, insufficient funding, and inadequate teacher training, making it impractical to emphasize innovative AI-powered projects.",
+      "label": "Resource Constraints",
+      "premises": [
+        "Many educational institutions have limited resources, including outdated hardware.",
+        "Insufficient funding is a common issue in educational institutions.",
+        "Inadequate teacher training is a significant obstacle to integrating artificial intelligence in education.",
+        "Innovative AI-powered projects require significant resources, including up-to-date hardware and sufficient funding.",
+        "Teachers need proper training to effectively integrate artificial intelligence in education."
+      ],
+      "id": "e91da53b-4c92-45a0-97fd-36cb71c3a7f6"
+    },
+    {
+      "claim": "Artificial intelligence systems lack the nuanced judgment and empathy of human teachers, which can result in a failure to recognize and address the unique needs and learning styles of individual students.",
+      "label": "Lack of Human Judgment",
+      "premises": [
+        "Artificial intelligence systems lack the nuanced judgment of human teachers.",
+        "Artificial intelligence systems lack the empathy of human teachers.",
+        "Nuanced judgment is necessary to recognize and address the unique needs of individual students.",
+        "Empathy is necessary to recognize and address the unique learning styles of individual students.",
+        "Human teachers possess the nuanced judgment and empathy required to recognize and address the unique needs and learning styles of individual students."
+      ],
+      "id": "22ecbf8b-fdb0-45d0-b195-8d6f85032a0c"
+    },
+    {
+      "claim": "The benefits of artificial intelligence in education may be outweighed by the potential to exacerbate existing inequalities, as not all students have equal access to AI-powered learning tools, thereby widening the digital divide.",
+      "label": "Digital Divide Widens",
+      "premises": [
+        "Not all students have equal access to AI-powered learning tools.",
+        "The digital divide is a significant issue in education.",
+        "The use of AI-powered learning tools can exacerbate existing inequalities.",
+        "Equal access to educational resources is important for ensuring fairness in education.",
+        "Widening the digital divide would have negative consequences for students who are already disadvantaged."
+      ],
+      "id": "011ad3e5-f888-4a53-a76e-3c5adf6aab17"
+    }
+  ],
+  "edges": [
+    {
+      "valence": "PRO",
+      "target_idx": 3,
+      "source": "56fec9fb-22ec-4fdd-81eb-de5eecb99ce1",
+      "target": "10132480-711f-466d-b58c-5505c83b2bc1"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "681ff00a-cf34-4769-a243-a8c64ddce9ac",
+      "target": "10132480-711f-466d-b58c-5505c83b2bc1"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 3,
+      "source": "6c1a23f1-959c-4ca4-8621-34214dd7e215",
+      "target": "10132480-711f-466d-b58c-5505c83b2bc1"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 4,
+      "source": "401ec64b-eccf-4882-9635-1ca27f2dfaaf",
+      "target": "10132480-711f-466d-b58c-5505c83b2bc1"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "fd865bb1-de5f-442e-9670-8c71154b01d5",
+      "target": "10132480-711f-466d-b58c-5505c83b2bc1"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "dc9613e0-5306-484e-83a6-4dde37820921",
+      "target": "10132480-711f-466d-b58c-5505c83b2bc1"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 4,
+      "source": "700c9869-8db3-45ae-af56-04eb99027589",
+      "target": "56fec9fb-22ec-4fdd-81eb-de5eecb99ce1"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 4,
+      "source": "b7bd4150-ed42-41d9-9e38-16286c2341f3",
+      "target": "56fec9fb-22ec-4fdd-81eb-de5eecb99ce1"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 2,
+      "source": "053c1114-ea56-4971-a7e5-9b85a1b5190f",
+      "target": "56fec9fb-22ec-4fdd-81eb-de5eecb99ce1"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 2,
+      "source": "4eafd424-1369-4443-b670-6b2d10ced0d9",
+      "target": "56fec9fb-22ec-4fdd-81eb-de5eecb99ce1"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 4,
+      "source": "53c7c4a1-aea8-4ff0-a2ad-696634511a15",
+      "target": "681ff00a-cf34-4769-a243-a8c64ddce9ac"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 4,
+      "source": "30dbe144-aa76-4475-9879-8ec0e37b69e3",
+      "target": "681ff00a-cf34-4769-a243-a8c64ddce9ac"
+    },
+    {
+      "valence": "PRO",
+      "target_idx": 1,
+      "source": "7a8db8e6-d0b6-494a-aa37-5d60128e0341",
+      "target": "681ff00a-cf34-4769-a243-a8c64ddce9ac"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "66842e27-f076-451f-9f30-a5d305e1a67f",
+      "target": "401ec64b-eccf-4882-9635-1ca27f2dfaaf"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "33f75965-2f1e-4d4b-b554-234431c21abf",
+      "target": "401ec64b-eccf-4882-9635-1ca27f2dfaaf"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "6ac35961-e7fd-4d8f-a68e-9286642f5de6",
+      "target": "401ec64b-eccf-4882-9635-1ca27f2dfaaf"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 3,
+      "source": "e91da53b-4c92-45a0-97fd-36cb71c3a7f6",
+      "target": "401ec64b-eccf-4882-9635-1ca27f2dfaaf"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 2,
+      "source": "22ecbf8b-fdb0-45d0-b195-8d6f85032a0c",
+      "target": "dc9613e0-5306-484e-83a6-4dde37820921"
+    },
+    {
+      "valence": "CON",
+      "target_idx": 4,
+      "source": "011ad3e5-f888-4a53-a76e-3c5adf6aab17",
+      "target": "dc9613e0-5306-484e-83a6-4dde37820921"
+    }
+  ]
+}
